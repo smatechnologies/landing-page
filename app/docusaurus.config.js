@@ -43,7 +43,7 @@ module.exports = {
           position: 'right',
         },
         {
-          to: '/opcon/opcon-docs',
+          to: '/opcon/opcon-doc/',
           label: 'OpCon',
           position: 'right',
         },
@@ -127,7 +127,7 @@ module.exports = {
         routeBasePath: 'opcon/opcon-deploy-docs',
         sidebarPath: require.resolve('../content/opcon-deploy-docs/sidebars.js'),
         editUrl:
-            'https://github.com/smatechnologies/opcon--deploy-docs/blob/main/',
+            'https://github.com/smatechnologies/opcon-deploy-docs/blob/main/',
 
       },
     ],
