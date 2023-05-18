@@ -58,7 +58,7 @@ module.exports = {
           position: 'right',
         },
         {
-          href: 'https://help.smatechnologies.com/opcon/deploy/',
+          href: '/opcon/opcon-deploy-docs/',
           label: 'Deploy',
           position: 'right',
         },
@@ -116,6 +116,18 @@ module.exports = {
         sidebarPath: require.resolve('../content/opcon-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/opcon-docs/blob/main/',
+
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'opcon-deploy-docs',
+        path: '../content/opcon-deploy-docs/docs',
+        routeBasePath: 'opcon/opcon-deploy-docs',
+        sidebarPath: require.resolve('../content/opcon-deploy-docs/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/opcon--deploy-docs/blob/main/',
 
       },
     ],
@@ -295,7 +307,7 @@ module.exports = {
 //        routeBasePath: 'opcon/agents/zos',
 //        sidebarPath: require.resolve('../content/zos-agent-docs/sidebars.js'),
 //        editUrl:
-//            'https://github.com/smatechnologies/zos-agent-docs/main/blob',
+//           'https://github.com/smatechnologies/zos-agent-docs/main/blob',
 //
 //      },
 //    ],
