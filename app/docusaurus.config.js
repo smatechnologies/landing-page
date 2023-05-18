@@ -43,7 +43,7 @@ module.exports = {
           position: 'right',
         },
         {
-          to: '/opcon/opcon-doc/',
+          to: '/opcon/opcon-docs/',
           label: 'OpCon',
           position: 'right',
         },
