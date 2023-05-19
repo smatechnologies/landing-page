@@ -124,7 +124,7 @@ module.exports = {
       {
         id: 'opcon-deploy-docs',
         path: '../content/opcon-deploy-docs/docs',
-        routeBasePath: 'opcon/opcon-deploy-docs',
+        routeBasePath: 'opcon/deploy',
         sidebarPath: require.resolve('../content/opcon-deploy-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/opcon-deploy-docs/blob/main/',
