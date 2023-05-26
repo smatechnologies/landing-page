@@ -1,32 +1,59 @@
+---
+hide_title: true;
+---
 
-# Agents
+<div class ="grid-container">
 
-<div class ="columns">
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/agents/ibm-i">IBM I</a>
+</div>
 
-[IBM I](/opcon/agents/ibm-i)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/agents/java">JAVA</a>
+</div>
 
-[JAVA](/opcon/agents/java)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/agents/mcp">MCP</a>
+</div>
 
-[MCP](/opcon/agents/mcp)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/agents/opconmft">MFT</a>
+</div>
 
-[MFT](/opcon/agents/opconmft)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/agents/os2200">OS2200</a>
+</div>
 
-[OS2200](/opcon/agents/os2200)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/agents/sap">SAP</a>
+</div>
 
-[SAP](/opcon/agents/sap)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/agents/sap-bw">SAP BW</a>
+</div>
 
-[SAP BW](/opcon/agents/sap-bw)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/agents/sql">SQL</a>
+</div>
 
-[SQL](/opcon/agents/sql)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/agents/tuxedo-art">TUXEDO ART</a>
+</div>
 
-[TUXEDO ART](/opcon/agents/tuxedo-art)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/agents/unix">UNIX</a>
+</div>
 
-[UNIX](/opcon/agents/unix)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/agents/windows">WINDOWS</a>
+</div>
 
-[WINDOWS](/opcon/agents/windows)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/agents/zos">ZOS</a>
+</div>
 
-[ZOS](/opcon/agents/zos)
-
-[ZVSE](https://help.smatechnologies.com/opcon/agents/zvse/v18.0/)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="https://help.smatechnologies.com/opcon/agents/zvse/v18.0/">ZVSE</a>
+</div>
 
 </div>

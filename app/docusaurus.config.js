@@ -58,6 +58,11 @@ module.exports = {
           position: 'right',
         },
         {
+          href: '/opcon/mft/',
+          label: 'MFT',
+          position: 'right',
+        },
+        {
           href: '/opcon/deploy/',
           label: 'Deploy',
           position: 'right',

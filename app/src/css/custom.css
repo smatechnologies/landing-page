@@ -24,6 +24,17 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
-.columns {
-  column-count: 3;
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 2px;
+}
+
+.grid-item {
+  padding: 2px;
+  text-align: center;
+}
+
+.button {
+  font-size: 20px;
 }

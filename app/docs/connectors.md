@@ -1,52 +1,95 @@
+---
+hide_title: true;
+---
 
-# Connectors
+<div class="grid-container">
 
-<div class="columns">  
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/connectors/asysco-amt">ASYSCO AMT</a>
+</div>
 
-[ASYSCO AMT](/opcon/connectors/asysco-amt)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/connectors/azure-storage">AZURE STORAGE</a>
+</div>
 
-[AZURE STORAGE](/opcon/connectors/azure-storage)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/connectors/azure-vm">AZURE VM</a>
+</div>
 
-[AZURE VM](/opcon/connectors/azure-vm)
+<div class="grid-item">
+ <a class="button button--link button--block button--primary" href="/opcon/connectors/cegid-cbr">CEGID CBR</a>
+</div>
 
-[CEGID CBR](/opcon/connectors/cegid-cbr)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/connectors/commvault">COMMVAULT</a>
+</div>
 
-[COMMVAULT](/opcon/connectors/commvault)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/connectors/corelation">CORELATION</a>
+</div>
 
-[CORELATION](/opcon/connectors/corelation)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/connectors/easyvista">EASYVISTA</a>
+</div>
 
-[EPISYS (RSJ)](/opcon/connectors/episys)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="#/opcon/connectors/episys">EPISYS (RSJ)</a>
+</div>
 
-[FICS](/opcon/connectors/fics)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/connectors/exigen">EXIGEN</a>
+</div>
 
-[FISERV DNA](/opcon/connectors/fiserv-dna)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/connectors/fics">FICS</a>
+</div>
 
-[FISERV XP2](/opcon/connectors/xp2)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/connectors/fiserv-dna">FISERV DNA</a>
+</div>
 
-[EASYVISTA](/opcon/connectors/easyvista)
+<div class="grid-item">
+<a class="button button--link button--link button--block button--primary" href="/opcon/connectors/xp2">FISERV XP2</a>
+</div>
 
-[EXIGEN](/opcon/connectors/exigen)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/connectors/jdedwards">JD EDWARDS</a>
+</div>
 
-[JD EDWARDS](/opcon/connectors/jdedwards)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/connectors/peoplesoft">PEOPLESOFT</a>
+</div>
 
-[PEOPLESOFT](/opcon/connectors/peoplesoft)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="https://help.smatechnologies.com/opcon/connectors/sapdataservices/v16.2/">SAP DATA SERVICES</a>
+</div>
 
-[SAP DATA SERVICES](https://help.smatechnologies.com/opcon/connectors/sapdataservices/v16.2/)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/connectors/servicenow">SERVICE NOW</a>
+</div>
 
-[SERVICENOW](/opcon/connectors/servicenow)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/connectors/smart-email">SMART EMAIL</a>
+</div>
 
-[SMART EMAIL](/opcon/connectors/smart-email)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/connectors/unikix">UNIKIX</a>
+</div>
 
-[UNIKIX](/opcon/connectors/unikix)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="https://help.smatechnologies.com/opcon/connectors/vmware/v17.0/">VMWARE</a>
+</div>
 
-[VMWARE](https://help.smatechnologies.com/opcon/connectors/vmware/v17.0/)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/connectors/webservices">WEBSERVICES</a>
+</div>
 
-[WEBSERVICES](/opcon/connectors/webservices)
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="https://help.smatechnologies.com/opcon/connectors/wsrestful/v18.3/">WSRESTFUL</a>
+</div>
 
-[WSRESTFUL](https://help.smatechnologies.com/opcon/connectors/wsrestful/v18.3/)
-
-[WSUS](https://help.smatechnologies.com/opcon/connectors/wsus/21.0.0/)
-
-
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="https://help.smatechnologies.com/opcon/connectors/wsus/21.0.0/">WSUS</a>
+</div>
 
 </div>
