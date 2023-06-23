@@ -17,7 +17,10 @@ Released as often as every 6 weeks and contains both defect fixes and new featur
 
 | Feature Release | Version | General Availability | Anticipated Support Retirement | Release Notes | Download |
 | --------------- | ------- | -------------------- | ------------------------------ | ------------- | -------- |
-| 22.1 | 22.1.0 | 2023-03-06 | 206-03-06 | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-2210) | [Download](https://files.smatechnologies.com/files/OpCon%20Releases/OpCon/22.1.0) | 
+| 22.4 | 22.4.0 | 2023-05-29 | 2026-05-29 | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-2240) | [Download](https://files.smatechnologies.com/files/OpCon%20Releases/OpCon/22.4.0) | 
+| 22.3 STS | 22.3.1 | 2023-05-02 | 2026-05-02 | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-2231) | [Download](https://files.smatechnologies.com/files/OpCon%20Releases/OpCon/22.3.1) | 
+| 22.2 STS | 22.2.0 | 2023-04-03 | 2026-04-03 | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-2220) | [Download](https://files.smatechnologies.com/files/OpCon%20Releases/OpCon/22.2.0) | 
+| 22.1 | 22.1.0 | 2023-03-06 | 2026-03-06 | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-2210) | [Download](https://files.smatechnologies.com/files/OpCon%20Releases/OpCon/22.1.0) | 
 | 22.0 LTS | 22.0.1 | 2023-03-13 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2201) | [Download](https://files.smatechnologies.com/files/OpCon%20Releases/OpCon/22.0.1) |
 | 22.0 LTS | 22.0.0 | 2023-02-20 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2200) | [Download](https://files.smatechnologies.com/files/OpCon%20Releases/OpCon/22.0.0) |
 | 21.10 | 21.10.0 | 2022-12-26 | 2025-12-26 | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-21100) | [Download](https://files.smatechnologies.com/files/OpCon%20Releases/OpCon/21.10.0) |

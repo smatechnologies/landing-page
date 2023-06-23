@@ -1,5 +1,5 @@
 ---
-hide_title: true;
+hide_title: true
 ---
 
 <div class ="grid-container">

@@ -1,11 +1,15 @@
 ---
-hide_title: true;
+hide_title: true
 ---
 
 <div class="grid-container">
 
 <div class="grid-item">
 <a class="button button--link button--block button--primary" href="/opcon/connectors/asysco-amt">ASYSCO AMT</a>
+</div>
+
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/connectors/awsec2">AMAZON EC2</a>
 </div>
 
 <div class="grid-item">
@@ -18,6 +22,10 @@ hide_title: true;
 
 <div class="grid-item">
  <a class="button button--link button--block button--primary" href="/opcon/connectors/cegid-cbr">CEGID CBR</a>
+</div>
+
+<div class="grid-item">
+ <a class="button button--link button--block button--primary" href="/opcon/connectors/cegid-orli">CEGID ORLI</a>
 </div>
 
 <div class="grid-item">
@@ -90,6 +98,11 @@ hide_title: true;
 
 <div class="grid-item">
 <a class="button button--link button--block button--primary" href="https://help.smatechnologies.com/opcon/connectors/wsus/21.0.0/">WSUS</a>
+</div>
+
+
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/connectors/xp2">XP2</a>
 </div>
 
 </div>

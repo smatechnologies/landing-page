@@ -58,7 +58,7 @@ module.exports = {
           position: 'right',
         },
         {
-          href: '/opcon/mft/',
+          href: '/opcon/agents/opconmft/',
           label: 'MFT',
           position: 'right',
         },
@@ -208,18 +208,18 @@ module.exports = {
 
       },
     ],
-//    [
-//      '@docusaurus/plugin-content-docs',
-//      {
-//        id: 'mft-agent-docs',
-//        path: '../content/mft-agent-docs/docs',
-//        routeBasePath: 'opcon/agents/opconmft',
-//        sidebarPath: require.resolve('../content/mft-agent-docs/sidebars.js'),
-//        editUrl:
-//            'https://github.com/smatechnologies/mft-agent-docs/main/blob',
-//
-//      },
-//    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'mft-agent-docs',
+        path: '../content/mft-agent-docs/docs',
+        routeBasePath: 'opcon/agents/opconmft',
+        sidebarPath: require.resolve('../content/mft-agent-docs/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/mft-agent-docs/main/blob',
+
+      },
+    ],
     [
       '@docusaurus/plugin-content-docs',
       {
@@ -331,6 +331,18 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'awsec2-connector-docs',
+        path: '../content/awsec2-connector-docs/docs',
+        routeBasePath: 'opcon/connectors/awsec2',
+        sidebarPath: require.resolve('../content/awsec2-connector-docs/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/awsec2-connector-docs/main/blob',
+
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'azurestorage-connector-docs',
         path: '../content/azurestorage-connector-docs/docs',
         routeBasePath: 'opcon/connectors/azure-storage',
@@ -361,6 +373,18 @@ module.exports = {
         sidebarPath: require.resolve('../content/cegid-cbr-connector-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/cegid-cbr-connector-docs/main/blob',
+
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'cegid-orli-connector-docs',
+        path: '../content/cegid-orli-connector-docs/docs',
+        routeBasePath: 'opcon/connectors/cegid-orli',
+        sidebarPath: require.resolve('../content/cegid-orli-connector-docs/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/cegid-orli-connector-docs/main/blob',
 
       },
     ],
@@ -421,18 +445,6 @@ module.exports = {
         sidebarPath: require.resolve('../content/dna-connector-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/dna-connector-docs/main/blob',
-
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'xp2-connector-docs',
-        path: '../content/xp2-connector-docs/docs',
-        routeBasePath: 'opcon/connectors/xp2',
-        sidebarPath: require.resolve('../content/xp2-connector-docs/sidebars.js'),
-        editUrl:
-            'https://github.com/smatechnologies/xp2-connector-docs/main/blob',
 
       },
     ],
@@ -531,6 +543,18 @@ module.exports = {
             'https://github.com/smatechnologies/webservices-connector-docs/main/blob',
 
       },
-    ],              
+    ],      
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'xp2-connector-docs',
+        path: '../content/xp2-connector-docs/docs',
+        routeBasePath: 'opcon/connectors/xp2',
+        sidebarPath: require.resolve('../content/xp2-connector-docs/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/xp2-connector-docs/main/blob',
+
+      },
+    ],  
 ],
 };
