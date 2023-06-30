@@ -4,7 +4,7 @@ module.exports = {
   tagline: 'SMA Help',
   url: 'https://help.smatechnologies.com',
   baseUrl: '/',
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'smatechnologies',
