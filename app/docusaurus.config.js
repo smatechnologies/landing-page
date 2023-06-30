@@ -304,18 +304,18 @@ module.exports = {
 
       },
     ],
-//    [
-//      '@docusaurus/plugin-content-docs',
-//      {
-//        id: 'zos-agent-docs',
-//        path: '../content/zos-agent-docs/docs',
-//        routeBasePath: 'opcon/agents/zos',
-//        sidebarPath: require.resolve('../content/zos-agent-docs/sidebars.js'),
-//        editUrl:
-//           'https://github.com/smatechnologies/zos-agent-docs/main/blob',
-//
-//      },
-//    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'zos-agent-docs',
+        path: '../content/zos-agent-docs/docs',
+        routeBasePath: 'opcon/agents/zos',
+        sidebarPath: require.resolve('../content/zos-agent-docs/sidebars.js'),
+        editUrl:
+           'https://github.com/smatechnologies/zos-agent-docs/main/blob',
+
+      },
+    ],
     [
       '@docusaurus/plugin-content-docs',
       {
