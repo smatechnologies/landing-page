@@ -179,18 +179,6 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'opcon-advanced-training',
-        path: '../content/opcon-advanced-training/docs',
-        routeBasePath: 'training/opcon-advanced',
-        sidebarPath: require.resolve('../content/opcon-advanced-training/sidebars.js'),
-        editUrl:
-            'https://github.com/smatechnologies/opcon-advanced-training/main/blob',
-
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
         id: 'ibm-i-agent-docs',
         path: '../content/ibm-i-agent-docs/docs',
         routeBasePath: 'opcon/agents/ibm-i',
