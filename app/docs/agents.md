@@ -17,10 +17,6 @@ hide_title: true
 </div>
 
 <div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/agents/opconmft">MFT</a>
-</div>
-
-<div class="grid-item">
 <a class="button button--link button--block button--primary" href="/opcon/agents/os2200">OS2200</a>
 </div>
 

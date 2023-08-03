@@ -1,6 +1,6 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'SMA Technologies Help',
+  title: 'Help',
   tagline: 'SMA Help',
   url: 'https://help.smatechnologies.com',
   baseUrl: '/',
@@ -11,7 +11,7 @@ module.exports = {
   projectName: 'help-landing-page',
   themeConfig: {
     navbar: {
-      title: 'SMA Technologies Help',
+      title: 'Home',
       logo: {
         alt: 'SMA Technologies Help Logo',
         src: 'img/logo.svg',
@@ -38,54 +38,58 @@ module.exports = {
           ],
         },
         {
-          to: 'releases',
-          label: 'Releases',
-          position: 'right',
-        },
-        {
           to: '/opcon/core/',
           label: 'OpCon',
-          position: 'right',
+          position: 'left',
         },
         {
-          to: 'agents',
-          label: 'Agents',
-          position: 'right',
-        },
-        {
-          to: 'connectors',
-          label: 'Connectors',
-          position: 'right',
-        },
-        {
-          href: '/opcon/agents/opconmft/',
-          label: 'MFT',
-          position: 'right',
+          type: 'dropdown',
+          label: 'Integrations',
+          position: 'left',
+          items: [
+            {
+              to: 'agents',
+              label: 'Agents',
+            },
+            {
+              to: 'connectors',
+              label: 'Connectors',
+            },
+            {
+              href: '/opcon/agents/opconmft/',
+              label: 'Managed File Transfer (MFT)',
+            },
+            {
+              href: '/opcon/agents/opcon-rpa/',
+              label: 'Robotic Process Automation (RPA)'
+            },
+          ],
         },
         {
           href: '/opcon/deploy/',
           label: 'Deploy',
-          position: 'right',
+          position: 'left',
         },
         {
           href: 'https://smatechnologies.my.site.com/SMAOpConUserCommunity/s/login/',
           label: 'Support',
           position: 'right',
         },
-        {
-          href: 'https://help.smatechnologies.com/opcon/contributor-guide/',
-          label: 'Contributor Guide',
-          position: 'right',
-        },
-        {
-          to: 'phone',
-          label: 'Phone',
-          position: 'right',
-        },
+//        {
+//          href: '/opcon/contributor-guide/',
+//          label: 'Contributor Guide',
+//          position: 'right',
+//        },
       ],
     },
     footer: {
       style: 'dark',
+      links: [
+        {
+          to: '/opcon/contributor-guide/',
+          label: 'Contributor Guide',
+        },
+      ],
       copyright: `Copyright © ${new Date().getFullYear()} SMA Technologies.`,
     },
   },
@@ -133,6 +137,18 @@ module.exports = {
         sidebarPath: require.resolve('../content/opcon-deploy-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/opcon-deploy-docs/blob/main/',
+
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'docs-contributor-guide',
+        path: '../content/docs-contributor-guide/docs',
+        routeBasePath: 'opcon/contributor-guide',
+        sidebarPath: require.resolve('../content/docs-contributor-guide/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/docs-contributor-guide/blob/main/',
 
       },
     ],
@@ -220,6 +236,18 @@ module.exports = {
 
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'opcon-rpa-docs',
+        path: '../content/opcon-rpa-docs/docs',
+        routeBasePath: 'opcon/agents/opcon-rpa',
+        sidebarPath: require.resolve('../content/opcon-rpa-docs/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/opcon-rpa-docs/main/blob',
+
+      },
+    ],    
     [
       '@docusaurus/plugin-content-docs',
       {
