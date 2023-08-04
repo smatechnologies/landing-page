@@ -15,7 +15,7 @@ module.exports = {
       logo: {
         alt: 'SMA Technologies Help Logo',
         src: 'img/logo.svg',
-        to: '/',
+        href: 'https://help.smatechnologies.com',
       },
       items: [
         {
