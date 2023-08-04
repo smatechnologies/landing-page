@@ -18,4 +18,5 @@ jobs:
       # copy content to new app 
       - run: azcopy_v10 copy '${{ secrets.HELP_CONTENT_URL }}/content/smatechnologies/?${{ secrets.HELP_CONTENT_TOKEN }}' './content/' --recursive
       # publish compiled output to existing app
+      - run: tree
       - run: cd app && yarn install && yarn build
