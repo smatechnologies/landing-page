@@ -122,7 +122,7 @@ module.exports = {
         id: 'opcon-docs',
         path: '../content/opcon-docs/docs',
         routeBasePath: 'opcon/core',
-        sidebarPath: require.resolve('../content/opcon-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/opcon-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/opcon-docs/blob/main/',
 
@@ -134,7 +134,7 @@ module.exports = {
         id: 'opcon-deploy-docs',
         path: '../content/opcon-deploy-docs/docs',
         routeBasePath: 'opcon/deploy',
-        sidebarPath: require.resolve('../content/opcon-deploy-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/opcon-deploy-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/opcon-deploy-docs/blob/main/',
 
@@ -146,7 +146,7 @@ module.exports = {
         id: 'docs-contributor-guide',
         path: '../content/docs-contributor-guide/docs',
         routeBasePath: 'opcon/contributor-guide',
-        sidebarPath: require.resolve('../content/docs-contributor-guide/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/docs-contributor-guide/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/docs-contributor-guide/blob/main/',
 
@@ -158,7 +158,7 @@ module.exports = {
         id: 'opcon-basic-training',
         path: '../content/opcon-basic-training/docs',
         routeBasePath: 'training/opcon-basic',
-        sidebarPath: require.resolve('../content/opcon-basic-training/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/opcon-basic-training/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/opcon-basic-training/main/blob',
 
@@ -170,7 +170,7 @@ module.exports = {
         id: 'opcon-deploy-training',
         path: '../content/opcon-deploy-training/docs',
         routeBasePath: 'training/opcon-deploy',
-        sidebarPath: require.resolve('../content/opcon-deploy-training/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/opcon-deploy-training/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/opcon-deploy-training/main/blob',
 
@@ -182,7 +182,7 @@ module.exports = {
         id: 'ibm-i-agent-docs',
         path: '../content/ibm-i-agent-docs/docs',
         routeBasePath: 'opcon/agents/ibm-i',
-        sidebarPath: require.resolve('../content/ibm-i-agent-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/ibm-i-agent-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/ibm-i-agent-docs/main/blob',
 
@@ -194,7 +194,7 @@ module.exports = {
         id: 'java-agent-docs',
         path: '../content/java-agent-docs/docs',
         routeBasePath: 'opcon/agents/java',
-        sidebarPath: require.resolve('../content/java-agent-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/java-agent-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/java-agent-docs/main/blob',
 
@@ -206,7 +206,7 @@ module.exports = {
         id: 'mcp-agent-docs',
         path: '../content/mcp-agent-docs/docs',
         routeBasePath: 'opcon/agents/mcp',
-        sidebarPath: require.resolve('../content/mcp-agent-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/mcp-agent-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/mcp-agent-docs/main/blob',
 
@@ -218,7 +218,7 @@ module.exports = {
         id: 'mft-agent-docs',
         path: '../content/mft-agent-docs/docs',
         routeBasePath: 'opcon/agents/opconmft',
-        sidebarPath: require.resolve('../content/mft-agent-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/mft-agent-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/mft-agent-docs/main/blob',
 
@@ -230,7 +230,7 @@ module.exports = {
         id: 'opcon-rpa-docs',
         path: '../content/opcon-rpa-docs/docs',
         routeBasePath: 'opcon/agents/opcon-rpa',
-        sidebarPath: require.resolve('../content/opcon-rpa-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/opcon-rpa-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/opcon-rpa-docs/main/blob',
 
@@ -242,7 +242,7 @@ module.exports = {
         id: 'os2200-agent-docs',
         path: '../content/os2200-agent-docs/docs',
         routeBasePath: 'opcon/agents/os2200',
-        sidebarPath: require.resolve('../content/os2200-agent-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/os2200-agent-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/os2200-agent-docs/main/blob',
 
@@ -254,7 +254,7 @@ module.exports = {
         id: 'sap-agent-docs',
         path: '../content/sap-agent-docs/docs',
         routeBasePath: 'opcon/agents/sap',
-        sidebarPath: require.resolve('../content/sap-agent-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/sap-agent-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/sap-agent-docs/main/blob',
 
@@ -266,7 +266,7 @@ module.exports = {
         id: 'sap-bw-agent-docs',
         path: '../content/sap-bw-agent-docs/docs',
         routeBasePath: 'opcon/agents/sap-bw',
-        sidebarPath: require.resolve('../content/sap-bw-agent-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/sap-bw-agent-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/sap-bw-agent-docs/main/blob',
 
@@ -278,7 +278,7 @@ module.exports = {
         id: 'sql-agent-docs',
         path: '../content/sql-agent-docs/docs',
         routeBasePath: 'opcon/agents/sql',
-        sidebarPath: require.resolve('../content/sql-agent-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/sql-agent-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/sql-agent-docs/main/blob',
 
@@ -290,7 +290,7 @@ module.exports = {
         id: 'tuxedo-art-agent-docs',
         path: '../content/tuxedo-art-agent-docs/docs',
         routeBasePath: 'opcon/agents/tuxedo-art',
-        sidebarPath: require.resolve('../content/tuxedo-art-agent-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/tuxedo-art-agent-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/tuxedo-art-agent-docs/main/blob',
 
@@ -302,7 +302,7 @@ module.exports = {
         id: 'unix-agent-docs',
         path: '../content/unix-agent-docs/docs',
         routeBasePath: 'opcon/agents/unix',
-        sidebarPath: require.resolve('../content/unix-agent-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/unix-agent-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/unix-agent-docs/main/blob',
 
@@ -314,7 +314,7 @@ module.exports = {
         id: 'windows-agent-docs',
         path: '../content/windows-agent-docs/docs',
         routeBasePath: 'opcon/agents/windows',
-        sidebarPath: require.resolve('../content/windows-agent-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/windows-agent-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/windows-agent-docs/main/blob',
 
@@ -326,7 +326,7 @@ module.exports = {
         id: 'zos-agent-docs',
         path: '../content/zos-agent-docs/docs',
         routeBasePath: 'opcon/agents/zos',
-        sidebarPath: require.resolve('../content/zos-agent-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/zos-agent-docs/sidebars.js'),
         editUrl:
            'https://github.com/smatechnologies/zos-agent-docs/main/blob',
 
@@ -338,7 +338,7 @@ module.exports = {
         id: 'asysco-amt-connector-docs',
         path: '../content/asysco-amt-connector-docs/docs',
         routeBasePath: 'opcon/connectors/asysco-amt',
-        sidebarPath: require.resolve('../content/asysco-amt-connector-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/asysco-amt-connector-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/asysco-connector-docs/main/blob',
 
@@ -350,7 +350,7 @@ module.exports = {
         id: 'awsec2-connector-docs',
         path: '../content/awsec2-connector-docs/docs',
         routeBasePath: 'opcon/connectors/awsec2',
-        sidebarPath: require.resolve('../content/awsec2-connector-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/awsec2-connector-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/awsec2-connector-docs/main/blob',
 
@@ -362,7 +362,7 @@ module.exports = {
         id: 'azurestorage-connector-docs',
         path: '../content/azurestorage-connector-docs/docs',
         routeBasePath: 'opcon/connectors/azure-storage',
-        sidebarPath: require.resolve('../content/azurestorage-connector-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/azurestorage-connector-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/azurestorage-connector-docs/main/blob',
 
@@ -374,7 +374,7 @@ module.exports = {
         id: 'azurevm-connector-docs',
         path: '../content/azurevm-connector-docs/docs',
         routeBasePath: 'opcon/connectors/azure-vm',
-        sidebarPath: require.resolve('../content/azurevm-connector-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/azurevm-connector-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/azurevm-connector-docs/main/blob',
 
@@ -386,7 +386,7 @@ module.exports = {
         id: 'cegid-cbr-connector-docs',
         path: '../content/cegid-cbr-connector-docs/docs',
         routeBasePath: 'opcon/connectors/cegid-cbr',
-        sidebarPath: require.resolve('../content/cegid-cbr-connector-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/cegid-cbr-connector-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/cegid-cbr-connector-docs/main/blob',
 
@@ -398,7 +398,7 @@ module.exports = {
         id: 'cegid-orli-connector-docs',
         path: '../content/cegid-orli-connector-docs/docs',
         routeBasePath: 'opcon/connectors/cegid-orli',
-        sidebarPath: require.resolve('../content/cegid-orli-connector-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/cegid-orli-connector-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/cegid-orli-connector-docs/main/blob',
 
@@ -410,7 +410,7 @@ module.exports = {
         id: 'commvault-connector-docs',
         path: '../content/commvault-connector-docs/docs',
         routeBasePath: 'opcon/connectors/commvault',
-        sidebarPath: require.resolve('../content/commvault-connector-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/commvault-connector-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/commvault-connector-docs/main/blob',
 
@@ -422,7 +422,7 @@ module.exports = {
         id: 'corelation-connector-docs',
         path: '../content/corelation-connector-docs/docs',
         routeBasePath: 'opcon/connectors/corelation',
-        sidebarPath: require.resolve('../content/corelation-connector-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/corelation-connector-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/corelation-connector-docs/main/blob',
 
@@ -434,7 +434,7 @@ module.exports = {
         id: 'episys-connector-docs',
         path: '../content/episys-connector-docs/docs',
         routeBasePath: 'opcon/connectors/episys',
-        sidebarPath: require.resolve('../content/episys-connector-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/episys-connector-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/episys-connector-docs/main/blob',
 
@@ -446,7 +446,7 @@ module.exports = {
         id: 'fics-connector-docs',
         path: '../content/fics-connector-docs/docs',
         routeBasePath: 'opcon/connectors/fics',
-        sidebarPath: require.resolve('../content/fics-connector-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/fics-connector-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/fics-connector-docs/main/blob',
 
@@ -458,7 +458,7 @@ module.exports = {
         id: 'dna-connector-docs',
         path: '../content/dna-connector-docs/docs',
         routeBasePath: 'opcon/connectors/fiserv-dna',
-        sidebarPath: require.resolve('../content/dna-connector-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/dna-connector-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/dna-connector-docs/main/blob',
 
@@ -470,7 +470,7 @@ module.exports = {
         id: 'easyvista-connector-docs',
         path: '../content/easyvista-connector-docs/docs',
         routeBasePath: 'opcon/connectors/easyvista',
-        sidebarPath: require.resolve('../content/easyvista-connector-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/easyvista-connector-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/easyvista-connector-docs/main/blob',
 
@@ -482,7 +482,7 @@ module.exports = {
         id: 'exigen-connector-docs',
         path: '../content/exigen-connector-docs/docs',
         routeBasePath: 'opcon/connectors/exigen',
-        sidebarPath: require.resolve('../content/exigen-connector-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/exigen-connector-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/exigen-connector-docs/main/blob',
 
@@ -494,7 +494,7 @@ module.exports = {
         id: 'jdedwards-connector-docs',
         path: '../content/jdedwards-connector-docs/docs',
         routeBasePath: 'opcon/connectors/jdedwards',
-        sidebarPath: require.resolve('../content/jdedwards-connector-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/jdedwards-connector-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/jdedwards-connector-docs/main/blob',
 
@@ -506,7 +506,7 @@ module.exports = {
         id: 'peoplesoft-connector-docs',
         path: '../content/peoplesoft-connector-docs/docs',
         routeBasePath: 'opcon/connectors/peoplesoft',
-        sidebarPath: require.resolve('../content/peoplesoft-connector-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/peoplesoft-connector-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/peoplesoft-connector-docs/main/blob',
 
@@ -518,7 +518,7 @@ module.exports = {
         id: 'servicenow-connector-docs',
         path: '../content/servicenow-connector-docs/docs',
         routeBasePath: 'opcon/connectors/servicenow',
-        sidebarPath: require.resolve('../content/servicenow-connector-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/servicenow-connector-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/servicenow-connector-docs/main/blob',
 
@@ -530,7 +530,7 @@ module.exports = {
         id: 'smart-email--docs',
         path: '../content/smart-email-docs/docs',
         routeBasePath: 'opcon/connectors/smart-email',
-        sidebarPath: require.resolve('../content/smart-email-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/smart-email-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/smart-email-docs/main/blob',
 
@@ -542,7 +542,7 @@ module.exports = {
         id: 'unikix-connector-docs',
         path: '../content/unikix-connector-docs/docs',
         routeBasePath: 'opcon/connectors/unikix',
-        sidebarPath: require.resolve('../content/unikix-connector-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/unikix-connector-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/unikix-connector-docs/main/blob',
 
@@ -554,7 +554,7 @@ module.exports = {
         id: 'webservices-connector-docs',
         path: '../content/webservices-connector-docs/docs',
         routeBasePath: 'opcon/connectors/webservices',
-        sidebarPath: require.resolve('../content/webservices-connector-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/webservices-connector-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/webservices-connector-docs/main/blob',
 
@@ -566,7 +566,7 @@ module.exports = {
         id: 'xp2-connector-docs',
         path: '../content/xp2-connector-docs/docs',
         routeBasePath: 'opcon/connectors/xp2',
-        sidebarPath: require.resolve('../content/xp2-connector-docs/sidebars.js'),
+        sidebarPath: require.resolve('../content/smatechnologies/xp2-connector-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/xp2-connector-docs/main/blob',
 
