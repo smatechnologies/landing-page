@@ -4,7 +4,7 @@ module.exports = {
   tagline: 'SMA Help',
   url: 'https://help.smatechnologies.com',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'smatechnologies',
@@ -15,7 +15,7 @@ module.exports = {
       logo: {
         alt: 'SMA Technologies Help Logo',
         src: 'img/logo.svg',
-        href: 'https://help.smatechnologies.com',
+        href: '/',
       },
       items: [
         {
