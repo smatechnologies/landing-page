@@ -15,7 +15,7 @@ module.exports = {
       logo: {
         alt: 'SMA Technologies Help Logo',
         src: 'img/logo.svg',
-        href: '/',
+        to: '/',
       },
       items: [
         {
@@ -48,11 +48,11 @@ module.exports = {
           position: 'left',
           items: [
             {
-              to: 'agents',
+              to: '/agents',
               label: 'Agents',
             },
             {
-              to: 'connectors',
+              to: '/connectors',
               label: 'Connectors',
             },
             {
