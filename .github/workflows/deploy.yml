@@ -13,8 +13,6 @@ jobs:
         with:
           version: 'v10'
       - run: azcopy_v10 copy '${{ secrets.HELP_CONTENT_URL }}/content/smatechnologies/?${{ secrets.HELP_CONTENT_TOKEN }}' './content/' --recursive
-      # publish compiled output to existing app
-      - run: cd app && npm install && npm run build
       - uses: docker/login-action@v2
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
