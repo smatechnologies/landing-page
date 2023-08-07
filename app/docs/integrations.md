@@ -61,11 +61,43 @@ hide_title: true
 </div>
 
 <div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/agents/ibm-i">IBM I</a>
+</div>
+
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/agents/java">JAVA</a>
+</div>
+
+<div class="grid-item">
 <a class="button button--link button--block button--primary" href="/opcon/connectors/jdedwards">JD EDWARDS</a>
 </div>
 
 <div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/agents/opconmft">MANAGED FILE TRANSFER (MFT)</a>
+</div>
+
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/agents/mcp">MCP</a>
+</div>
+
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/agents/os2200">OS2200</a>
+</div>
+
+<div class="grid-item">
 <a class="button button--link button--block button--primary" href="/opcon/connectors/peoplesoft">PEOPLESOFT</a>
+</div>
+
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/agents/opcon-rpa">ROBOTIC PROCESS AUTOMATION (RPA)</a>
+</div>
+
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/agents/sap">SAP</a>
+</div>
+
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/agents/sap-bw">SAP BW</a>
 </div>
 
 <div class="grid-item">
@@ -81,7 +113,19 @@ hide_title: true
 </div>
 
 <div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/agents/sql">SQL</a>
+</div>
+
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/agents/tuxedo-art">TUXEDO ART</a>
+</div>
+
+<div class="grid-item">
 <a class="button button--link button--block button--primary" href="/opcon/connectors/unikix">UNIKIX</a>
+</div>
+
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/agents/unix">UNIX</a>
 </div>
 
 <div class="grid-item">
@@ -90,6 +134,10 @@ hide_title: true
 
 <div class="grid-item">
 <a class="button button--link button--block button--primary" href="/opcon/connectors/webservices">WEBSERVICES</a>
+</div>
+
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/agents/windows">WINDOWS</a>
 </div>
 
 <div class="grid-item">
@@ -103,6 +151,14 @@ hide_title: true
 
 <div class="grid-item">
 <a class="button button--link button--block button--primary" href="/opcon/connectors/xp2">XP2</a>
+</div>
+
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/agents/zos">ZOS</a>
+</div>
+
+<div class="grid-item">
+<a class="button button--link button--block button--primary" href="https://help.smatechnologies.com/opcon/agents/zvse/v18.0/">ZVSE</a>
 </div>
 
 </div>

@@ -43,27 +43,9 @@ module.exports = {
           position: 'left',
         },
         {
-          type: 'dropdown',
+          to: '/integrations/',
           label: 'Integrations',
           position: 'left',
-          items: [
-            {
-              to: '/agents',
-              label: 'Agents',
-            },
-            {
-              to: '/connectors',
-              label: 'Connectors',
-            },
-            {
-              href: '/opcon/agents/opconmft/',
-              label: 'Managed File Transfer (MFT)',
-            },
-            {
-              href: '/opcon/agents/opcon-rpa/',
-              label: 'Robotic Process Automation (RPA)'
-            },
-          ],
         },
         {
           href: '/opcon/deploy/',
