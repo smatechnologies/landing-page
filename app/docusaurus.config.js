@@ -106,7 +106,23 @@ module.exports = {
         routeBasePath: 'opcon/core',
         sidebarPath: require.resolve('../content/smatechnologies/opcon-docs/sidebars.js'),
         editUrl:
-            'https://github.com/smatechnologies/opcon-docs/blob/main/', 
+            'https://github.com/smatechnologies/opcon-docs/blob/main/',
+            lastVersion: "current",
+        versions: {
+          current: {
+            label: "current",
+          },
+          "22.0": {
+            label: "22.0",
+            path: "v22.0",
+            banner: "none",
+          },
+          "21.0": {
+            label: "21.0",
+            path: "v21.0",
+            banner: "none",
+          },
+        },    
       },
     ],
     [
