@@ -53,7 +53,7 @@ module.exports = {
           position: 'left',
         },
         {
-          href: 'https://smatechnologies.my.site.com/SMAOpConUserCommunity/s/login/',
+          href: 'https://smatech2.my.site.com/SMAOpConUserCommunity/s/',
           label: 'Support',
           position: 'right',
         },
@@ -106,8 +106,7 @@ module.exports = {
         routeBasePath: 'opcon/core',
         sidebarPath: require.resolve('../content/smatechnologies/opcon-docs/sidebars.js'),
         editUrl:
-            'https://github.com/smatechnologies/opcon-docs/blob/main/',
-
+            'https://github.com/smatechnologies/opcon-docs/blob/main/', 
       },
     ],
     [
