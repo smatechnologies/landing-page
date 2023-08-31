@@ -20,7 +20,7 @@ hide_title: 'true'
 
 ## OpCon Web Installer (OWI)
 
-Download the [OpCon Web Installer](https://github.com/smatechnologies/opcon-web-installer/releases/download/v1.9.0/OpConWebInstaller.zip)
+Download the [OpCon Web Installer](https://teams.microsoft.com/l/message/19:meeting_ZGU2NmMyYWMtZTQ3MS00ZDNmLWE4NTktN2RjYzVlZDhkMjIw@thread.v2/1693496207548?context=%7B%22contextType%22%3A%22chat%22%7D)
 
 The OpCon Web Installer (OWI) is a tool designed to make the process of installing and maintaining OpCon software easier. It has the ability to connect to the public distribution location of OpCon software automatically and download or install selected product components.
 
