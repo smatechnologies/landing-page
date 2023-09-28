@@ -7,6 +7,10 @@ hide_title: 'true'
 
 | Release Date | Name | Support | Release Notes | 
 |: ------------ :|: ---- :|: ------- :|: ------------- :|
+| August 28, 2023 | OpCon 20.0.24 | LTS |  [Release Notes](https://help.smatechnologies.com/opcon/core/v20.0/index.htm#Files/Release%20Notes/OpCon/OpCon%20Notes.htm#Version20.0.24) 
+| August 28, 2023 | OpCon 21.0.19 | LTS |  [Release Notes](https://help.smatechnologies.com/opcon/core/v21.0/release-notes/#opcon-21019) 
+| August 28, 2023 | OpCon 22.0.7 | LTS |  [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-2207) 
+| August 21, 2023 | OpCon 22.7.0 | LTS |  [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-2270) 
 | July 31, 2023 | OpCon 20.0.23 | LTS |  [Release Notes](https://help.smatechnologies.com/opcon/core/v20.0/index.htm#Files/Release%20Notes/OpCon/OpCon%20Notes.htm#Version20.0.23) 
 | July 31, 2023 | OpCon 21.0.18 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v21.0/release-notes/#opcon-21018) | 
 | July 31, 2023 | OpCon 22.0.6 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2206) | 
@@ -14,9 +18,7 @@ hide_title: 'true'
 | July 03, 2023 | OpCon 20.0.22 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v20.0/index.htm#Files/Release%20Notes/OpCon/OpCon%20Notes.htm#Version20.0.22) | 
 | July 03, 2023 | OpCon 21.0.17 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v21.0/release-notes/#opcon-21017) | 
 | July 03, 2023 | OpCon 22.0.5 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2205) | 
-| June 26, 2023 | OpCon 22.5.0 | STS | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-2250) | 
-| June 05, 2023 | OpCon 21.0.16 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v21.0/release-notes/#opcon-21016) | 
-| June 05, 2023 | OpCon 22.0.4 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22040) | 
+
 
 ## OpCon Web Installer (OWI)
 

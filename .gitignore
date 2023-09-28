@@ -20,3 +20,5 @@ yarn-debug.log*
 yarn-error.log*
 
 /content
+/app/opcon-docs_versioned_docs
+/app/opcon-docs_versioned_sidebars

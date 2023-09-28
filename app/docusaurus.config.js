@@ -1,4 +1,5 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
+const VersionsArchived = require("./opcon-docs_versionsArchived.json");
 module.exports = {
   title: 'Help',
   tagline: 'SMA Help',
@@ -38,9 +39,17 @@ module.exports = {
           ],
         },
         {
-          to: '/opcon/core/',
-          label: 'OpCon',
-          position: 'left',
+          type: "docsVersionDropdown",
+          position: "left",
+          docsPluginId: 'opcon-docs',
+          dropdownItemsAfter: [
+            ...Object.entries(VersionsArchived).map(
+              ([versionName, versionUrl]) => ({
+                label: versionName,
+                href: versionUrl,
+              })
+            ),
+          ],
         },
         {
           to: '/integrations/',
@@ -107,10 +116,10 @@ module.exports = {
         sidebarPath: require.resolve('../content/smatechnologies/opcon-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/opcon-docs/blob/main/',
-            lastVersion: "current",
+        lastVersion: "current",
         versions: {
           current: {
-            label: "current",
+            label: "OpCon",
           },
           "22.0": {
             label: "22.0",
