@@ -7,6 +7,7 @@ hide_title: 'true'
 
 | Release Date | Name | Support | Release Notes | 
 |: ------------ :|: ---- :|: ------- :|: ------------- :|
+| October 16, 2023 | WebServices Connector 21.2 | STS | [Release Notes](https://help.smatechnologies.com/opcon/connectors/webservices/release-notes) |
 | October 16, 2023 | Service Now Connector 21.4 | STS | [Release Notes](https://help.smatechnologies.com/opcon/connectors/servicenow/release-notes) |
 | October 16, 2023 | zOS Agent 23.01.01| STS | [Release Notes](https://help.smatechnologies.com/opcon/agents/zos/release-notes) | 
 | October 16, 2023 | OpCon 22.9 | STS | [Release Note](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-2280) |
