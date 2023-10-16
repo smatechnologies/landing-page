@@ -7,15 +7,18 @@ hide_title: 'true'
 
 | Release Date | Name | Support | Release Notes | 
 |: ------------ :|: ---- :|: ------- :|: ------------- :|
-| October 10, 2023 | IBMi Agent 21.1.123| -- | [Release Notes](https://help.smatechnologies.com/opcon/agents/ibm-i/ibm-i-lsam-release-notes/overview/) | 
-| October 09, 2023 | OpCon MFT 3.13.3 | -- | -- |
-| October 02, 2023 | Deploy 22.5 | -- | [Release Notes](https://help.smatechnologies.com/opcon/deploy/release-notes#version-225) |
+| October 16, 2023 | Service Now Connector 21.4 | STS | [Release Notes](https://help.smatechnologies.com/opcon/connectors/servicenow/release-notes) |
+| October 16, 2023 | zOS Agent 23.01.01| STS | [Release Notes](https://help.smatechnologies.com/opcon/agents/zos/release-notes) | 
+| October 16, 2023 | OpCon 22.9 | STS | [Release Note](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-2280) |
+| October 10, 2023 | IBMi Agent 21.1.123| STS | [Release Notes](https://help.smatechnologies.com/opcon/agents/ibm-i/ibm-i-lsam-release-notes/overview/) | 
+| October 09, 2023 | OpCon MFT 3.13.3 | STS | -- |
+| October 02, 2023 | Deploy 22.5 | STS | [Release Notes](https://help.smatechnologies.com/opcon/deploy/release-notes#version-225) |
 | September 25, 2023 | OpCon 20.0.25 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v20.0/index.htm#Files/Release%2520Notes/OpCon/OpCon%2520Notes.htm%23Version20.0.25) |
 | September 25, 2023 | OpCon 21.0.20 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v21.0/release-notes/#opcon-21020) |
 | September 25, 2023 | OpCon 22.0.8 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2208) |
 | September 18, 2023 | OpCon 22.8 | STS | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-2280) | 
-| September 14, 2023 | MCP Agent 21.04.00 | -- | [Release Notes](https://help.smatechnologies.com/opcon/agents/mcp/release-notes) | 
-| September 05, 2023 | SQL Agent 22.0.0 | -- | [Release Notes](https://help.smatechnologies.com/opcon/agents/sql/release-notes#sql-agent-2200) |
+| September 14, 2023 | MCP Agent 21.04.00 | STS | [Release Notes](https://help.smatechnologies.com/opcon/agents/mcp/release-notes) | 
+| September 05, 2023 | SQL Agent 22.0.0 | STS | [Release Notes](https://help.smatechnologies.com/opcon/agents/sql/release-notes#sql-agent-2200) |
 
 ## OpCon Web Installer (OWI)
 
@@ -42,6 +45,7 @@ Released as often as every 6 weeks and contains both defect fixes and new featur
 
 | Feature Release | Version | General Availability | Anticipated Support Retirement | Release Notes |
 |: --------------- :|: ------- :|: -------------------- :|: ------------------------------ :|: ------------- :|
+| 22.9 STS | 22.9.0 | 2023-10-16 | 2026-10-16 | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-2290) |
 | 22.8 STS | 22.8.0 | 2023-09-18 | 2026-09-18 | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-2280) |
 | 22.7 STS | 22.7.0 | 2023-08-21 | 2026-08-21 | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-2270) |
 | 22.6 STS | 22.6.0 | 2023-07-24 | 2026-07-24 | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-2260) |
