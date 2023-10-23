@@ -7,6 +7,8 @@ hide_title: 'true'
 
 | Release Date | Name | Support | Release Notes | 
 |: ------------ :|: ---- :|: ------- :|: ------------- :|
+| October 23, 2023 | OpCon 22.0.9 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes#opcon-2209) |
+| October 23, 2023 | OpCon 21.0.21 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v21.0/release-notes#opcon-21021) |
 | October 23, 2023 | OpCon 20.0.26 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v20.0/index.htm#Files/Release%2520Notes/OpCon/OpCon%2520Notes.htm%23Version20.0.26) |
 | October 17, 2023 | IBMi Agent 18.1.151 | STS | [Release Notes](https://help.smatechnologies.com/opcon/agents/ibm-i/ibm-i-lsam-release-notes/overview/) |
 | October 17, 2023 | IBMi Agent 21.1.123 | STS | [Release Notes](https://help.smatechnologies.com/opcon/agents/ibm-i/ibm-i-lsam-release-notes/overview/) |
