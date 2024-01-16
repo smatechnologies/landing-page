@@ -7,6 +7,8 @@ hide_title: 'true'
 
 | Release Date | Name | Support | Release Notes | 
 |: ------------ :|: ---- :|: ------- :|: ------------- :|
+| January 15, 2024 | OpCon 21.0.24 | [Release Notes](https://help.smatechnologies.com/opcon/core/v21.0/release-notes/#opcon-21024) |
+| January 15, 2024 | OpCon 22.0.12 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22012) |
 | December 18, 2023 | OpCon 21.0.23 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v21.0/release-notes/#opcon-21023) |
 | December 18, 2023 | OpCon 22.0.11 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22011) |
 | November 13, 2023 | Opcon 22.10.0  | STS | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-22100) |
