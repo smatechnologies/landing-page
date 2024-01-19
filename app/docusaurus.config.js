@@ -185,6 +185,18 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'guidewire-agent-docs',
+        path: '../content/smatechnologies/guidewire-agent-docs/docs',
+        routeBasePath: 'opcon/agents/guidewire',
+        sidebarPath: require.resolve('../content/smatechnologies/guidewire-agent-docs/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/guidewire-agent-docs/main/blob',
+
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'ibm-i-agent-docs',
         path: '../content/smatechnologies/ibm-i-agent-docs/docs',
         routeBasePath: 'opcon/agents/ibm-i',
@@ -563,6 +575,18 @@ module.exports = {
         sidebarPath: require.resolve('../content/smatechnologies/unikix-connector-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/unikix-connector-docs/main/blob',
+
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'vmware-connector-docs',
+        path: '../content/smatechnologies/vmware-connector-docs/docs',
+        routeBasePath: 'opcon/connectors/vmware',
+        sidebarPath: require.resolve('../content/smatechnologies/vmware-connector-docs/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/vmware-connector-docs/main/blob',
 
       },
     ],

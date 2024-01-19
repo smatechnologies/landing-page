@@ -61,6 +61,10 @@ hide_title: true
 </div>
 
 <div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/agents/guidewire">GUIDEWIRE</a>
+</div>
+
+<div class="grid-item">
 <a class="button button--link button--block button--primary" href="/opcon/agents/ibm-i">IBM I</a>
 </div>
 
@@ -133,7 +137,7 @@ hide_title: true
 </div>
 
 <div class="grid-item">
-<a class="button button--link button--block button--primary" href="https://help.smatechnologies.com/opcon/connectors/vmware/v17.0/">VMWARE</a>
+<a class="button button--link button--block button--primary" href="/opcon/connectors/vmware">VMWARE</a>
 </div>
 
 <div class="grid-item">
