@@ -293,6 +293,18 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'sapbo-connector-docs',
+        path: '../content/smatechnologies/sapbo-connector-docs/docs',
+        routeBasePath: 'opcon/connectors/sapbo',
+        sidebarPath: require.resolve('../content/smatechnologies/sapbo-connector-docs/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/sapbo-connector-docs/main/blob',
+
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'sql-agent-docs',
         path: '../content/smatechnologies/sql-agent-docs/docs',
         routeBasePath: 'opcon/agents/sql',
