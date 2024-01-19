@@ -54,7 +54,7 @@ Released as often as every 6 weeks and contains both defect fixes and new featur
 
 | Feature Release | Version | General Availability | Anticipated Support Retirement | Release Notes |
 |: --------------- :|: ------- :|: -------------------- :|: ------------------------------ :|: ------------- :|
-" 22.10 STS | 22.10.0 | 2023-11-13 | 2026-11-13 | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-22100) |
+| 22.10 STS | 22.10.0 | 2023-11-13 | 2026-11-13 | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-22100) |
 | 22.9 STS | 22.9.0 | 2023-10-16 | 2026-10-16 | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-2290) |
 | 22.8 STS | 22.8.0 | 2023-09-18 | 2026-09-18 | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-2280) |
 | 22.7 STS | 22.7.0 | 2023-08-21 | 2026-08-21 | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-2270) |
