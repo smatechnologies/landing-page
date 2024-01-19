@@ -109,7 +109,7 @@ hide_title: true
 </div>
 
 <div class="grid-item">
-<a class="button button--link button--block button--primary" href="https://help.smatechnologies.com/opcon/connectors/sapdataservices/v16.2/">SAP DATA SERVICES</a>
+<a class="button button--link button--block button--primary" href="/opcon/connectors/sap-data-services">SAP DATA SERVICES</a>
 </div>
 
 <div class="grid-item">

@@ -293,6 +293,18 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'sap-data-services-docs',
+        path: '../content/smatechnologies/sap-data-services-docs/docs',
+        routeBasePath: 'opcon/connectors/sap-data-services',
+        sidebarPath: require.resolve('../content/smatechnologies/sap-data-services-docs/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/sap-data-services-docs/main/blob',
+
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'sql-agent-docs',
         path: '../content/smatechnologies/sql-agent-docs/docs',
         routeBasePath: 'opcon/agents/sql',
