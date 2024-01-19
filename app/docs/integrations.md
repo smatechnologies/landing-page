@@ -105,7 +105,7 @@ hide_title: true
 </div>
 
 <div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/sap-bo">SAPBO</a>
+<a class="button button--link button--block button--primary" href="/opcon/connectors/sapbo">SAPBO</a>
 </div>
 
 <div class="grid-item">
