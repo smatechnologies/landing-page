@@ -66,11 +66,6 @@ module.exports = {
           label: 'Support',
           position: 'right',
         },
-//        {
-//          href: '/opcon/contributor-guide/',
-//          label: 'Contributor Guide',
-//          position: 'right',
-//        },
       ],
     },
     footer: {
