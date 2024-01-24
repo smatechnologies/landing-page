@@ -22,3 +22,5 @@ yarn-error.log*
 /content
 /app/opcon-docs_versioned_docs
 /app/opcon-docs_versioned_sidebars
+/app/ibm-i-agent-docs_versioned_docs
+/app/ibm-i-agent-docs_versioned_sidebars
