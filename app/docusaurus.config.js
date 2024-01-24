@@ -198,17 +198,7 @@ module.exports = {
         sidebarPath: require.resolve('../content/smatechnologies/ibm-i-agent-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/ibm-i-agent-docs/main/blob',
-//            lastVersion: "current",
-//            versions: {
-//              current: {
-//                label: "21.1",
-//              }, 
-//              "18.1": {
-//                label: "18.1",
-//                path: "v18.1",
-//                banner: "none",
-//              },
-//            }, 
+
       },
     ],
     [
