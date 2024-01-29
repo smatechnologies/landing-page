@@ -98,7 +98,7 @@ module.exports = {
   ],
   plugins: [
     [
-      require.resolve('@cmfcmf/docusaurus-search-local'), 
+      require.resolve('@cmfcmf/docusaurus-search-local'),
       {
       }
     ],
@@ -116,6 +116,11 @@ module.exports = {
           current: {
             label: "OpCon",
           },
+          "23.0": {
+            label: "23.0",
+            path: "v23.0",
+            banner: "none",
+          },
           "22.0": {
             label: "22.0",
             path: "v22.0",
@@ -126,7 +131,7 @@ module.exports = {
             path: "v21.0",
             banner: "none",
           },
-        },    
+        },
       },
     ],
     [
@@ -208,7 +213,7 @@ module.exports = {
                 path: "v18.1",
                 banner: "none",
               },
-            }, 
+            },
       },
     ],
     [
@@ -258,7 +263,7 @@ module.exports = {
             'https://github.com/smatechnologies/opcon-rpa-docs/main/blob',
 
       },
-    ],    
+    ],
     [
       '@docusaurus/plugin-content-docs',
       {
@@ -270,7 +275,7 @@ module.exports = {
             'https://github.com/smatechnologies/os2200-agent-docs/main/blob',
 
       },
-    ],  
+    ],
     [
       '@docusaurus/plugin-content-docs',
       {
@@ -486,7 +491,7 @@ module.exports = {
             'https://github.com/smatechnologies/fics-connector-docs/main/blob',
 
       },
-    ], 
+    ],
     [
       '@docusaurus/plugin-content-docs',
       {
@@ -618,7 +623,7 @@ module.exports = {
             'https://github.com/smatechnologies/webservices-connector-docs/main/blob',
 
       },
-    ],      
+    ],
     [
       '@docusaurus/plugin-content-docs',
       {
@@ -630,6 +635,6 @@ module.exports = {
             'https://github.com/smatechnologies/xp2-connector-docs/main/blob',
 
       },
-    ],  
+    ],
 ],
 };
