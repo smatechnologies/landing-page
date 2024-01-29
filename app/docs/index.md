@@ -1,6 +1,7 @@
 ---
 slug: '/'
 hide_title: 'true'
+title: 'Home'
 ---
 
 ## Recent Releases
