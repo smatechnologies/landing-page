@@ -93,6 +93,9 @@ module.exports = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        gtag: {
+          trackingID: "G-7XYMFXX81Y",
+        },
       },
     ],
   ],
@@ -174,6 +177,18 @@ module.exports = {
         sidebarPath: require.resolve('../content/smatechnologies/opcon-deploy-training/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/opcon-deploy-training/main/blob',
+
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'opcon-advanced-training',
+        path: '../content/smatechnologies/opcon-advanced-training/docs',
+        routeBasePath: 'training/opcon-advanced',
+        sidebarPath: require.resolve('../content/smatechnologies/opcon-advanced-training/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/opcon-advanced-training/main/blob',
 
       },
     ],
