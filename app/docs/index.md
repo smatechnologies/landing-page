@@ -13,23 +13,6 @@ title: 'Home'
 | January 15, 2024 | OpCon 22.0.12 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22012) |
 | December 18, 2023 | OpCon 21.0.23 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v21.0/release-notes/#opcon-21023) |
 | December 18, 2023 | OpCon 22.0.11 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22011) |
-| November 13, 2023 | Opcon 22.10.0  | STS | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-22100) |
-| October 27, 2023 | OpCon 20.0.27 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v20.0/index.htm#Files/Release%2520Notes/OpCon/OpCon%2520Notes.htm%23Version20.0.27) |
-| October 27, 2023 | OpCon 21.0.22 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v21.0/release-notes#opcon-21022) |
-| October 27, 2023 | OpCon 22.0.10 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes#opcon-2210) |
-| October 23, 2023 | OpCon 22.0.9 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes#opcon-2209) |
-| October 23, 2023 | OpCon 21.0.21 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v21.0/release-notes#opcon-21021) |
-| October 23, 2023 | OpCon 20.0.26 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v20.0/index.htm#Files/Release%2520Notes/OpCon/OpCon%2520Notes.htm%23Version20.0.26) |
-| October 17, 2023 | IBMi Agent 18.1.151 | STS | [Release Notes](https://help.smatechnologies.com/opcon/agents/ibm-i/ibm-i-lsam-release-notes/overview/) |
-| October 17, 2023 | IBMi Agent 21.1.123 | STS | [Release Notes](https://help.smatechnologies.com/opcon/agents/ibm-i/ibm-i-lsam-release-notes/overview/) |
-| October 17, 2023 | IBMi Agent 18.1.151 | STS | [Release Notes](https://help.smatechnologies.com/opcon/agents/ibm-i/ibm-i-lsam-release-notes/overview/) |
-| October 16, 2023 | WebServices Connector 21.2 | STS | [Release Notes](https://help.smatechnologies.com/opcon/connectors/webservices/release-notes) |
-| October 16, 2023 | Service Now Connector 21.4 | STS | [Release Notes](https://help.smatechnologies.com/opcon/connectors/servicenow/release-notes) |
-| October 16, 2023 | zOS Agent 23.01.01| STS | [Release Notes](https://help.smatechnologies.com/opcon/agents/zos/release-notes) |
-| October 16, 2023 | OpCon 22.9 | STS | [Release Note](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-2280) |
-| October 10, 2023 | IBMi Agent 21.1.123| STS | [Release Notes](https://help.smatechnologies.com/opcon/agents/ibm-i/ibm-i-lsam-release-notes/overview/) |
-| October 09, 2023 | OpCon MFT 3.13.3 | STS | -- |
-| October 02, 2023 | Deploy 22.5 | STS | [Release Notes](https://help.smatechnologies.com/opcon/deploy/release-notes#version-225) |
 
 ## OpCon Web Installer (OWI)
 
@@ -56,6 +39,7 @@ Released as often as every 6 weeks and contains both defect fixes and new featur
 
 | Feature Release | Version | General Availability | Anticipated Support Retirement | Release Notes |
 |: --------------- :|: ------- :|: -------------------- :|: ------------------------------ :|: ------------- :|
+| 23.0 LTS | 23.0.0 | 2024-01-29 | 2027-01-29 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2300) |
 | 22.10 STS | 22.10.0 | 2023-11-13 | 2026-11-13 | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-22100) |
 | 22.9 STS | 22.9.0 | 2023-10-16 | 2026-10-16 | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-2290) |
 | 22.8 STS | 22.8.0 | 2023-09-18 | 2026-09-18 | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-2280) |

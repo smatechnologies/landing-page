@@ -29,12 +29,24 @@ module.exports = {
               label: 'Training Registration',
             },
             {
+              to: '/basic-training-agenda/',
+              label: 'Basic Training Agenda',
+            },
+            {
               to: '/training/opcon-basic/',
-              label: 'Basic Training',
+              label: 'Basic Training Content',
+            },
+            {
+              to: '/deploy-training-agenda/',
+              label: 'Deploy Training Agenda',
             },
             {
               to: '/training/opcon-deploy',
-              label: 'Deploy Training',
+              label: 'Deploy Training Content',
+            },
+            {
+              to: '/advanced-training-agenda/',
+              label: 'Advanced Training Agenda',
             },
           ],
         },
