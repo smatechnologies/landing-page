@@ -8,6 +8,7 @@ title: 'Home'
 
 | Release Date | Name | Support | Release Notes |
 |: ------------ :|: ---- :|: ------- :|: ------------- :|
+| February 15, 2024 | WebServices Connector | -- | [Release Notes](https://help.smatechnologies.com/opcon/connectors/webservices/release-notes#webservices-213) |
 | January 29, 2024 | Opcon 23.0.0  | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-2300) |
 | January 15, 2024 | OpCon 21.0.24 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v21.0/release-notes/#opcon-21024) |
 | January 15, 2024 | OpCon 22.0.12 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22012) |
