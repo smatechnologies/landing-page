@@ -8,12 +8,12 @@ title: 'Home'
 
 | Release Date | Name | Support | Release Notes |
 |: ------------ :|: ---- :|: ------- :|: ------------- :|
+| February 21, 2024 | Deploy 23.0 | -- | [Release Notes](https://help.smatechnologies.com/opcon/deploy/release-notes) |
+| February 16, 2024 | OS2200 Agent 22.1.0 | -- | [Release Notes](https://help.smatechnologies.com/opcon/agents/os2200/) |
 | February 15, 2024 | WebServices Connector | -- | [Release Notes](https://help.smatechnologies.com/opcon/connectors/webservices/release-notes#webservices-213) |
 | January 29, 2024 | Opcon 23.0.0  | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-2300) |
 | January 15, 2024 | OpCon 21.0.24 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v21.0/release-notes/#opcon-21024) |
 | January 15, 2024 | OpCon 22.0.12 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22012) |
-| December 18, 2023 | OpCon 21.0.23 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v21.0/release-notes/#opcon-21023) |
-| December 18, 2023 | OpCon 22.0.11 | LTS | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22011) |
 
 ## OpCon Web Installer (OWI)
 
