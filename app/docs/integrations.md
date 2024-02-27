@@ -159,7 +159,7 @@ hide_title: true
 -->
 
 <div class="grid-item">
-<a class="button button--link button--block button--primary" href="https://help.smatechnologies.com/opcon/connectors/wsus/21.0.0/">WSUS</a>
+<a class="button button--link button--block button--primary" href="https://help.smatechnologies.com/opcon/connectors/wsus">WSUS</a>
 </div>
 
 

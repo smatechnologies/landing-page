@@ -654,6 +654,18 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'wsus-connector-docs',
+        path: '../content/smatechnologies/wsus-connector-docs/docs',
+        routeBasePath: 'opcon/connectors/wsus',
+        sidebarPath: require.resolve('../content/smatechnologies/wsus-connector-docs/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/wsus-connector-docs/main/blob',
+
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'xp2-connector-docs',
         path: '../content/smatechnologies/xp2-connector-docs/docs',
         routeBasePath: 'opcon/connectors/xp2',
