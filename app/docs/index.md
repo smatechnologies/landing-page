@@ -7,7 +7,7 @@ title: 'Home'
 ## Recent Releases
 
 | Release Date | Name | Release Notes |
-|: ------------ :|: ---- :|: ------- :|: ------------- :|
+|: ------------ :|: ---- :|: ------------- :|
 | February 21, 2024 | Deploy 23.0 | [Release Notes](https://help.smatechnologies.com/opcon/deploy/release-notes) |
 | February 16, 2024 | OS2200 Agent 22.1.0 | [Release Notes](https://help.smatechnologies.com/opcon/agents/os2200/) |
 | February 15, 2024 | WebServices Connector 21.3 | [Release Notes](https://help.smatechnologies.com/opcon/connectors/webservices/release-notes#webservices-213) |
