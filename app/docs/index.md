@@ -9,7 +9,7 @@ title: 'Home'
 | Release Date | Name | Release Notes |
 |: ------------ :|: ---- :|: ------------- :|
 | March 4, 2024 | OpCon 23.0.1 | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes) |
-| March 4, 2024 | OpCon 22.0.12 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes#opcon-22012) |
+| March 4, 2024 | OpCon 22.0.13 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes#opcon-22013) |
 | March 4, 2024 | OpCon 21.0.25 | [Release Notes](https://help.smatechnologies.com/opcon/core/v21.0/release-notes#opcon-21025) | 
 | February 21, 2024 | Deploy 23.0 | [Release Notes](https://help.smatechnologies.com/opcon/deploy/release-notes) |
 | February 16, 2024 | OS2200 Agent 22.1.0 | [Release Notes](https://help.smatechnologies.com/opcon/agents/os2200/) |
