@@ -270,6 +270,18 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'knowledge-base-docs',
+        path: '../content/smatechnologies/knowledge-base-docs/docs',
+        routeBasePath: 'opcon/cknowledge-base',
+        sidebarPath: require.resolve('../content/smatechnologies/knowledge-base-docs/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/knowledge-base-docs/main/blob',
+
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'mcp-agent-docs',
         path: '../content/smatechnologies/mcp-agent-docs/docs',
         routeBasePath: 'opcon/agents/mcp',
