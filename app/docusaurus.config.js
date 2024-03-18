@@ -272,7 +272,7 @@ module.exports = {
       {
         id: 'knowledge-base-docs',
         path: '../content/smatechnologies/knowledge-base-docs/docs',
-        routeBasePath: 'opcon/cknowledge-base',
+        routeBasePath: 'opcon/knowledge-base',
         sidebarPath: require.resolve('../content/smatechnologies/knowledge-base-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/knowledge-base-docs/main/blob',
