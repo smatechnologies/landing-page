@@ -258,6 +258,18 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'jboss-connector-docs',
+        path: '../content/smatechnologies/jboss-connector-docs/docs',
+        routeBasePath: 'opcon/connectors/jboss',
+        sidebarPath: require.resolve('../content/smatechnologies/jboss-connector-docs/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/jboss-connector-docs/main/blob',
+
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'mcp-agent-docs',
         path: '../content/smatechnologies/mcp-agent-docs/docs',
         routeBasePath: 'opcon/agents/mcp',
