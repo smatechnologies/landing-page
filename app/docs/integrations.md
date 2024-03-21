@@ -81,6 +81,10 @@ hide_title: true
 </div>
 
 <div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/connectors/jboss">JBoss</a>
+</div>
+
+<div class="grid-item">
 <a class="button button--link button--block button--primary" href="/opcon/agents/opconmft">MANAGED FILE TRANSFER (MFT)</a>
 </div>
 
