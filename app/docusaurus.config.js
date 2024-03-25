@@ -246,6 +246,18 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'jaspersoft-connector-docs',
+        path: '../content/smatechnologies/jaspersoft-connector-docs/docs',
+        routeBasePath: 'opcon/connectors/jaspersoft',
+        sidebarPath: require.resolve('../content/smatechnologies/jaspersoft-connector-docs/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/jaspersoft-connector-docs/main/blob',
+
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'java-agent-docs',
         path: '../content/smatechnologies/java-agent-docs/docs',
         routeBasePath: 'opcon/agents/java',
