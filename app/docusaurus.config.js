@@ -51,6 +51,21 @@ module.exports = {
           ],
         },
         {
+          type: 'dropdown',
+          label: 'Customer Service',
+          position: 'right',
+          items: [
+            {
+              href: 'https://smatech2.my.site.com/SMAOpConUserCommunity/s/',
+              label: 'Support',
+            },
+            {
+              to: '/opcon/knowledge-base/',
+              label: 'Knowledge Base',
+            },
+          ],
+        },
+        {
           type: "docsVersionDropdown",
           position: "left",
           docsPluginId: 'opcon-docs',
@@ -72,11 +87,6 @@ module.exports = {
           href: '/opcon/deploy/',
           label: 'Deploy',
           position: 'left',
-        },
-        {
-          href: 'https://smatech2.my.site.com/SMAOpConUserCommunity/s/',
-          label: 'Support',
-          position: 'right',
         },
       ],
     },
