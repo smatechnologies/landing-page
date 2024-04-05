@@ -222,6 +222,18 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'modular-training',
+        path: '../content/smatechnologies/modular-training/docs',
+        routeBasePath: 'training/modular-training',
+        sidebarPath: require.resolve('../content/smatechnologies/modular-training/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/modular-training/main/blob',
+
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'guidewire-agent-docs',
         path: '../content/smatechnologies/guidewire-agent-docs/docs',
         routeBasePath: 'opcon/agents/guidewire',
