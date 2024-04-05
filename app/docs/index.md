@@ -8,15 +8,15 @@ title: 'Home'
 
 | Release Date | Name | Release Notes |
 |: ------------ :|: ---- :|: ------------- :|
-| March 4, 2024 | OpCon 23.0.1 | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes) |
+| April 5, 2024 | OpCon 22.0.14 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes#opcon-22014) |
+| April 5, 2024 | OpCon 23.0.2 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2302) |
+| March 4, 2024 | OpCon 23.0.1 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2301) |
 | March 4, 2024 | OpCon 22.0.13 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes#opcon-22013) |
 | March 4, 2024 | OpCon 21.0.25 | [Release Notes](https://help.smatechnologies.com/opcon/core/v21.0/release-notes#opcon-21025) | 
 | February 21, 2024 | Deploy 23.0 | [Release Notes](https://help.smatechnologies.com/opcon/deploy/release-notes) |
 | February 16, 2024 | OS2200 Agent 22.1.0 | [Release Notes](https://help.smatechnologies.com/opcon/agents/os2200/) |
 | February 15, 2024 | WebServices Connector 21.3 | [Release Notes](https://help.smatechnologies.com/opcon/connectors/webservices/release-notes#webservices-213) |
 | January 29, 2024 | Opcon 23.0.0 | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes/#opcon-2300) |
-| January 15, 2024 | OpCon 21.0.24 | [Release Notes](https://help.smatechnologies.com/opcon/core/v21.0/release-notes/#opcon-21024) |
-| January 15, 2024 | OpCon 22.0.12 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22012) |
 
 ## OpCon Web Installer (OWI)
 
@@ -96,4 +96,3 @@ Released as often as every 6 weeks and contains both defect fixes and new featur
 | 20.6 STS | 20.6.0 | 2021-08-09 | 2024-08-09 | [Release Notes](https://help.smatechnologies.com/opcon/core/v20.0/index.htm#Files/Release%20Notes/OpCon/OpCon%20Notes.htm%3FTocPath%3DRelease%2520Notes%7COpCon%7C_____0) |
 | 20.5 STS | 20.5.0 | 2021-06-28 | 2024-06-28 | [Release Notes](https://help.smatechnologies.com/opcon/core/v20.0/index.htm#Files/Release%20Notes/OpCon/OpCon%20Notes.htm%3FTocPath%3DRelease%2520Notes%7COpCon%7C_____0) |
 | 20.4 STS | 20.4.0 | 2021-05-17 | 2024-05-17 | [Release Notes](https://help.smatechnologies.com/opcon/core/v20.0/index.htm#Files/Release%20Notes/OpCon/OpCon%20Notes.htm%3FTocPath%3DRelease%2520Notes%7COpCon%7C_____0) |
-| 20.3 STS | 20.3.0 | 2021-04-05 | 2024-04-05 | [Release Notes](https://help.smatechnologies.com/opcon/core/v20.0/index.htm#Files/Release%20Notes/OpCon/OpCon%20Notes.htm%3FTocPath%3DRelease%2520Notes%7COpCon%7C_____0) |
