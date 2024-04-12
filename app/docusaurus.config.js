@@ -140,6 +140,7 @@ module.exports = {
         versions: {
           current: {
             label: "OpCon",
+            path: "v23.0",
           },
           "23.0": {
             label: "23.0",
