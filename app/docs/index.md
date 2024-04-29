@@ -8,7 +8,6 @@ title: 'Home'
 
 | Release Date | Name | Release Notes |
 |: ------------ :|: ---- :|: ------------- :|
-| April 29, 2024 | OpCon 24.1.0 | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes#opcon-2410) |
 | April 5, 2024 | OpCon 22.0.14 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes#opcon-22014) |
 | April 5, 2024 | OpCon 23.0.2 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2302) |
 | March 4, 2024 | OpCon 23.0.1 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2301) |
