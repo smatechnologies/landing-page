@@ -88,7 +88,7 @@ Released as often as every 6 weeks and contains both defect fixes and new featur
 | 21.0 LTS | 21.0.2 | 2022-01-28 | 2024-11-01 | [Release Notes](https://help.smatechnologies.com/opcon/core/v21.0/release-notes/#opcon-2102) |
 | 21.0 LTS | 21.0.1 | 2022-01-24 | 2024-11-01 | [Release Notes](https://help.smatechnologies.com/opcon/core/v21.0/release-notes/#opcon-2101) |
 | 21.0 LTS | 21.0.0 | 2021-11-01 | 2024-11-01 | [Release Notes](https://help.smatechnologies.com/opcon/core/v21.0/release-notes/#opcon-2100)  | 
-| 20.7 STS | 20.7.0 | 2021-09-20 | 2024-09-20 | |
-| 20.6 STS | 20.6.0 | 2021-08-09 | 2024-08-09 | |
-| 20.5 STS | 20.5.0 | 2021-06-28 | 2024-06-28 | |
-| 20.4 STS | 20.4.0 | 2021-05-17 | 2024-05-17 | |
+| 20.7 STS | 20.7.0 | 2021-09-20 | 2024-09-20 | [Release Notes](opcon-release-notes-20/#version-2070) |
+| 20.6 STS | 20.6.0 | 2021-08-09 | 2024-08-09 | [Release Notes](opcon-release-notes-20/#version-2060)  |
+| 20.5 STS | 20.5.0 | 2021-06-28 | 2024-06-28 | [Release Notes](opcon-release-notes-20/#version-2050) |
+| 20.4 STS | 20.4.0 | 2021-05-17 | 2024-05-17 | [Release Notes](opcon-release-notes-20/#version-2040) |
