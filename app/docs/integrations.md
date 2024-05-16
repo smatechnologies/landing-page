@@ -170,19 +170,8 @@ hide_title: true
 <a class="button button--link button--block button--primary" href="https://help.smatechnologies.com/opcon/connectors/wsus">WSUS</a>
 </div>
 
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/xp2">XP2</a>
-</div>
-
 <div class="grid-item">
 <a class="button button--link button--block button--primary" href="/opcon/agents/zos">ZOS</a>
 </div>
-
-<!--
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="https://help.smatechnologies.com/opcon/agents/zvse/v18.0/">ZVSE</a>
-</div>
--->
 
 </div>
