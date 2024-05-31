@@ -140,19 +140,19 @@ module.exports = {
         versions: {
           current: {
             label: "OpCon",
-          },
+          },         
           "23.0": {
-            label: "23.0",
+            label: "OpCon 23.0 (On-Prem)",
             path: "v23.0",
             banner: "none",
           },
           "22.0": {
-            label: "22.0",
+            label: "OpCon 22.0 (On-Prem)",
             path: "v22.0",
             banner: "none",
           },
           "21.0": {
-            label: "21.0",
+            label: "OpCon 21.0 (On-Prem)",
             path: "v21.0",
             banner: "none",
           },
