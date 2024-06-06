@@ -30,7 +30,7 @@ https://files.smatechnologies.com/files/OpCon%20Releases/Relay.
 
 **Q**: What ports need to be open?
 
-**A**: Typically, none, but if you are blocking outbound traffic to the Internet then TCP:9012.  If you choose to install Relay within a DMZ, then you will also need to open inbound traffic for all ports used by Agents (default: 3100-3111).
+**A**: Typically, none, but if you are blocking outbound traffic to the Internet then `TCP:9012`.  If you choose to install Relay within a DMZ, then you will also need to open inbound traffic for all ports used by Agents (default: 3100-3111).
 
 **Q**: How do I update the Relay software?
 
@@ -38,9 +38,9 @@ https://files.smatechnologies.com/files/OpCon%20Releases/Relay.
 
 ### Known Issues
 
-* Currently will only install and run on a Windows OS
-* Requires a Relay per OpCon instance.  For example, if you have a production and development instance of OpCon, then you would need to install two (2) relays.  Multiple relays CAN NOT exist on the same Windows OS.
-* When configuring the Agent in OpCon to use Relay (NetComName) and the Relay and Agent are on the same Windows Server machine, you should not use 127.0.0.1 as the IP Address.  Instead you should use the actual name of the server or the actual IP Address of the server.
+* Currently will *only install and run on a Windows OS*
+* Requires a Relay *per* OpCon instance.  For example, if you have a production and development instance of OpCon, then you would need to install two (2) relays.  Multiple relays **CAN NOT** exist on the same Windows OS.
+* When configuring the Agent in OpCon to use Relay (NetComName) and the Relay and Agent are on the same Windows Server machine, you **SHOULD NOT** use `127.0.0.1` as the IP Address.  *Instead you should use the actual name of the server or the actual IP Address of the server*.
 
 ### Install
 
@@ -49,9 +49,9 @@ https://files.smatechnologies.com/files/OpCon%20Releases/Relay.
 3. Right-click the file **SMANetComRelay.exe** and choose to **Run as administrator**
 4. You will be presented with a text menu, choose the first option labeled **Register & Install Netcom Relay Service**
 5. Next, you will be prompted to **Enter Client Name**.  The default is the fully qualified domain name of the machine, we recommend taking the default.
-6. Next, you will be prompted to **Enter Relay Name**.  The default is the name of the machine, we recommend the prefix of the URL to your OpCon instance.  For example, `company-prod`, where **company** would be your company identifier and "prod" would be the instance identifier.  These are usually found in the provided URI before `opcon.smatechnologies.com`.
+6. Next, you will be prompted to **Enter Relay Name**.  The default is the name of the machine, we recommend the prefix of the URL to your OpCon instance.  For example, `company-prod`, where **company** would be your company identifier and **prod** would be the instance identifier.  These are usually found in the provided URI before `opcon.smatechnologies.com`.
 7. Next, you will be prompted to **Enter your OpCon URI**.  This will be the URI provided by SMA that identifies your cloud instance.
-8. Finally, you will be prompted to **Enter External Event Token for a User with Super Admin privilege like ocadm**.  You can generate this token by logging into Solution Manager as `ocadm` and navigating to **OCADM" -> "EXTERNAL TOKEN**.  Here you will select the radio button labeled **API Token** and then click the button labeled **Generate**.  Make sure to copy and paste the generated token to the install dialog that is currently open.
+8. Finally, you will be prompted to **Enter External Event Token for a User with Super Admin privilege like ocadm**.  You can generate this token by logging into Solution Manager as `ocadm` and navigating to **OCADM -> "EXTERNAL TOKEN**.  Here you will select the radio button labeled **API Token** and then click the button labeled **Generate**.  Make sure to copy and paste the generated token to the install dialog that is currently open.
 9. You will see the install dialogue confirm authentication to the URI entered in step 7 with the token entered in step 8 and then register to relay with the names given in Steps 5 & 6.
 10.  You can now choose to **Exit** the install dialog or just close the window.
 11.  Log into Solution Manager as `ocadm` or user with equivalent rights.
