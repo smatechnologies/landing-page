@@ -88,6 +88,11 @@ module.exports = {
           label: 'Deploy',
           position: 'left',
         },
+        {
+          href: '/opcon-relay/',
+          label: 'Relay',
+          position: 'left',
+        },
       ],
     },
     footer: {
