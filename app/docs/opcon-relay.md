@@ -8,6 +8,11 @@ The Relay (NetComApi) utility provides communication for our **OpCon Relay** and
 
 This is accomplished by relaying traffic from/to the Agents internal to a customer network with the customer's cloud instance(s).
 
+### Diagram
+
+![](../static/img/relay-diagram.png)
+
+
 ### Download
 
 You can download the latest version of the Relay install package using the OpCon Web Installer located at:
