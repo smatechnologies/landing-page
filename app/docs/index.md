@@ -6,15 +6,15 @@ title: 'Home'
 
 ## Recent Releases
 
-| Release Date | Name | Release Notes |
-|: ------------ :|: ---- :|: ------------- :|
-| May 20, 2024 | Spring 24 | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes) |
-| May 14, 2024 | OpCon 23.0.3 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2303) |
-| May 14, 2024 | OpCon 22.0.15 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes#opcon-22015) |
-| May 14, 2024 | OpCon 21.0.26 | [Release Notes](https://help.smatechnologies.com/opcon/core/v21.0/release-notes#opcon-21026) | 
-| April 5, 2024 | OpCon 22.0.14 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes#opcon-22014) |
-| April 5, 2024 | OpCon 23.0.2 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2302) |
-| March 4, 2024 | OpCon 21.0.25 | [Release Notes](https://help.smatechnologies.com/opcon/core/v21.0/release-notes#opcon-21025) | 
+| Release Date | Name | Type | Release Notes |
+|: ------------ :|: ---- :|:-----:|: ------------- :|
+| May 30, 2024 | OpCon Deploy 23.1.0 | Deploy | [Release Notes](https://help.smatechnologies.com/opcon/deploy/release-notes) |
+| May 20, 2024 | OpCon Spring 24 | Cloud | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes) |
+| May 14, 2024 | OpCon 23.0.3 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2303) |
+| May 14, 2024 | OpCon 22.0.15 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes#opcon-22015) |
+| May 14, 2024 | OpCon 21.0.26 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v21.0/release-notes#opcon-21026) | 
+| April 5, 2024 | OpCon 22.0.14 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes#opcon-22014) |
+| April 5, 2024 | OpCon 23.0.2 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2302) |
 
 ## OpCon Web Installer (OWI)
 
@@ -41,6 +41,7 @@ Released as often as every 6 weeks and contains both defect fixes and new featur
 
 | Feature Release | Version | General Availability | Anticipated Support Retirement | Release Notes |
 |: --------------- :|: ------- :|: -------------------- :|: ------------------------------ :|: ------------- :|
+| Spring 24 | Cloud | 2024-05-20 | Summer 24 | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes) |
 | 23.0 LTS | 23.0.0 | 2024-01-29 | 2027-01-29 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2300) |
 | 22.10 STS | 22.10.0 | 2023-11-13 | 2026-11-13 | [Release Notes](opcon-release-notes-22/#opcon-22100) |
 | 22.9 STS | 22.9.0 | 2023-10-16 | 2026-10-16 | [Release Notes](opcon-release-notes-22#opcon-2290) |
@@ -93,4 +94,3 @@ Released as often as every 6 weeks and contains both defect fixes and new featur
 | 20.7 STS | 20.7.0 | 2021-09-20 | 2024-09-20 | [Release Notes](opcon-release-notes-20/#version-2070) |
 | 20.6 STS | 20.6.0 | 2021-08-09 | 2024-08-09 | [Release Notes](opcon-release-notes-20/#version-2060)  |
 | 20.5 STS | 20.5.0 | 2021-06-28 | 2024-06-28 | [Release Notes](opcon-release-notes-20/#version-2050) |
-| 20.4 STS | 20.4.0 | 2021-05-17 | 2024-05-17 | [Release Notes](opcon-release-notes-20/#version-2040) |
