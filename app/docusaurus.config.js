@@ -239,6 +239,18 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'opcon-mft-training',
+        path: '../content/smatechnologies/opcon-mft-training/docs',
+        routeBasePath: 'training/opcon-mft-training',
+        sidebarPath: require.resolve('../content/smatechnologies/opcon-mft-training/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/opcon-mft-training/main/blob',
+
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'guidewire-agent-docs',
         path: '../content/smatechnologies/guidewire-agent-docs/docs',
         routeBasePath: 'opcon/agents/guidewire',
