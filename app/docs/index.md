@@ -8,6 +8,7 @@ title: 'Home'
 
 | Release Date | Name | Type | Release Notes |
 |: ------------ :|: ---- :|:-----:|: ------------- :|
+| July 8, 2024 | OpCon MFT Agent 3.13.4 | Integrations | [Release Notes](https://help.smatechnologies.com/opcon/agents/opconmft/release-notes) |
 | June 12, 2024 | EasyVista Connector | Integrations | [Release Notes](https://help.smatechnologies.com/opcon/connectors/easyvista/release-notes) |
 | July 8, 2024 | OpCon Spring 24 | Cloud | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes) |
 | May 30, 2024 | OpCon Deploy 23.1.0 | Deploy | [Release Notes](https://help.smatechnologies.com/opcon/deploy/release-notes) |
