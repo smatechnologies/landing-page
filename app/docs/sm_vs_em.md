@@ -4,7 +4,7 @@ hide_title: true
 
 ## Solution Manager vs Enterprise Manager 
 
-This page highlights feature parity, location differences, and action differences in **Solution Manager** vs **Enterprise Manager** in Side-By-Side Walkthroughs.
+This page highlights feature parity, location differences, and action differences in **Solution Manager** vs **Enterprise Manager** in *Side-By-Side Walkthroughs*.
 
 <div class="grid-container">
 
