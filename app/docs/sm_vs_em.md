@@ -64,7 +64,7 @@ This page highlights feature parity, location differences, and action difference
 
 <div class="grid-item">
 
-[![Schedule Master](../static/img/Schedule_Master.png)](../static/video/10_Notification_Manager.mp4)
+[![Notification Manager](../static/img/Notification_Manager.png)](../static/video/10_Notification_Manager.mp4)
 
 </div>
 
