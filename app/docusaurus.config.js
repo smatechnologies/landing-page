@@ -48,6 +48,10 @@ module.exports = {
               to: '/advanced-training-agenda/',
               label: 'Advanced Training Agenda',
             },
+            {
+              to: '/sm_vs_em/',
+              label: 'Solution Manager/Enterprise Manager Side-by-Side',
+            },
           ],
         },
         {
