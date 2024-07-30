@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          lfs: true
       - uses: kheiakiyama/install-azcopy-action@v1
         with:
           version: 'v10'
