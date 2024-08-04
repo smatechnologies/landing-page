@@ -13,10 +13,11 @@ title: 'Home'
 
 | Release Date | Name | Type | Release Notes |
 |: ------------ :|: ---- :|:-----:|: ------------- :|
+| August 5, 2024 | OpCon 23.0.5 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2305) |
+| August 5, 2024 | OpCon Summer 24 | Cloud | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes) |
 | July 29, 2024 | OpCon 23.0.4 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2304) |
 | July 29, 2024 | OpCon 22.0.16 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes#opcon-22016) |
 | July 29, 2024 | OpCon 21.0.27 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v21.0/release-notes#opcon-21027) | 
-| July 22, 2024 | OpCon Summer 24 | Cloud | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes) |
 | July 8, 2024 | OpCon MFT Agent 3.13.4 | Integrations | [Release Notes](https://help.smatechnologies.com/opcon/agents/opconmft/release-notes) |
 | June 12, 2024 | EasyVista Connector | Integrations | [Release Notes](https://help.smatechnologies.com/opcon/connectors/easyvista/release-notes) |
 | May 30, 2024 | OpCon Deploy 23.1.0 | Deploy | [Release Notes](https://help.smatechnologies.com/opcon/deploy/release-notes) |
