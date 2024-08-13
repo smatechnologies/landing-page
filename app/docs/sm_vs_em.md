@@ -47,7 +47,7 @@ This page highlights feature parity, location differences, and action difference
 
 <div class="grid-item">
 
-[![File Arrival](../static/img/File_Arrival.png)](../static/video/7_File_Arrival.mp4)
+[![File Arrival](../static/img/File_Arrival.png)](https://sma1980-my.sharepoint.com/:v:/g/personal/rweesner_smatechnologies_com/Eb68jSzG4CZJtkFEBa3jZbYB8m3UnYi3n71OZ4mrYp1WIQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=u6Q2Y4)
 
 </div>
 
