@@ -16,7 +16,7 @@
   "dependencies": {
     "@babel/plugin-transform-runtime": "7.22.9",
     "@babel/runtime-corejs3": "7.22.6",
-    "@cmfcmf/docusaurus-search-local": "^0.10.0",
+    "@cmfcmf/docusaurus-search-local": "^1.2.0",
     "@docsearch/react": "3.5.1",
     "@docusaurus/core": "^2.4.1",
     "@docusaurus/cssnano-preset": "2.4.1",
