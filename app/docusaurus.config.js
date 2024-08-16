@@ -225,7 +225,7 @@ module.exports = {
         sidebarPath: require.resolve('../content/smatechnologies/opcon-advanced-training/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/opcon-advanced-training/main/blob',
-
+        
       },
     ],
     [
