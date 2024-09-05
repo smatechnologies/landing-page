@@ -34,7 +34,7 @@ This page highlights feature parity, location differences, and action difference
 
 <div class="grid-item">
 
-[![Tags and Tag Manager](../static/img/Tags_and_Tag_Manager.png)](https://sma1980-my.sharepoint.com/:v:/g/personal/rweesner_smatechnologies_com/ERLqjmefrMNMlPBLwd6hDAQBCsa1nmJw4UO9pXKxjpYScw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=wTFqEe
+[![Tags and Tag Manager](../static/img/Tags_and_Tag_Manager.png)](https://sma1980-my.sharepoint.com/:v:/g/personal/rweesner_smatechnologies_com/ERLqjmefrMNMlPBLwd6hDAQBCsa1nmJw4UO9pXKxjpYScw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=wTFqEe)
 
 </div>
 
