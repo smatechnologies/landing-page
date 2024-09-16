@@ -141,6 +141,10 @@ hide_title: true
 </div>
 
 <div class="grid-item">
+<a class="button button--link button--block button--primary" href="/opcon/connectors/symphonysummit">SYMPHONY SUMMIT</a>
+</div>
+
+<div class="grid-item">
 <a class="button button--link button--block button--primary" href="/opcon/agents/tuxedo-art">TUXEDO ART</a>
 </div>
 
@@ -163,12 +167,6 @@ hide_title: true
 <div class="grid-item">
 <a class="button button--link button--block button--primary" href="/opcon/agents/windows">WINDOWS</a>
 </div>
-
-<!--
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="https://help.smatechnologies.com/opcon/connectors/wsrestful/v18.3/">WSRESTFUL</a>
-</div>
--->
 
 <div class="grid-item">
 <a class="button button--link button--block button--primary" href="https://help.smatechnologies.com/opcon/connectors/wsus">WSUS</a>

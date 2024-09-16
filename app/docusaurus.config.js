@@ -702,6 +702,18 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'symphonysummit-connector--docs',
+        path: '../content/smatechnologies/symphonysummit-connector-docs/docs',
+        routeBasePath: 'opcon/connectors/symphonysummit',
+        sidebarPath: require.resolve('../content/smatechnologies/symphonysummit-connector-docs/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/symphonysummit-connector-docs/main/blob',
+
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'unikix-connector-docs',
         path: '../content/smatechnologies/unikix-connector-docs/docs',
         routeBasePath: 'opcon/connectors/unikix',
