@@ -8,7 +8,6 @@ title: 'Home'
 
 [Here](sm_vs_em) you can find a **Solution Manager** vs **Enterprise Manager** *Side-by-Side Walkthrough*!
 
-
 ## Recent Releases
 
 | Release Date | Name | Type | Release Notes |
