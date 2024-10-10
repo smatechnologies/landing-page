@@ -10,7 +10,7 @@ This is accomplished by relaying traffic from/to the Agents internal to a custom
 
 ### Diagram
 
-![](../static/img/relay-diagram.png)
+![](../static/img/Relay_Diagram_2024-10-09.png)
 
 
 ### Download
@@ -35,7 +35,7 @@ https://files.smatechnologies.com/files/OpCon%20Releases/Relay.
 
 **Q**: What ports need to be open?
 
-**A**: Typically, none, but if you are blocking outbound traffic to the Internet then `TCP:9012`.  If you choose to install Relay within a DMZ, then you will also need to open inbound traffic for all ports used by Agents (default: 3100-3111).
+**A**: Typically, none, but if you are blocking outbound traffic to the Internet then `TCP:9012` and `TCP:9013`.  If you choose to install Relay within a DMZ, then you will also need to open inbound traffic for all ports used by Agents (default: 3100-3111).
 
 **Q**: How do I update the Relay software?
 
