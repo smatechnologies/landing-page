@@ -10,7 +10,7 @@ This is accomplished by relaying traffic from/to the Agents internal to a custom
 
 ### Diagram
 
-![](../static/img/Relay Diagram 2024-10-09.png)
+![](../static/img/Relay_Diagram_2024-10-09.png)
 
 
 ### Download
