@@ -12,7 +12,7 @@ module.exports = {
   projectName: 'help-landing-page',
   themeConfig: {
     navbar: {
-      title: 'Home',
+      title: 'SMA Technologies',
       logo: {
         alt: 'SMA Technologies Help Logo',
         src: 'img/smabranding.svg',
@@ -70,6 +70,11 @@ module.exports = {
           ],
         },
         {
+          to: '/',
+          label: 'Home',
+          position: 'left',
+        },
+        {
           type: "docsVersionDropdown",
           position: "left",
           docsPluginId: 'opcon-docs',
@@ -80,6 +85,14 @@ module.exports = {
                 href: versionUrl,
               })
             ),
+            {
+              href: '/opcon-release-notes-22/',
+              label: 'OpCon 22.x STS Release Notes',
+            },
+            {
+              to: '/opcon-release-notes-21',
+              label: 'OpCon 21.x STS Release Notes',
+            },
           ],
         },
         {
@@ -771,17 +784,16 @@ module.exports = {
 
       },
     ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'opcon-acs-sdk-docs',
-        path: '../content/smatechnologies/opcon-acs-sdk-docs/docs',
-        routeBasePath: 'opcon/connectors/opcon-acs-sdk',
-        sidebarPath: require.resolve('../content/smatechnologies/opcon-acs-sdk-docs/sidebars.js'),
-        editUrl:
-            'https://github.com/smatechnologies/opcon-acs-sdk-docs/main/blob',
-
-      },
-    ],
+//    [
+//      '@docusaurus/plugin-content-docs',
+//      {
+//        id: 'opcon-acs-sdk-docs',
+//        path: '../content/smatechnologies/opcon-acs-sdk-docs/docs',
+//        routeBasePath: 'opcon/connectors/opcon-acs-sdk',
+//        sidebarPath: require.resolve('../content/smatechnologies/opcon-acs-sdk-docs/sidebars.js'),
+//        editUrl:
+//            'https://github.com/smatechnologies/opcon-acs-sdk-docs/main/blob',
+//     },
+//    ],
 ],
 };
