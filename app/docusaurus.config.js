@@ -87,11 +87,11 @@ module.exports = {
             ),
             {
               href: '/opcon-release-notes-22/',
-              label: 'OpCon 22.x STS (On-Prem) Release Notes',
+              label: 'OpCon 22.x STS Release Notes',
             },
             {
               to: '/opcon-release-notes-21',
-              label: 'OpCon 21.x STS (On-Prem) Release Notes',
+              label: 'OpCon 21.x STS Release Notes',
             },
           ],
         },
