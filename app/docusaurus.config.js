@@ -771,17 +771,17 @@ module.exports = {
 
       },
     ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'opcon-acs-sdk-docs',
-        path: '../content/smatechnologies/opcon-acs-sdk-docs/docs',
-        routeBasePath: 'opcon/connectors/opcon-acs-sdk',
-        sidebarPath: require.resolve('../content/smatechnologies/opcon-acs-sdk-docs/sidebars.js'),
-        editUrl:
-            'https://github.com/smatechnologies/opcon-acs-sdk-docs/main/blob',
-
-      },
-    ],
+//    [
+//      '@docusaurus/plugin-content-docs',
+//      {
+//        id: 'opcon-acs-sdk-docs',
+//        path: '../content/smatechnologies/opcon-acs-sdk-docs/docs',
+//        routeBasePath: 'opcon/connectors/opcon-acs-sdk',
+//        sidebarPath: require.resolve('../content/smatechnologies/opcon-acs-sdk-docs/sidebars.js'),
+//        editUrl:
+//            'https://github.com/smatechnologies/opcon-acs-sdk-docs/main/blob',
+//
+//      },
+//    ],
 ],
 };
