@@ -21,9 +21,17 @@ sidebar_label: "OpCon Pre-release Notes"
 6) Communication between Relay and OpCon-Cloud restricted to TLS 1.2 and up
 7) Allow multi instance relay installation on a machine
 
+:eight_spoked_asterisk: **OPCON-24433**: Added support for ACS plugins in Relay. Users can now define their on-prem ACS Agent machines in OpCon-Cloud and run jobs on those without requiring a VPN.
+
 :white_check_mark: **OPCON-24483**: Modified NetcommApi to handle database disconnects. It now keeps retrying connection to database. As soon as database becomes available again, processing will automatically resume.
 
+:white_check_mark: **OPCON-24987**: Fixed an issue in RequestRouter which was causing the request processing to get stuck. Any bad requests in the table will now be marked as processed and cleaned up if RequestRouter is not able to process them, it will then move on to process the next request instead of getting stuck at the bad entry.
+
+:white_check_mark: **OPCON-25076**: Added active ping mechanism in Relay to periodically check validity of its WebSocket connection with OpCon-Cloud. This will eliminate issues encountered because of lost socket connections that did not raise events to notify Relay that the connection has been closed.
+
 :white_check_mark: **OPCON-25117**: OpCon wasn't resolving references to embedded scripts or batch users in the ACS integration agent config at agent start time.
+
+:white_check_mark: **OPCON-25774**: RequestRouter is coded to cleanup only expired processed requests. If a request was bad and RequestRouter could not process it, it would be left in the table as unprocessed. A fix in OPCON-24987 modifies this logic to mark the bad requests as processed and clean them up.
 
 #### Solution Manager
 
@@ -32,6 +40,8 @@ sidebar_label: "OpCon Pre-release Notes"
 :eight_spoked_asterisk: **OPCON-24004**: Added an information icon for Otto that explains skills and capabilities.
 
 :eight_spoked_asterisk: **OPCON-24677**: Formatted Otto's responses for better readability.
+
+:eight_spoked_asterisk: **OPCON-24678**: Added the ability to report on user behavior within Solution Manager. This addition will help SMA determine which features are most valuable to our current customers.
 
 :white_check_mark: **OPCON-22258**: The Job Execution History now displays the correct duration for skipped jobs.
 
