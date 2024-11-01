@@ -255,6 +255,18 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'rsj-training',
+        path: '../content/smatechnologies/rsj-training/docs',
+        routeBasePath: 'training/rsj-training',
+        sidebarPath: require.resolve('../content/smatechnologies/rsj-training/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/rsj-training/main/blob',
+
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'guidewire-agent-docs',
         path: '../content/smatechnologies/guidewire-agent-docs/docs',
         routeBasePath: 'opcon/agents/guidewire',
@@ -771,17 +783,17 @@ module.exports = {
 
       },
     ],
-//    [
-//      '@docusaurus/plugin-content-docs',
-//      {
-//        id: 'opcon-acs-sdk-docs',
-//        path: '../content/smatechnologies/opcon-acs-sdk-docs/docs',
-//        routeBasePath: 'opcon/connectors/opcon-acs-sdk',
-//        sidebarPath: require.resolve('../content/smatechnologies/opcon-acs-sdk-docs/sidebars.js'),
-//        editUrl:
-//            'https://github.com/smatechnologies/opcon-acs-sdk-docs/main/blob',
-//
-//      },
-//    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'opcon-acs-sdk-docs',
+        path: '../content/smatechnologies/opcon-acs-sdk-docs/docs',
+        routeBasePath: 'opcon/connectors/opcon-acs-sdk',
+        sidebarPath: require.resolve('../content/smatechnologies/opcon-acs-sdk-docs/sidebars.js'),
+        editUrl:
+           'https://github.com/smatechnologies/opcon-acs-sdk-docs/main/blob',
+
+      },
+    ],
 ],
 };
