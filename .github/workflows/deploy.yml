@@ -18,7 +18,7 @@ jobs:
         run: azcopy_v10 copy '${{ secrets.HELP_CONTENT_URL }}/content/smatechnologies/?${{ secrets.HELP_CONTENT_TOKEN }}' './content/' --recursive --log-file ${{ github.workspace }}/azcopy.log
       - name: Upload AzCopy log on failure
         if: failure()
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: azcopy-log
           path: ${{ github.workspace }}/azcopy.log
