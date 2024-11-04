@@ -14,14 +14,9 @@ jobs:
       - uses: kheiakiyama/install-azcopy-action@v1
         with:
           version: 'v10'
-      - name: Run AzCopy
-        run: azcopy_v10 copy '${{ secrets.HELP_CONTENT_URL }}/content/smatechnologies/?${{ secrets.HELP_CONTENT_TOKEN }}' './content/' --recursive
-      - name: Upload AzCopy log on failure
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: azcopy-log
-          path: /home/runner/.azcopy/*.log
+      - run: azcopy_v10 copy '${{ secrets.HELP_CONTENT_URL }}/content/smatechnologies/?${{ secrets.HELP_CONTENT_TOKEN }}' './content/' --recursive
+      - if: failure()
+        run: azcopy_v10 copy '${{ secrets.HELP_CONTENT_URL }}/content/smatechnologies/?${{ secrets.HELP_CONTENT_TOKEN }}' './content/' --recursive --overwrite=false
       - run: azcopy_v10 copy '${{ secrets.HELP_CONTENT_URL }}/versioned-content/*?${{ secrets.HELP_CONTENT_TOKEN }}' './app/' --recursive
       - run: azcopy_v10 copy '${{ secrets.HELP_CONTENT_URL }}/api/*?${{ secrets.HELP_CONTENT_TOKEN }}' './api/'
       - run: tree
