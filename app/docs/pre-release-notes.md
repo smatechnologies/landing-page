@@ -31,7 +31,11 @@ sidebar_label: "OpCon Pre-release Notes"
 
 :white_check_mark: **OPCON-25117**: OpCon wasn't resolving references to embedded scripts or batch users in the ACS integration agent config at agent start time.
 
+:white_check_mark: **OPCON-25773**: Resolved an issue which could prevent NetCom from properly tracking running ACS jobs following an unexpected shutdown.
+
 :white_check_mark: **OPCON-25774**: RequestRouter is coded to cleanup only expired processed requests. If a request was bad and RequestRouter could not process it, it would be left in the table as unprocessed. A fix in OPCON-24987 modifies this logic to mark the bad requests as processed and clean them up.
+
+:white_check_mark: **OPCON-25802**: Fixed an issue in Relay and Netcom where the JORS request was picked up by incorrect Netcom or Relay. All Jors request are now routed to the correct Relay or Netcom on which the requesting machine is configured.
 
 #### Solution Manager
 
