@@ -13,8 +13,8 @@ title: 'Home'
 | Release Date | Name | Type | Release Notes |
 |: ------------ :|: ---- :|:-----:|: ------------- :|
 | November 20, 2024 | OpCon Fall 24 | Cloud | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes) |
-| October 21, 2024 | OpCon 23.0.6 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2306) |
-| October 21, 2024 | OpCon 22.0.17 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes#opcon-22017) |
+| October 25, 2024 | OpCon 23.0.7 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2307) |
+| October 25, 2024 | OpCon 22.0.18 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes#opcon-22018) |
 | October 21, 2024 | OpCon 21.0.28 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v21.0/release-notes#opcon-21028) | 
 
 
