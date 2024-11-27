@@ -56,7 +56,25 @@ https://files.smatechnologies.com/files/OpCon%20Releases/Relay.
 5. Next, you will be prompted to **Enter Client Name**.  The default is the fully qualified domain name of the machine, we recommend taking the default.
 6. Next, you will be prompted to **Enter Relay Name**.  The default is the name of the machine, we recommend the prefix of the URL to your OpCon instance.  For example, `company-prod`, where **company** would be your company identifier and **prod** would be the instance identifier.  These are usually found in the provided URI before `opcon.smatechnologies.com`.
 7. Next, you will be prompted to **Enter your OpCon URI**.  This will be the URI provided by SMA that identifies your cloud instance.
-8. Finally, you will be prompted to **Enter External Event Token for a User with Super Admin privilege like ocadm**.  You can generate this token by logging into Solution Manager as `ocadm` and navigating to **OCADM -> "EXTERNAL TOKEN**.  Here you will select the radio button labeled **API Token** and then click the button labeled **Generate**.  Make sure to copy and paste the generated token to the install dialog that is currently open.
+8. Finally, you will be prompted to Enter External Event Token for a User with Super Admin privilege like ocadm.
+
+You can generate this token by logging into Solution Manager as a user like ocadm and navigating to LIBRARY → ACCESS MANAGEMENT → USERS → “+” to add a new user
+
+First Name: Relay
+
+Last Name: Install
+
+Username: relayInstall
+
+Password: <remember for later>
+
+Click on the button labeled “Save”
+
+Click on the ROLES tab and check the box for Role_ocadm and click on the button labeled “Save”
+
+Click on the SETTINGS tab and check the box for Enable external tokens and click on the button labeled “Save”
+
+Logout of Solution Manager and log back in as relayInstall and navigate to RELAYINSTALL → EXTERNAL TOKEN. Here you will select the radio button labeled API Token and then click the button labeled Generate. Make sure to copy and paste the generated token to the install dialog that is currently open.
 9. You will see the install dialogue confirm authentication to the URI entered in step 7 with the token entered in step 8 and then register to relay with the names given in Steps 5 & 6.
 10.  You can now choose to **Exit** the install dialog or just close the window.
 11.  Log into Solution Manager as `ocadm` or user with equivalent rights.
@@ -67,6 +85,7 @@ https://files.smatechnologies.com/files/OpCon%20Releases/Relay.
      * Save the changes
      * Start the agent
 14. If all Agents show **Communicating**, then you have successfully installed and configured Relay.  If not, please open a case with support so our team can help you troubleshoot the issue.
+15. Log back into Solution Manager as a user like ocadm and navigate to LIBRARY → ACCESS MANAGEMENT → USERS.  Select the user relayInstall, created in Step #8, by clicking on it.  Click on the vertical ellipsis to Delete the selected user.
 
 ### Uninstall
 
