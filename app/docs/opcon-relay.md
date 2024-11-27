@@ -60,16 +60,18 @@ https://files.smatechnologies.com/files/OpCon%20Releases/Relay.
 
 	You can generate this token by logging into Solution Manager as a user like ocadm and navigating to LIBRARY → ACCESS MANAGEMENT → USERS → “+” to add a new user
 
-	First Name: Relay
-	Last Name: Install
-	Username: relayInstall
-	Password: <remember for later>
+	* First Name: Relay
+	* Last Name: Install
+	* Username: relayInstall
+	* Password: <remember for later>
 
 	Click on the button labeled “Save”
+	
 	Click on the ROLES tab and check the box for Role_ocadm and click on the button labeled “Save”
+	
 	Click on the SETTINGS tab and check the box for Enable external tokens and click on the button labeled “Save”
 
-	Logout of Solution Manager and log back in as relayInstall and navigate to RELAYINSTALL → EXTERNAL TOKEN. Here you will select the radio button labeled API Token and then click the button labeled Generate. Make sure to copy and paste the generated token to the install dialog that is currently open.
+	Log out of Solution Manager and log back in as relayInstall and navigate to RELAYINSTALL → EXTERNAL TOKEN. Here you will select the radio button labeled API Token and then click the button labeled Generate. Make sure to copy and paste the generated token to the install dialog that is currently open.
 
 9. You will see the install dialogue confirm authentication to the URI entered in step 7 with the token entered in step 8 and then register to relay with the names given in Steps 5 & 6.
 10.  You can now choose to **Exit** the install dialog or just close the window.
