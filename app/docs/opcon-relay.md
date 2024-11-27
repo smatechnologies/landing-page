@@ -63,7 +63,7 @@ https://files.smatechnologies.com/files/OpCon%20Releases/Relay.
 	* First Name: Relay
 	* Last Name: Install
 	* Username: relayInstall
-	* Password: "<remember for later>"
+	* Password: (Set to unique value and remember for later)
 
 	Click on the button labeled “Save”
 	
