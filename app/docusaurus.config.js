@@ -60,8 +60,8 @@ module.exports = {
           position: 'right',
           items: [
             {
-              href: 'https://smatech2.my.site.com/SMAOpConUserCommunity/s/',
-              label: 'Support',
+              href: 'https://smatech2.my.site.com/SMASupportPortal',
+              label: 'SMA Support Portal',
             },
             {
               to: '/opcon/knowledge-base/',
