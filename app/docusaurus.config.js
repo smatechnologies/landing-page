@@ -12,7 +12,7 @@ module.exports = {
   projectName: 'help-landing-page',
   themeConfig: {
     navbar: {
-      title: 'Home',
+//      title: 'Home',
       logo: {
         alt: 'SMA Technologies Help Logo',
         src: 'img/smabranding.svg',
@@ -68,6 +68,10 @@ module.exports = {
               label: 'Knowledge Base',
             },
           ],
+        },
+        {
+          to: '/',
+          label: 'Help',
         },
         {
           type: "docsVersionDropdown",
