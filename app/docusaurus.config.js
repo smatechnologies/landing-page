@@ -70,6 +70,11 @@ module.exports = {
           ],
         },
         {
+          href: 'https://github.com/smatechnologies',
+          label: 'Innovation Lab',
+          position: 'right',
+        },
+        {
           to: '/',
           label: 'Help',
         },
