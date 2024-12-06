@@ -55,7 +55,7 @@ https://files.smatechnologies.com/files/OpCon%20Releases/Relay.
 4. You will be presented with a text menu, choose the first option labeled **Register & Install Netcom Relay Service**
 5. Next, you will be prompted to **Enter Client Name**.  The default is the fully qualified domain name of the machine, we recommend taking the default.
 6. Next, you will be prompted to **Enter Relay Name**.  The default is the name of the machine, we recommend the prefix of the URL to your OpCon instance.  For example, `company-prod`, where **company** would be your company identifier and **prod** would be the instance identifier.  These are usually found in the provided URI before `opcon.smatechnologies.com`.
-7. Next, you will be prompted to **Enter your OpCon URI**.  This will be the URI provided by SMA that identifies your cloud instance. (E.g.- https://<customername>-<instance>.opcon.smatechnologies.com)
+7. Next, you will be prompted to **Enter your OpCon URI**.  This will be the URI provided by SMA that identifies your cloud instance. (E.g.- https://company-prod.opcon.smatechnologies.com)
 8. Finally, you will be prompted to Enter External Token for a User with Super Admin privilege like ocadm.
 
 	You can generate this token by logging into Solution Manager as a user like ocadm and navigating to LIBRARY → ACCESS MANAGEMENT → USERS → “+” to add a new user
@@ -93,7 +93,7 @@ https://files.smatechnologies.com/files/OpCon%20Releases/Relay.
 4. You will be presented with a text menu, choose the first option labeled **Register & Install Netcom Relay Service**
 5. Next, you will be prompted to **Enter Client Name**.  The default is the fully qualified domain name of the machine, we recommend taking the default.
 6. Next, you will be prompted to **Enter Relay Name**.  The default is the name of the machine, we recommend the prefix of the URL to your OpCon instance.  For example, `company-prod`, where **company** would be your company identifier and **prod** would be the instance identifier.  These are usually found in the provided URI before `opcon.smatechnologies.com`. This name needs to be distinct from the Relay that is already installed.
-7. Next, you will be prompted to **Enter your OpCon URI**.  This will be the URI provided by SMA that identifies your cloud instance. (E.g.- https://<customername>-<instance>.opcon.smatechnologies.com)
+7. Next, you will be prompted to **Enter your OpCon URI**.  This will be the URI provided by SMA that identifies your cloud instance. (E.g.- https://company-prod.opcon.smatechnologies.com)
 8. Finally, you will be prompted to Enter External Token for a User with Super Admin privilege like ocadm.
 
 	For this step, you may use the token for the relayInstall user that was created while installing the first Relay. If that user no longer exists, please follow the instructions under step 8 in the **Install** section above.
