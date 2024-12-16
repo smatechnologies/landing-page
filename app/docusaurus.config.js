@@ -180,6 +180,18 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'wripple-docs',
+        path: '../content/smatechnologies/wripple/docs',
+        routeBasePath: 'wripple/',
+        sidebarPath: require.resolve('../content/smatechnologies/wripple/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/wripple/blob/main/',
+
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'opcon-deploy-docs',
         path: '../content/smatechnologies/opcon-deploy-docs/docs',
         routeBasePath: 'opcon/deploy',
