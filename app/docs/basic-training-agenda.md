@@ -2,7 +2,7 @@
 hide_title: true
 ---
 
-# OpCon Basic Training Agenda (2024)
+# OpCon Basic Training Agenda
 
 :::tip Unit One
 

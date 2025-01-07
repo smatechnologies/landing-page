@@ -2,7 +2,7 @@
 hide_title: true
 ---
 
-# OpCon Deploy Training Agenda (2024)
+# OpCon Deploy Training Agenda
 
 :::tip Administration
 

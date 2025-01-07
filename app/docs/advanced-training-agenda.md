@@ -2,7 +2,7 @@
 hide_title: true
 ---
 
-# OpCon Advanced Training Agenda (2024)
+# OpCon Advanced Training Agenda
 
 :::tip Multi Instance
 
