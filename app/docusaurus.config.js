@@ -177,18 +177,18 @@ module.exports = {
         },
       },
     ],
-//    [
-//      '@docusaurus/plugin-content-docs',
-//      {
-//        id: 'wripple-docs',
-//        path: '../content/smatechnologies/wripple-docs/docs',
-//        routeBasePath: 'wripple/',
-//        sidebarPath: require.resolve('../content/smatechnologies/wripple-docs/sidebars.js'),
-//        editUrl:
-//            'https://github.com/smatechnologies/wripple-docs/blob/main/',
-//
-//      },
-//    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'wripple-docs',
+        path: '../content/smatechnologies/wripple-docs/docs',
+        routeBasePath: 'wripple/',
+        sidebarPath: require.resolve('../content/smatechnologies/wripple-docs/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/wripple-docs/blob/main/',
+
+      },
+    ],
     [
       '@docusaurus/plugin-content-docs',
       {
