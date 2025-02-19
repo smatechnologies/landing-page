@@ -69,11 +69,11 @@ sidebar_label: "OpCon Pre-release Notes"
 
 :white_check_mark: **OPCON-25150**: Fixed an issue where filtering by column resets on every visit on the agents page.
 
-:white_check_mark: **OPCON-25158**: Fixed an issue where Daily Job: Frequency offset values cleared on second save via turning admin off.
+:white_check_mark: **OPCON-25158**: Fixed an issue where *Daily Job: Frequency* offset values cleared on second save via turning admin off.
 
-:white_check_mark: **OPCON-25151**: Resolved an issue where assigning 'Can Update' access to a resource for a role did not work as expected.
+:white_check_mark: **OPCON-25151**: Resolved an issue where assigning *Can Update* access to a resource for a role did not work as expected.
 
-:white_check_mark: **OPCON-25159**: Fixed a permissions issue with master jobs where users with any privilege in <All Departments> were incorrectly able to modify master jobs.
+:white_check_mark: **OPCON-25159**: Fixed a permissions issue with master jobs where users with any privilege in `<All Departments>` were incorrectly able to modify master jobs.
 
 :white_check_mark: **OPCON-25736**: Fixed issue which prevented users from selecting an ACS Integration as a Script Runner OS Type if the user had multiple ACS integrations installed
 
@@ -109,11 +109,11 @@ Requires Deploy version 25.0.0.
 
 :white_check_mark: **OPCON-25849**: Adjusted various UI elements for accessibility and 508 compliance.
 
-:white_check_mark: **OPCON-25851**: Fixed label on the "To" input field within the deploy dialog.
+:white_check_mark: **OPCON-25851**: Fixed label on the `To` input field within the deploy dialog.
 
-:white_check_mark: **OPCON-25853**: Upgraded .net version to .net 9.
+:white_check_mark: **OPCON-25853**: Upgraded `.net` version to `.net 9`.
 
-:white_check_mark: **OPCON-25856**: Fixed an issue where <All Departments> was inadvertently available in the master job department select.
+:white_check_mark: **OPCON-25856**: Fixed an issue where `<All Departments>` was inadvertently available in the master job department select.
 
 :white_check_mark: **OPCON-25864**: Fixes issue which could cause Solution Manager to crash after switching between certain ACS task types.
 
@@ -155,7 +155,7 @@ Requires Deploy version 25.0.0.
 
 :white_check_mark: **OPCON-25982**: Fixes issue in NetCom where ACS job starts would sometimes request job status information even when the job had previously reported completion.
 
-:white_check_mark: **OPCON-26026**: Fixed an issue on in the Notification Triggers manager Group page where the checkboxes on pages 2+ do not populate with the correct value.
+:white_check_mark: **OPCON-26026**: Fixed an issue on in the Notification Triggers manager Group page where the checkboxes on pages `2+` do not populate with the correct value.
 
 :white_check_mark: **OPCON-26016**: Adjusted the save button on the Daily Jobs page.
 
@@ -169,7 +169,7 @@ Requires Deploy version 25.0.0.
 
 :white_check_mark: **OPCON-26097**: Fixed a problem during schedule deployment when the schedule definition included BIS jobs and the schedule exists on the target OpCon system. The BIS RunId field was incorrectly reset. 
 
-:white_check_mark: **OPCON-26103**: Fixed issue in Relay wehre the GET /api/acs/rjsf endpoint doesn't respect machine NetComName field.
+:white_check_mark: **OPCON-26103**: Fixed issue in Relay wehre the `GET /api/acs/rjsf` endpoint doesn't respect machine NetComName field.
 
 :white_check_mark: **OPCON-26144**: Fixed issue where the user would receive the error "Adding the specified count to the semaphore would cause it to exceed its maximum count".
 
