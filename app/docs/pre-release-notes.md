@@ -6,7 +6,13 @@ sidebar_label: "OpCon Pre-release Notes"
 
 ## Winter 25
 
-**NOTE**: Verify/Upgrade these components if applicable: **ServiceNow** Connector – 21.4 or higher, **WebServices** Connector – 21.2 or higher, **Deploy** – 22.4 or higher, **Relay** - 24.1 or higher
+**NOTE**: Verify/Upgrade these components if applicable: 
+
+* **Enterprise Manager** - 25.0 
+* **ServiceNow** Connector – 21.4 or higher
+* **WebServices** Connector – 21.2 or higher
+* **Deploy** – 23.4 or higher
+* **Relay** - 24.3.2 or higher
 
 2024 December
 
