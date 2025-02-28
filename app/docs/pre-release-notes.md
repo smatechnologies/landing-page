@@ -181,6 +181,10 @@ Requires Deploy version 25.0.0.
 
 :white_check_mark: **OPCON-26137**: Fixed a problem during deployment when schedule privileges are lost. When role does not include inherit all schedules and a deployment is performed and the role names are the same but characters have different case then the schedule privilege is incorrectly removed.   
 
+:white_check_mark: **INTPLT-32**: Fixed issue where the customer was receiving an invalid URI and internal server error when authenticating machines.
+
+:white_check_mark: **OPCON-26153**: Fixed an issue where OpconMFT agent was not communicating after install/upgrade.
+
 
 
 
