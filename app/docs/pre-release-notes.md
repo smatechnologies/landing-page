@@ -111,7 +111,7 @@ Requires Deploy version 25.0.0.
 
 :white_check_mark: **OPCON-25843**: Fixed API documentation for posting a new script runner.
 
-:white_check_mark: **OPCON-25843**: Fixed issue causing nodes to stack on top of one another due to incorrect node positions on the workflow page.
+:white_check_mark: **OPCON-25845**: Fixed issue causing nodes to stack on top of one another due to incorrect node positions on the workflow page.
 
 :white_check_mark: **OPCON-25849**: Adjusted various UI elements for accessibility and 508 compliance.
 
