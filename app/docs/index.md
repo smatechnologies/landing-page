@@ -72,6 +72,4 @@ Released as often as every 6 weeks and contains both defect fixes and new featur
 | 21.6 STS | 21.6.0 | 2022-07-11 | 2025-07-11 | [Release Notes](opcon-release-notes-21/#opcon-2160) |
 | 21.5 STS | 21.5.0 | 2022-05-30 | 2025-05-30 | [Release Notes](opcon-release-notes-21/#opcon-2150) |
 | 21.4 STS | 21.4.0 | 2022-04-18 | 2025-04-18 | [Release Notes](opcon-release-notes-21/#opcon-2140) |
-| 21.3 STS | 21.3.0 | 2022-03-07 | 2025-03-07 | [Release Notes](opcon-release-notes-21/#opcon-2130) |
-| 21.2 STS | 21.2.0 | 2022-01-24 | 2025-01-24 | [Release Notes](opcon-release-notes-21/#opcon-2120) |
-| 21.1 STS | 21.1.0 | 2021-12-13 | 2024-12-13 | [Release Notes](opcon-release-notes-21/#opcon-2110) |
+
