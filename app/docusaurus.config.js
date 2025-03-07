@@ -297,24 +297,6 @@ module.exports = {
         path: '../content/smatechnologies/ibm-i-agent-docs/docs',
         routeBasePath: 'opcon/agents/ibm-i',
         sidebarPath: require.resolve('../content/smatechnologies/ibm-i-agent-docs/sidebars.js'),
-        editUrl:
-            'https://github.com/smatechnologies/ibm-i-agent-docs/main/blob',
-            lastVersion: "current",
-            versions: {
-              current: {
-                label: "21.1",
-              },
-              "21.1": {
-                label: "21.1",
-                path: "v21.1",
-                banner: "none",
-              },
-              "18.1": {
-                label: "18.1",
-                path: "v18.1",
-                banner: "none",
-              },
-            },
       },
     ],
     [

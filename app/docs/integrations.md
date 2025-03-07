@@ -63,11 +63,7 @@ hide_title: true
 <div class="grid-item">
 <a class="button button--link button--block button--primary" href="/opcon/agents/guidewire">GUIDEWIRE</a>
 </div>
-<!--
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/agents/ibm-i">IBM I (Version 23.1)</a>
-</div>
--->
+
 <div class="grid-item">
 <a class="button button--link button--block button--primary" href="/opcon/agents/ibm-i/v21.1">IBM I (Version 21.1)</a>
 </div>
