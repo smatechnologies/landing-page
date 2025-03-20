@@ -38,7 +38,7 @@ One release each calendar year containing both new features and defect fixes. Ma
 
 #### STS or Short-Term-Support
 
-Released as often as every 6 weeks and contains both defect fixes and new features.
+Multiple releases throughout the year. STS Releases include both new features and bug fixes. Patches with only bug fixes are not provided.
 
 
 ### Supported OpCon Releases
@@ -71,5 +71,5 @@ Released as often as every 6 weeks and contains both defect fixes and new featur
 | 21.8 STS | 21.8.0 | 2022-10-03 | 2025-10-03 | [Release Notes](opcon-release-notes-21/#opcon-2180) |
 | 21.6 STS | 21.6.0 | 2022-07-11 | 2025-07-11 | [Release Notes](opcon-release-notes-21/#opcon-2160) |
 | 21.5 STS | 21.5.0 | 2022-05-30 | 2025-05-30 | [Release Notes](opcon-release-notes-21/#opcon-2150) |
-| 21.4 STS | 21.4.0 | 2022-04-18 | 2025-04-18 | [Release Notes](opcon-release-notes-21/#opcon-2140) |
+
 
