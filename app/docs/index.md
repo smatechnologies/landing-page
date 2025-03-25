@@ -41,7 +41,10 @@ One release each calendar year containing both new features and defect fixes. Ma
 Multiple releases throughout the year. STS Releases include both new features and bug fixes. Patches with only bug fixes are not provided.
 
 
-### Supported OpCon Releases
+### Supported On-Prem OpCon Releases
+
+On-Prem releases are supported for 3 years from the date of release. Releases taht are no longer supported will not receive patches and  technical support will be limited.
+
 
 | Feature Release | Version | General Availability | Anticipated Support Retirement | Release Notes |
 |: --------------- :|: ------- :|: -------------------- :|: ------------------------------ :|: ------------- :|
