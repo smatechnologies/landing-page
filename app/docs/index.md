@@ -21,13 +21,13 @@ title: 'Home'
 
 ## SMA On-Prem OpCon Product Support Lifecycle
 
-### OpCon Web Installer (OWI)
+#### OpCon Web Installer (OWI)
 
 Download the [OpCon Web Installer](https://smatechnologies.hosted-by-files.com/OpConPublicUtilities/OpConWebInstaller.zip)
 
 The OpCon Web Installer (OWI) is a tool designed to make the process of installing and maintaining OpCon software easier. It has the ability to connect to the public distribution location of OpCon software automatically and download or install selected product components.
 
-### On-Prem Release FTP Access
+#### On-Prem Release FTP Access
 
 Downloads for available releases outside the scope of the OpCon Web Installer can be found with appropriate credentials through [SMA FTP Files](https://files.smatechnologies.com/files/)
 
@@ -41,7 +41,7 @@ Multiple releases throughout the year. STS Releases include both new features an
 
 ### Supported On-Prem OpCon Releases
 
-On-Prem releases are supported for 3 years from the date of release. Releases taht are no longer supported will not receive patches and  technical support will be limited.
+On-Prem releases are supported for 3 years from the date of release. Releases that are no longer supported will not receive patches and technical support will be limited.
 
 
 | Feature Release | Version | General Availability | Anticipated Support Retirement | Release Notes |
