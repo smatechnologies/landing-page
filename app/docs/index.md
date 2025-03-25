@@ -19,6 +19,10 @@ title: 'Home'
 | January 20, 2025 | OpCon 22.0.19 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes#opcon-22019) |
 
 
+## OpCon Cloud Releases
+
+OpCon Cloud Instances are automatically upgraded on a quarterly basis.
+
 ## SMA On-Prem OpCon Product Support Lifecycle
 
 #### OpCon Web Installer (OWI)
