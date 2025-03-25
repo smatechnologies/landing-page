@@ -4,7 +4,7 @@ hide_title: true
 
 # Relay (NetComApi)
 
-The Relay (NetComApi) utility provides communication for our **OpCon Relay** and **OpCon Outcomes** cloud offerings.  
+The Relay (NetComApi) utility provides communication for our **OpCon Relay** cloud offering.  
 
 This is accomplished by relaying traffic from/to the Agents internal to a customer network with the customer's cloud instance(s).
 
