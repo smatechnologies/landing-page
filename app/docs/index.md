@@ -17,20 +17,19 @@ title: 'Home'
 | February 3, 2025 | OpCon 23.0.9 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2309) |
 | January 20, 2025 | OpCon 23.0.8 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2308) |
 | January 20, 2025 | OpCon 22.0.19 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes#opcon-22019) |
-| October 25, 2024 | OpCon 22.0.18 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes#opcon-22018) |
 
 
-## OpCon Web Installer (OWI)
+## SMA On-Prem OpCon Product Support Lifecycle
+
+### OpCon Web Installer (OWI)
 
 Download the [OpCon Web Installer](https://smatechnologies.hosted-by-files.com/OpConPublicUtilities/OpConWebInstaller.zip)
 
 The OpCon Web Installer (OWI) is a tool designed to make the process of installing and maintaining OpCon software easier. It has the ability to connect to the public distribution location of OpCon software automatically and download or install selected product components.
 
-### Release FTP Access
+### On-Prem Release FTP Access
 
 Downloads for available releases outside the scope of the OpCon Web Installer can be found with appropriate credentials through [SMA FTP Files](https://files.smatechnologies.com/files/)
-
-## SMA Product Support Lifecycle
 
 #### LTS or Long-Term-Support (Indicated in Table)
 
@@ -39,7 +38,6 @@ One release each calendar year containing both new features and defect fixes. Ma
 #### STS or Short-Term-Support
 
 Multiple releases throughout the year. STS Releases include both new features and bug fixes. Patches with only bug fixes are not provided.
-
 
 ### Supported On-Prem OpCon Releases
 
@@ -56,10 +54,10 @@ On-Prem releases are supported for 3 years from the date of release. Releases ta
 | 22.7 STS | 22.7.0 | 2023-08-21 | 2026-08-21 | [Release Notes](opcon-release-notes-22/#opcon-2270) |
 | 22.6 STS | 22.6.0 | 2023-07-24 | 2026-07-24 | [Release Notes](opcon-release-notes-22#opcon-2260) |
 | 22.5 STS | 22.5.0 | 2023-06-26 | 2026-06-26 | [Release Notes](opcon-release-notes-22/#opcon-2250) |
-| 22.4 STS| 22.4.0 | 2023-05-29 | 2026-05-29 | [Release Notes](opcon-release-notes-22/#opcon-2240) |
+| 22.4 STS | 22.4.0 | 2023-05-29 | 2026-05-29 | [Release Notes](opcon-release-notes-22/#opcon-2240) |
 | 22.3 STS | 22.3.1 | 2023-05-02 | 2026-05-02 | [Release Notes](opcon-release-notes-22/#opcon-2231) |
 | 22.2 STS | 22.2.0 | 2023-04-03 | 2026-04-03 | [Release Notes](opcon-release-notes-22/#opcon-2220) |
-| 22.1 STS| 22.1.0 | 2023-03-06 | 2026-03-06 | [Release Notes](opcon-release-notes-22/#opcon-2210) |
+| 22.1 STS | 22.1.0 | 2023-03-06 | 2026-03-06 | [Release Notes](opcon-release-notes-22/#opcon-2210) |
 | 22.0 LTS | 22.0.8 | 2023-09-25 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2208) |
 | 22.0 LTS | 22.0.7 | 2023-08-28 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2207) |
 | 22.0 LTS | 22.0.6 | 2023-07-31 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2206) |
