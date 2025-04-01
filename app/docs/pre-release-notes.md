@@ -4,6 +4,29 @@ sidebar_label: "OpCon Pre-release Notes"
 
 # Pre-release Notes
 
+## OpCon 25.0.1
+
+**NOTE**: Verify/Upgrade these components if applicable: 
+
+* **Enterprise Manager** - 25.0 
+* **ServiceNow** Connector – 21.4 or higher
+* **WebServices** Connector – 21.2 or higher
+* **Deploy** – 25.0.0 or higher
+
+2025 March
+
+#### Server
+
+:white_check_mark: **OC-2499**: Fixed database re-connection logic to prevent NotifyHandler from hanging during database disruptions.
+
+:white_check_mark: **OC-2502**: Providing a delayed start and checking for certificate file in NetcomApi to prevent errors encountered during initialization of service.
+
+#### REST API
+
+:white_check_mark: **OC-22**: Modified OS2200 daily jobs details to exclude completion statuses with empty or null condition words.
+
+
+
 ## Winter 25
 
 **NOTE**: Verify/Upgrade these components if applicable: 
