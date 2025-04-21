@@ -49,7 +49,16 @@ On-Prem releases are supported for 3 years from the date of release. Releases th
 
 | Feature Release | Version | General Availability | Anticipated Support Retirement | Release Notes |
 |: --------------- :|: ------- :|: -------------------- :|: ------------------------------ :|: ------------- :|
-| Spring 24 | Cloud | 2024-05-20 | Summer 24 | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes) |
+| 25.0 LTS | 25.0.1 | 2025-03-31 | 2028-02-28 | [Release Notes](https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2501) |
+| 25.0 LTS | 25.0.0 | 2025-02-28 | 2028-02-28 | [Release Notes](https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2500) |
+| 23.0 LTS | 23.0.9 | 2025-02-03 | 2027-01-29 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2309) |
+| 23.0 LTS | 23.0.8 | 2025-01-22 | 2027-01-29 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2308) |
+| 23.0 LTS | 23.0.7 | 2024-11-25 | 2027-01-29 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2307) |
+| 23.0 LTS | 23.0.6 | 2024-10-21 | 2027-01-29 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2306) |
+| 23.0 LTS | 23.0.5 | 2024-08-03 | 2027-01-29 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2305) |
+| 23.0 LTS | 23.0.4 | 2024-07-31 | 2027-01-29 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2304) |
+| 23.0 LTS | 23.0.3 | 2024-05-13 | 2027-01-29 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2303) |
+| 23.0 LTS | 23.0.1 | 2024-03-04 | 2027-01-29 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2301) |
 | 23.0 LTS | 23.0.0 | 2024-01-29 | 2027-01-29 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2300) |
 | 22.10 STS | 22.10.0 | 2023-11-13 | 2026-11-13 | [Release Notes](opcon-release-notes-22/#opcon-22100) |
 | 22.9 STS | 22.9.0 | 2023-10-16 | 2026-10-16 | [Release Notes](opcon-release-notes-22#opcon-2290) |
