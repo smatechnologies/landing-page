@@ -70,6 +70,15 @@ On-Prem releases are supported for 3 years from the date of release. Releases th
 | 22.3 STS | 22.3.1 | 2023-05-02 | 2026-05-02 | [Release Notes](opcon-release-notes-22/#opcon-2231) |
 | 22.2 STS | 22.2.0 | 2023-04-03 | 2026-04-03 | [Release Notes](opcon-release-notes-22/#opcon-2220) |
 | 22.1 STS | 22.1.0 | 2023-03-06 | 2026-03-06 | [Release Notes](opcon-release-notes-22/#opcon-2210) |
+| 22.0 LTS | 22.0.19 | 2025-01-22 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22019) |
+| 22.0 LTS | 22.0.17 | 2024-10-21 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22017) |
+| 22.0 LTS | 22.0.16 | 2024-07-31 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22016) |
+| 22.0 LTS | 22.0.15 | 2024-05-14 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22015) |
+| 22.0 LTS | 22.0.13 | 2024-03-04 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22013) |
+| 22.0 LTS | 22.0.12 | 2024-01-15 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22012) |
+| 22.0 LTS | 22.0.11 | 2023-12-18 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22011) |
+| 22.0 LTS | 22.0.10 | 2023-10-27 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22010) |
+| 22.0 LTS | 22.0.9 | 2023-10-23 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2209) |
 | 22.0 LTS | 22.0.8 | 2023-09-25 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2208) |
 | 22.0 LTS | 22.0.7 | 2023-08-28 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2207) |
 | 22.0 LTS | 22.0.6 | 2023-07-31 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2206) |
