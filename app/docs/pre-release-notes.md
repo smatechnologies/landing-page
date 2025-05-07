@@ -33,7 +33,7 @@ sidebar_label: "OpCon Pre-release Notes"
 
 :white_check_mark: **OC-393**: Accessibility support has been added to the main navigation, and the following Solution Manager pages: Job Execution History, Self-Service, Schedule Build, Daily Jobs, Batch Users, Notification Triggers, Master Jobs,  to support WCAG accessibility standards.
 
-:white_check_mark: **OC-15**: Performance enhancements and error resolutions in Pert view.
+:white_check_mark: **OC-15**: Performance enhancements and error resolutions in Pert view where blank page or a timeout error occurred.
 
 :white_check_mark: **OC-8**: Fixed an issue where stopping SMA OpCon Service Manager service from services console, times out and says service did not respond to the start or control request in a timely fashion.
 
