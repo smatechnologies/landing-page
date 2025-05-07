@@ -13,12 +13,13 @@ sidebar_label: "OpCon Pre-release Notes"
 * **Enterprise Manager** - 25.0 
 * **ServiceNow** Connector – 21.4 or higher
 * **WebServices** Connector – 21.2 or higher
-* **Deploy** – 25.0.0 or higher
+* **Deploy** – 25.1.0 or higher
 * **Relay** - 24.3.2 or higher
 
 2025 May
 
 #### Solution Manager
+
 :white_check_mark: **OC-2186**: Added support for OAuth to be used for SMTP, replacing Basic SMTP (Exchange), which will be depricated by Microsoft as of September, to Supported Auth in Notifications
 
 :white_check_mark: **OC-161**: Fixed issue where French translations were not applied on the Execution History view for Daily Jobs.
