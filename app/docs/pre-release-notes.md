@@ -92,7 +92,6 @@ sidebar_label: "OpCon Pre-release Notes"
 
 :white_check_mark: **OC-325**: Updated Deploy and ImpEx2 to include the capability to move RPA tasks between systems.
 
-
 #### RequestRouter
 :white_check_mark: **OC-2760**: Fixed RequestRouter to process schedule build and other requests targeted for it without getting stuck on unprocessed requests targeted for relay agents
 
