@@ -4,8 +4,6 @@ hide_title: 'true'
 title: 'Home'
 ---
 
-## NEW!
-
 [Click Here](sm_vs_em) to view a **Solution Manager** vs **Enterprise Manager** *Side-by-Side Walkthrough*!
 
 ## Recent Releases
