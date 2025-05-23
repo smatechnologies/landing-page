@@ -4,7 +4,7 @@ sidebar_label: "OpCon Pre-release Notes"
 
 # Pre-release Notes
 
-## OpCon 25.1.0
+## OpCon 25.1.1
 
 ## Spring 25
 
@@ -22,6 +22,8 @@ sidebar_label: "OpCon Pre-release Notes"
 
 #### Deploy
 :white_check_mark: **OC-3092**: Fixed a problem when performing script runner match. Removed CommandFormat match, as runner name and platform ID provide the required information.
+
+## OpCon 25.1.0
 
 2025 May
 
