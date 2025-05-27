@@ -4,9 +4,9 @@ sidebar_label: "OpCon Pre-release Notes"
 
 # Pre-release Notes
 
-## OpCon 25.1.1
-
 ## Spring 25
+
+## OpCon 25.1.1
 
 **NOTE**: Verify/Upgrade these components if applicable: 
 
