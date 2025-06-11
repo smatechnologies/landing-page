@@ -46,7 +46,7 @@ On-Prem releases are supported for 3 years from the date of release. Releases th
 
 | Feature Release | Version | General Availability | Anticipated Support Retirement | Release Notes |
 |: --------------- :|: ------- :|: -------------------- :|: ------------------------------ :|: ------------- :|
-| 25.0 LTS | 25.0.2 | 2025-05-12 | 2028-02-28 | [Release Notes](https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2501) |
+| 25.0 LTS | 25.0.2 | 2025-05-12 | 2028-02-28 | [Release Notes](https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2502) |
 | 25.0 LTS | 25.0.1 | 2025-03-31 | 2028-02-28 | [Release Notes](https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2501) |
 | 25.0 LTS | 25.0.0 | 2025-02-28 | 2028-02-28 | [Release Notes](https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2500) |
 | 23.0 LTS | 23.0.9 | 2025-02-03 | 2027-01-29 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2309) |
