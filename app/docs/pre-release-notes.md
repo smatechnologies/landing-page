@@ -4,6 +4,39 @@ sidebar_label: "OpCon Pre-release Notes"
 
 # Pre-release Notes
 
+## 25.1.3
+
+**NOTE**: Verify/Upgrade these components if applicable: 
+
+* **Enterprise Manager** - 25.0 
+* **ServiceNow** Connector – 21.4 or higher
+* **WebServices** Connector – 21.2 or higher
+* **Deploy** – 25.0.0 or higher
+* **Relay** - 25.1.1 or higher
+
+2025 June
+
+#### Relay
+:eight_spoked_asterisk: **OC-3600**: Fixed issue where Machines may be placed offline by NetCom/Relay after an interruption to communication.
+
+## 25.1.1
+
+**NOTE**: Verify/Upgrade these components if applicable: 
+
+* **Enterprise Manager** - 25.0 
+* **ServiceNow** Connector – 21.4 or higher
+* **WebServices** Connector – 21.2 or higher
+* **Deploy** – 25.0.0 or higher
+* **Relay** - 25.1.1 or higher
+
+2025 June
+
+#### Solution Manager
+:eight_spoked_asterisk: **OC-2843**: Added more resilience to scheduling message logic for guaranteed delivery. Also added some extra debug messages at Trace Level 1 to provide us more information in the logs in case the problem recurs in spite of improved logic.
+
+#### Deploy
+:eight_spoked_asterisk: **OC-3092**: Fixed a problem when performing script runner match. Removed CommandFormat match, as runner name and platform ID provide the required information.
+
 ## OpCon 25.1.0
 
 ## Spring 25
