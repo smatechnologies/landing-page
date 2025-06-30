@@ -4,19 +4,16 @@ hide_title: 'true'
 title: 'Home'
 ---
 
-## NEW!
-
 [Click Here](sm_vs_em) to view a **Solution Manager** vs **Enterprise Manager** *Side-by-Side Walkthrough*!
 
 ## Recent Releases
 
 | Release Date | Name | Type | Release Notes |
 |: ------------ :|: ---- :|:-----:|: ------------- :|
-| March 31, 2025 | OpCon Winter 25 | Cloud | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes) |
-| March 31, 2025 | OpCon 25.0.1 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2500) |
-| February 3, 2025 | OpCon 23.0.9 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2309) |
-| January 20, 2025 | OpCon 22.0.19 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes#opcon-22019) |
-
+| May 18, 2025 | OpCon Spring 25 | Cloud | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes) |
+| May 12, 2025 | OpCon 25.0.2 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2502) |
+| May 12, 2025 | OpCon 23.0.10 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-23010) |
+| May 12, 2025 | OpCon 22.0.20 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes#opcon-22020) |
 
 ## OpCon Cloud Releases
 
@@ -49,6 +46,7 @@ On-Prem releases are supported for 3 years from the date of release. Releases th
 
 | Feature Release | Version | General Availability | Anticipated Support Retirement | Release Notes |
 |: --------------- :|: ------- :|: -------------------- :|: ------------------------------ :|: ------------- :|
+| 25.0 LTS | 25.0.2 | 2025-05-12 | 2028-02-28 | [Release Notes](https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2502) |
 | 25.0 LTS | 25.0.1 | 2025-03-31 | 2028-02-28 | [Release Notes](https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2501) |
 | 25.0 LTS | 25.0.0 | 2025-02-28 | 2028-02-28 | [Release Notes](https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2500) |
 | 23.0 LTS | 23.0.9 | 2025-02-03 | 2027-01-29 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2309) |
@@ -92,6 +90,5 @@ On-Prem releases are supported for 3 years from the date of release. Releases th
 | 21.9 STS | 21.9.0 | 2022-11-14 | 2025-11-14 | [Release Notes](opcon-release-notes-21/#opcon-2190) |
 | 21.8 STS | 21.8.0 | 2022-10-03 | 2025-10-03 | [Release Notes](opcon-release-notes-21/#opcon-2180) |
 | 21.6 STS | 21.6.0 | 2022-07-11 | 2025-07-11 | [Release Notes](opcon-release-notes-21/#opcon-2160) |
-| 21.5 STS | 21.5.0 | 2022-05-30 | 2025-05-30 | [Release Notes](opcon-release-notes-21/#opcon-2150) |
 
 

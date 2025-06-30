@@ -47,6 +47,10 @@ https://files.smatechnologies.com/files/OpCon%20Releases/Relay.
 * Requires a Relay *per* OpCon instance.  For example, if you have a production and development instance of OpCon, then you would need to install two (2) relays. As of the Relay 24.3.2 release, multiple instances of Relay can be installed on the same Windows OS. Please see instructions below.
 * When configuring the Agent in OpCon to use Relay (NetComName) and the Relay and Agent are on the same Windows Server machine, you **SHOULD NOT** use `127.0.0.1` as the IP Address.  *Instead you should use the actual name of the server or the actual IP Address of the server*.
 
+### Enabling TLS Communication For OpCon Agents Using Relay
+
+To set up TLS communication for OpCon agents using Relay, follow the existing documentation for the agent (https://help.smatechnologies.com/integrations/) but import the certificates to the Relay server in place of the on-prem OpCon server.
+
 ### Install
 
 1. Download the install file **SMANetComRelay.exe**
@@ -118,6 +122,13 @@ https://files.smatechnologies.com/files/OpCon%20Releases/Relay.
 4. You will see the install dialogue confirm successful remove of the Relay services.
 5. You can now choose to **Exit** the install dialog or just close the window.
 
-### Enabling TLS Communication For OpCon Agents Using Relay
+### Upgrade
 
-To set up TLS communication for OpCon agents using Relay, follow the existing documentation for the agent (https://help.smatechnologies.com/integrations/) but import the certificates to the Relay server in place of the on-prem OpCon server.
+1. Download the new release file **SMANetComRelay.exe**
+2. Click on Start and type "Services" to launch the service manager window
+3. Scroll down the list of services, right-click on "SMA OpCon Relay" and "Stop" the service
+4. Copy **SMANetComRelay.exe** from the download folder and overwrite the file by the same name at "C:\Program Files\OpConxps\Relay" or wherever you chose to install the application
+5. Navigate back to the service manager window opened in Step #2 and right-click on "SMA OpCon Relay" and "Start" the service
+6. Confirm the service is "Running"
+7. Open a web browser and navigate to the Solution Manager UI for the instance using the Relay service that was just updated
+8. Confirm all machines are communicating
