@@ -6,6 +6,21 @@ sidebar_label: "OpCon Pre-release Notes"
 
 ## Spring 25
 
+## 25.1.3
+
+**NOTE**: Verify/Upgrade these components if applicable: 
+
+* **Enterprise Manager** - 25.0 
+* **ServiceNow** Connector – 21.4 or higher
+* **WebServices** Connector – 21.2 or higher
+* **Deploy** – 25.0.0 or higher
+* **Relay** - 25.1.1 or higher
+
+2025 June
+
+#### Relay
+:eight_spoked_asterisk: **OC-3600**: Fixed issue where Machines may be placed offline by NetCom/Relay after an interruption to communication.
+
 ## OpCon 25.1.1
 
 **NOTE**: Verify/Upgrade these components if applicable: 
