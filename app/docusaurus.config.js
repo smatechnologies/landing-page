@@ -809,5 +809,17 @@ module.exports = {
 
       },
     ],
+        [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'ease-acs-docs',
+        path: '../content/smatechnologies/ease-acs-docs/docs',
+        routeBasePath: 'opcon/connectors/ease-acs-docs',
+        sidebarPath: require.resolve('../content/smatechnologies/ease-acs-docs/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/ease-acs-docs/main/blob',
+
+      },
+    ],
 ],
 };
