@@ -821,5 +821,17 @@ module.exports = {
 
       },
     ],
+            [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'asyscoamt-acs-docs',
+        path: '../content/smatechnologies/asyscoamt-acs-docs/docs',
+        routeBasePath: 'opcon/connectors/asyscoamt-acs',
+        sidebarPath: require.resolve('../content/smatechnologies/asyscoamt-acs-docs/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/asyscoamt-acs-docs/main/blob',
+
+      },
+    ],
 ],
 };
