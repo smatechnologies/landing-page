@@ -10,6 +10,7 @@ title: 'Home'
 
 | Release Date | Name | Type | Release Notes |
 |: ------------ :|: ---- :|:-----:|: ------------- :|
+| June 7, 2025 | OpCon Summer 25 | Cloud | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes) |
 | May 18, 2025 | OpCon Spring 25 | Cloud | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes) |
 | May 12, 2025 | OpCon 25.0.2 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2502) |
 | May 12, 2025 | OpCon 23.0.10 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-23010) |
