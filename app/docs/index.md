@@ -90,6 +90,6 @@ On-Prem releases are supported for 3 years from the date of release. Releases th
 | 21.10 STS | 21.10.0 | 2022-12-26 | 2025-12-26 | [Release Notes](opcon-release-notes-21/#opcon-21100) |
 | 21.9 STS | 21.9.0 | 2022-11-14 | 2025-11-14 | [Release Notes](opcon-release-notes-21/#opcon-2190) |
 | 21.8 STS | 21.8.0 | 2022-10-03 | 2025-10-03 | [Release Notes](opcon-release-notes-21/#opcon-2180) |
-| 21.6 STS | 21.6.0 | 2022-07-11 | 2025-07-11 | [Release Notes](opcon-release-notes-21/#opcon-2160) |
+
 
 
