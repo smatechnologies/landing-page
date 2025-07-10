@@ -776,18 +776,6 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'webservices-acs-docs',
-        path: '../content/smatechnologies/webservices-acs-docs/docs',
-        routeBasePath: 'opcon/connectors/webservices-acs',
-        sidebarPath: require.resolve('../content/smatechnologies/webservices-acs-docs/sidebars.js'),
-        editUrl:
-            'https://github.com/smatechnologies/webservices-acs-docs/main/blob',
-
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
         id: 'wsus-connector-docs',
         path: '../content/smatechnologies/wsus-connector-docs/docs',
         routeBasePath: 'opcon/connectors/wsus',
@@ -830,6 +818,18 @@ module.exports = {
         sidebarPath: require.resolve('../content/smatechnologies/asyscoamt-acs-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/asyscoamt-acs-docs/main/blob',
+
+      },
+    ],
+        [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'webservices-acs-docs',
+        path: '../content/smatechnologies/webservices-acs-docs/docs',
+        routeBasePath: 'opcon/connectors/webservices-acs',
+        sidebarPath: require.resolve('../content/smatechnologies/webservices-acs-docs/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/webservices-acs-docs/main/blob',
 
       },
     ],
