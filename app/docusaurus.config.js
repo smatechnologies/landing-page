@@ -2,20 +2,20 @@
 const VersionsArchived = require("./opcon-docs_versionsArchived.json");
 module.exports = {
   title: 'Help',
-  tagline: 'SMA Help',
+  tagline: 'Continuous Help',
   url: 'https://help.smatechnologies.com',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'smatechnologies',
+  favicon: 'img/continuous-favicon.ico',
+  organizationName: 'Continuous',
   projectName: 'help-landing-page',
   themeConfig: {
     navbar: {
 //      title: 'Home',
       logo: {
         alt: 'SMA Technologies Help Logo',
-        src: 'img/smabranding.svg',
+        src: 'img/continuous-logomark-blue.png',
         href: 'https://www.smatechnologies.com',
       },
       items: [

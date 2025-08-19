@@ -21,7 +21,7 @@ title: 'Home'
 
 OpCon Cloud Instances are automatically upgraded on a quarterly basis.
 
-## SMA On-Prem OpCon Product Support Lifecycle
+## Continuous On-Prem OpCon Product Support Lifecycle
 
 #### OpCon Web Installer (OWI)
 
@@ -31,7 +31,7 @@ The OpCon Web Installer (OWI) is a tool designed to make the process of installi
 
 #### On-Prem Release FTP Access
 
-Downloads for available releases outside the scope of the OpCon Web Installer can be found with appropriate credentials through [SMA FTP Files](https://files.smatechnologies.com/files/)
+Downloads for available releases outside the scope of the OpCon Web Installer can be found with appropriate credentials through [Continuous FTP Files](https://files.smatechnologies.com/files/)
 
 #### LTS or Long-Term-Support (Indicated in Table)
 

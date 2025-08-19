@@ -7,7 +7,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #007DB5;;
+  --ifm-color-primary: #0F4bbd;;
   --ifm-color-primary-dark: rgb(33, 175, 144);
   --ifm-color-primary-darker: rgb(31, 165, 136);
   --ifm-color-primary-darkest: rgb(26, 136, 112);
@@ -40,6 +40,6 @@
 }
 
 .button:hover {
-  background-color: #FA4616;
-  color: white;
+  background-color: #FA4716;
+  color: #ffffff;
 }

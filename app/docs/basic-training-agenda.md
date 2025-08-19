@@ -6,7 +6,7 @@ hide_title: true
 
 :::tip Unit One
 
-* Introduction to SMA 
+* Introduction to Continuous 
 * Class Information 
 * Overview of OpCon Workflow 
 * Machines 
