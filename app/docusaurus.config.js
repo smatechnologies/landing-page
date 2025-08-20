@@ -61,12 +61,12 @@ module.exports = {
           items: [
             {
               href: 'https://smatech2.my.site.com/SMASupportPortal',
-              label: 'SMA Support Portal',
+              label: 'Continuous Support Portal',
             },
-            {
-              to: '/opcon/knowledge-base/',
-              label: 'Knowledge Base',
-            },
+//            {
+//              to: '/opcon/knowledge-base/',
+//              label: 'Knowledge Base',
+//            },
           ],
         },
         {
@@ -116,7 +116,7 @@ module.exports = {
           label: 'Contributor Guide',
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} SMA Technologies.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Continuous.`,
     },
   },
   presets: [
