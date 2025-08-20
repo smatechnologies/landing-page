@@ -75,6 +75,11 @@ module.exports = {
           position: 'right',
         },
         {
+          href: 'https://help.smatechnologies.com/opcon/core/api/25-1',
+          label: "REST API",
+          position: 'right',
+        },
+        {
           to: '/',
           label: 'Help',
         },
