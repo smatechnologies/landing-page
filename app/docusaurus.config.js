@@ -16,7 +16,7 @@ module.exports = {
       logo: {
         alt: 'SMA Technologies Help Logo',
         src: 'img/continuous-logomark-blue.png',
-        href: 'https://www.smatechnologies.com',
+        href: 'https://www.continuous.com',
       },
       items: [
         {
