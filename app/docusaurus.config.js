@@ -283,6 +283,18 @@ module.exports = {
 
       },
     ],
+        [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'vc-rpa-training-guide',
+        path: '../content/smatechnologies/vc-rpa-training-guide/docs',
+        routeBasePath: 'training/vc-rpa-training-guide',
+        sidebarPath: require.resolve('../content/smatechnologies/vc-rpa-training-guide/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/vc-rpa-training-guide/main/blob',
+
+      },
+    ],
     [
       '@docusaurus/plugin-content-docs',
       {
