@@ -2,9 +2,11 @@
 hide_title: true
 ---
 
-## Support of Integrations (Agents and Connectors)
+### Support of Integrations (Agents and Connectors)
 
 We support the current version and the previous version (for up to one year after the new version is available). Older versions are not supported. Support means we will assist with issues and verify bugs, but only current version receive patches; previous version is supported for troubleshooting, not fixes.
+
+### Agents and Connectors
 
 <div class="grid-container">
 
