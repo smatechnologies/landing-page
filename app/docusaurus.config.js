@@ -63,10 +63,10 @@ module.exports = {
               href: 'https://smatech2.my.site.com/SMASupportPortal',
               label: 'Continuous Support Portal',
             },
-//            {
-//              to: '/opcon/knowledge-base/',
-//              label: 'Knowledge Base',
-//            },
+            {
+              href: 'https://community.smatechnologies.com/',
+              label: 'Customer Community & Knowledge Base',
+            },
           ],
         },
         {
