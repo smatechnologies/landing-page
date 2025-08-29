@@ -7,7 +7,7 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/continuous-favicon.ico',
+  favicon: 'img/infinity-16x16.png',
   organizationName: 'Continuous',
   projectName: 'help-landing-page',
   themeConfig: {
