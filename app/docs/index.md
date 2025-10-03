@@ -93,7 +93,6 @@ On-Prem releases are supported for 3 years from the date of release. Releases th
 | 22.0 LTS | 22.0.0 | 2023-02-20 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2200) |
 | 21.10 STS | 21.10.0 | 2022-12-26 | 2025-12-26 | [Release Notes](opcon-release-notes-21/#opcon-21100) |
 | 21.9 STS | 21.9.0 | 2022-11-14 | 2025-11-14 | [Release Notes](opcon-release-notes-21/#opcon-2190) |
-| 21.8 STS | 21.8.0 | 2022-10-03 | 2025-10-03 | [Release Notes](opcon-release-notes-21/#opcon-2180) |
 
 
 
