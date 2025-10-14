@@ -286,6 +286,18 @@ module.exports = {
         [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'opcon-rpa-training',
+        path: '../content/smatechnologies/opcon-rpa-training/docs',
+        routeBasePath: 'training/opcon-rpa-training',
+        sidebarPath: require.resolve('../content/smatechnologies/opcon-rpa-training/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/opcon-rpa-training/main/blob',
+
+      },
+    ],
+        [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'vc-rpa-training-guide',
         path: '../content/smatechnologies/vc-rpa-training-guide/docs',
         routeBasePath: 'training/vc-rpa-training-guide',
