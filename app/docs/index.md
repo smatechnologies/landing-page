@@ -10,11 +10,11 @@ title: 'Home'
 
 | Release Date | Name | Type | Release Notes |
 |: ------------ :|: ---- :|:-----:|: ------------- :|
-| October 6, 2025 | OpCon 25.0.4 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2504) |
-| October 6, 2025 | OpCon 23.0.12 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-23012) |
-| October 6, 2025 | OpCon 22.0.22 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes#opcon-22022) |
 | August 7, 2025 | OpCon MFT 3.13.8 | Agent | [Release Notes](https://help.smatechnologies.com/opcon/agents/opconmft/release-notes) |
 | July 31, 2025 | SQL Agent 22.2.0 | Agent | [Release Notes](https://help.smatechnologies.com/opcon/agents/sql/release-notes) |
+| July 14, 2025 | OpCon 25.0.3 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2503) |
+| July 14, 2025 | OpCon 23.0.11 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-23011) |
+| July 14, 2025 | OpCon 22.0.21 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes#opcon-22021) |
 | June 7, 2025 | OpCon Summer 25 | Cloud | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes) |
 
 ## OpCon Cloud Releases
