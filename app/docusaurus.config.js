@@ -319,31 +319,28 @@ module.exports = {
 
       },
     ],
-    [
+        [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'ibm-i-agent-docs',
-        path: '../content/smatechnologies/ibm-i-agent-docs/docs',
-        routeBasePath: 'opcon/agents/ibm-i',
-        sidebarPath: require.resolve('../content/smatechnologies/ibm-i-agent-docs/sidebars.js'),
+        id: 'ibm-i-agent-1801-docs',
+        path: '../content/smatechnologies/ibm-i-agent-1801-docs/docs',
+        routeBasePath: 'opcon/agents/ibm-i-agent-1801/',
+        sidebarPath: require.resolve('../content/smatechnologies/ibm-i-agent-1801-docs/sidebars.js'),
         editUrl:
-            'https://github.com/smatechnologies/ibm-i-agent-docs/main/blob',
-            lastVersion: "current",
-            versions: {
-              current: {
-                label: "21.1",
-              },
-              "21.1": {
-                label: "21.1",
-                path: "v21.1",
-                banner: "none",
-              },
-              "18.1": {
-                label: "18.1",
-                path: "v18.1",
-                banner: "none",
-              },
-            },
+            'https://github.com/smatechnologies/ibm-i-agent-1801-docs/main/blob',
+
+      },
+    ],
+        [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'ibm-i-agent-2101-docs',
+        path: '../content/smatechnologies/ibm-i-agent-2101-docs/docs',
+        routeBasePath: 'opcon/agents/ibm-i-agent-2101/',
+        sidebarPath: require.resolve('../content/smatechnologies/ibm-i-agent-2101-docs/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/ibm-i-agent-2101-docs/main/blob',
+
       },
     ],
     [

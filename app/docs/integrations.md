@@ -83,11 +83,11 @@ We support the current version and the previous version (for up to one year afte
 </div>
 
 <div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/agents/ibm-i/v21.1">IBM I (Version 21.1)</a>
+<a class="button button--link button--block button--primary" href="/opcon/agents/ibm-i-2101">IBM I (Version 21.1)</a>
 </div>
 
 <div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/agents/ibm-i/v18.1">IBM I (Version 18.1)</a>
+<a class="button button--link button--block button--primary" href="/opcon/agents/ibm-i-1801">IBM I (Version 18.1)</a>
 </div>
 
 <div class="grid-item">
