@@ -324,7 +324,7 @@ module.exports = {
       {
         id: 'ibm-i-agent-1801-docs',
         path: '../content/smatechnologies/ibm-i-agent-1801-docs/docs',
-        routeBasePath: 'opcon/agents/ibm-i-agent-1801',
+        routeBasePath: 'opcon/agents/ibm-i-1801',
         sidebarPath: require.resolve('../content/smatechnologies/ibm-i-agent-1801-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/ibm-i-agent-1801-docs/main/blob',
@@ -336,7 +336,7 @@ module.exports = {
       {
         id: 'ibm-i-agent-2101-docs',
         path: '../content/smatechnologies/ibm-i-agent-2101-docs/docs',
-        routeBasePath: 'opcon/agents/ibm-i-agent-2101',
+        routeBasePath: 'opcon/agents/ibm-i-2101',
         sidebarPath: require.resolve('../content/smatechnologies/ibm-i-agent-2101-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/ibm-i-agent-2101-docs/main/blob',
