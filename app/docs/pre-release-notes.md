@@ -13,7 +13,7 @@ sidebar_label: "OpCon Pre-release Notes"
 * **Enterprise Manager** - 25.0 
 * **ServiceNow** Connector – 21.4 or higher
 * **WebServices** Connector – 21.2 or higher
-* **Deploy** – 25.0.0 or higher
+* **Deploy** – 25.3.0 or higher
 * **Relay** - 25.1.1 or higher
 
 2025 November
