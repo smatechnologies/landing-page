@@ -4,6 +4,24 @@ sidebar_label: "OpCon Pre-release Notes"
 
 # Pre-release Notes
 
+## Fall 25 - Fix
+
+#### 25.3.1
+
+**NOTE****: Verify/Upgrade these components if applicable**: 
+
+* **Enterprise Manager** - 25.0 
+* **ServiceNow** Connector – 21.4 or higher
+* **WebServices** Connector – 21.2 or higher
+* **Deploy** – 25.3.0 or higher
+* **Relay** - 25.1.1 or higher
+
+2025 December
+
+#### Server
+
+:white_check_mark: **OC-5355**: Fixed an issue with $JOB:ADD events.
+
 ## Fall 25
 
 #### 25.3.0
