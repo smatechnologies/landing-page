@@ -183,18 +183,18 @@ module.exports = {
 
       },
     ],
-//    [
-//      '@docusaurus/plugin-content-docs',
-//      {
-//        id: 'opcon-basic-training',
-//        path: '../content/smatechnologies/opcon-basic-training/docs',
-//        routeBasePath: 'training/opcon-basic',
-//        sidebarPath: require.resolve('../content/smatechnologies/opcon-basic-training/sidebars.js'),
-//        editUrl:
-//            'https://github.com/smatechnologies/opcon-basic-training/main/blob',
-//
-//      },
-//    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'opcon-basic-training',
+        path: '../content/smatechnologies/opcon-basic-training/docs',
+        routeBasePath: 'training/opcon-basic',
+        sidebarPath: require.resolve('../content/smatechnologies/opcon-basic-training/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/opcon-basic-training/main/blob',
+
+      },
+    ],
     [
       '@docusaurus/plugin-content-docs',
       {
@@ -207,30 +207,30 @@ module.exports = {
 
       },
     ],
-//    [
-//      '@docusaurus/plugin-content-docs',
-//      {
-//        id: 'opcon-advanced-training',
-//        path: '../content/smatechnologies/opcon-advanced-training/docs',
-//        routeBasePath: 'training/opcon-advanced',
-//        sidebarPath: require.resolve('../content/smatechnologies/opcon-advanced-training/sidebars.js'),
-//        editUrl:
-//            'https://github.com/smatechnologies/opcon-advanced-training/main/blob',
-//        
-//      },
-//    ],
-//    [
-//      '@docusaurus/plugin-content-docs',
-//      {
-//        id: 'modular-training',
-//        path: '../content/smatechnologies/modular-training/docs',
-//       routeBasePath: 'training/modular-training',
-//        sidebarPath: require.resolve('../content/smatechnologies/modular-training/sidebars.js'),
-//        editUrl:
-//            'https://github.com/smatechnologies/modular-training/main/blob',
-//
-//      },
-//    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'opcon-advanced-training',
+        path: '../content/smatechnologies/opcon-advanced-training/docs',
+        routeBasePath: 'training/opcon-advanced',
+        sidebarPath: require.resolve('../content/smatechnologies/opcon-advanced-training/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/opcon-advanced-training/main/blob',
+        
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'modular-training',
+        path: '../content/smatechnologies/modular-training/docs',
+       routeBasePath: 'training/modular-training',
+        sidebarPath: require.resolve('../content/smatechnologies/modular-training/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/modular-training/main/blob',
+
+      },
+    ],
     [
       '@docusaurus/plugin-content-docs',
       {
