@@ -19,55 +19,15 @@ module.exports = {
         href: 'https://continuous.com',
       },
       items: [
-        {
-          type: 'dropdown',
-          label: 'Training',
+                 {
+          href: 'https://community.smatechnologies.com/',
+          label: 'Community & Learning',
           position: 'right',
-          items: [
-            {
-              href: 'https://www.smatechnologies.com/training',
-              label: 'Training Registration',
-            },
-            {
-              to: '/basic-training-agenda/',
-              label: 'Basic Training Agenda',
-            },
-            {
-              to: '/training/opcon-basic/',
-              label: 'Basic Training Content',
-            },
-            {
-              to: '/deploy-training-agenda/',
-              label: 'Deploy Training Agenda',
-            },
-            {
-              to: '/training/opcon-deploy',
-              label: 'Deploy Training Content',
-            },
-            {
-              to: '/advanced-training-agenda/',
-              label: 'Advanced Training Agenda',
-            },
-            {
-              to: '/sm_vs_em/',
-              label: 'Solution Manager/Enterprise Manager Side-by-Side',
-            },
-          ],
-        },
+        },   
         {
-          type: 'dropdown',
-          label: 'Customer Service',
+           href: 'https://smatech2.my.site.com/SMASupportPortal',
+          label: 'Support Portal',
           position: 'right',
-          items: [
-            {
-              href: 'https://smatech2.my.site.com/SMASupportPortal',
-              label: 'Continuous Support Portal',
-            },
-            {
-              href: 'https://community.smatechnologies.com/',
-              label: 'Customer Community & Knowledge Base',
-            },
-          ],
         },
         {
           href: 'https://github.com/smatechnologies',
@@ -223,18 +183,18 @@ module.exports = {
 
       },
     ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'opcon-basic-training',
-        path: '../content/smatechnologies/opcon-basic-training/docs',
-        routeBasePath: 'training/opcon-basic',
-        sidebarPath: require.resolve('../content/smatechnologies/opcon-basic-training/sidebars.js'),
-        editUrl:
-            'https://github.com/smatechnologies/opcon-basic-training/main/blob',
-
-      },
-    ],
+//    [
+//      '@docusaurus/plugin-content-docs',
+//      {
+//        id: 'opcon-basic-training',
+//        path: '../content/smatechnologies/opcon-basic-training/docs',
+//        routeBasePath: 'training/opcon-basic',
+//        sidebarPath: require.resolve('../content/smatechnologies/opcon-basic-training/sidebars.js'),
+//        editUrl:
+//            'https://github.com/smatechnologies/opcon-basic-training/main/blob',
+//
+//      },
+//    ],
     [
       '@docusaurus/plugin-content-docs',
       {
@@ -247,18 +207,18 @@ module.exports = {
 
       },
     ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'opcon-advanced-training',
-        path: '../content/smatechnologies/opcon-advanced-training/docs',
-        routeBasePath: 'training/opcon-advanced',
-        sidebarPath: require.resolve('../content/smatechnologies/opcon-advanced-training/sidebars.js'),
-        editUrl:
-            'https://github.com/smatechnologies/opcon-advanced-training/main/blob',
-        
-      },
-    ],
+//    [
+//      '@docusaurus/plugin-content-docs',
+//      {
+//        id: 'opcon-advanced-training',
+//        path: '../content/smatechnologies/opcon-advanced-training/docs',
+//        routeBasePath: 'training/opcon-advanced',
+//        sidebarPath: require.resolve('../content/smatechnologies/opcon-advanced-training/sidebars.js'),
+//        editUrl:
+//            'https://github.com/smatechnologies/opcon-advanced-training/main/blob',
+//        
+//      },
+//    ],
     [
       '@docusaurus/plugin-content-docs',
       {
