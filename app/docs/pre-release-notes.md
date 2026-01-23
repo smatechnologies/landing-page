@@ -4,117 +4,101 @@ sidebar_label: "OpCon Pre-release Notes"
 
 # Pre-release Notes
 
-## Fall 25 - Fix
+## Winter 26
 
-#### 25.3.1
+#### 26.0.0
 
 **NOTE****: Verify/Upgrade these components if applicable**: 
 
-* **Enterprise Manager** - 25.0 
+* **Enterprise Manager** - 26.0 
 * **ServiceNow** Connector – 21.4 or higher
 * **WebServices** Connector – 21.2 or higher
-* **Deploy** – 25.3.0 or higher
+* **Deploy** – 26.0.0 or higher
 * **Relay** - 25.1.1 or higher
 
 2025 December
 
-#### Server
-
-:white_check_mark: **OC-5355**: Fixed an issue with $JOB:ADD events.
-
-## Fall 25
-
-#### 25.3.0
-
-**NOTE****: Verify/Upgrade these components if applicable**: 
-
-* **Enterprise Manager** - 25.0 
-* **ServiceNow** Connector – 21.4 or higher
-* **WebServices** Connector – 21.2 or higher
-* **Deploy** – 25.3.0 or higher
-* **Relay** - 25.1.1 or higher
-
-2025 November
-
 #### Installation
 
-:white_check_mark: **OC-4388**: Fixed an issue where generated BIRT reports were blank due to a missing jtds-1.2.8.jar.
-
-#### Server
-
-:white_check_mark: **OC-3549**: Fixed an issue where SAM allowed empty instance properties when an external event had extraneous semi-colons in the instance property parameter.
-
-:white_check_mark: **OC-4607**: Request Router now handles database connection loss during initialization or request cleanup without halting request processing or flooding logs with repeated errors.
+:white_check_mark: **OC-####**: Coming Soon
 
 #### Solution Manager
 
-:eight_spoked_asterisk: **OC-2081**: OpCon now employs standard password salting and hashing techniques to ensure the secure storage of user passwords. This enhancement allows users to create passwords that exceed the previous 12-character limit, offering greater flexibility and security. However, please note that for backward compatibility, the ImpEx user must continue to use passwords that are 12 characters or fewer to ensure proper functionality.
+:eight_spoked_asterisk: **OC-5902**: Added a reference to SMACommon in order to align ReportingService logging with OpCon conventions.
 
-:eight_spoked_asterisk: **OC-2628**: An Annual Plan By Calendar Dates Report is now available in the Reporting Library. This report shows all defined dates on user-defined calendars.
+:eight_spoked_asterisk: **OC-5867**: Added Encryption for Reporting DB to Rest API in Windows
 
-:eight_spoked_asterisk: **OC-2629**: A Cross Reference Schedules and Jobs Report is now available in the Reporting Library. This report shows all jobs and their associated schedules.
+:eight_spoked_asterisk: **OC-5336**: Upgraded the OpCon core server to use .Net 10 runtime.
 
-:eight_spoked_asterisk: **OC-2630**: A Current Global Properties Report is now available in the Reporting Library. This report shows current values of global properties.
+:eight_spoked_asterisk: **OC-5323**: Added an Audit Table for to capture Report setting changes.
 
-:eight_spoked_asterisk: **OC-2631**: A Current Threshold Values Report is now available in the Reporting Library. This report shows current threshold values and descriptions.
+:eight_spoked_asterisk: **OC-5319**: Made Report logs are visible in Solution Manager for on-prem users.
 
-:eight_spoked_asterisk: **OC-2632**: A Current Resource Values Report is now available in the Reporting Library. This report shows current resource values and descriptions.
+:eight_spoked_asterisk: **OC-5315**: Added Date ranges and columns to various reports.
 
-:eight_spoked_asterisk: **OC-2638**: A Frequencies and Associated Jobs Report is now available in the Reporting Library. This report shows all frequencies and their associated jobs.
+:eight_spoked_asterisk: **OC-5287**: New reporting tab added to the Server Options UI for reporting configuration.
 
-:eight_spoked_asterisk: **OC-3715**: The Job Execution History page has been significantly optimized for faster load times and improved responsiveness.
+:eight_spoked_asterisk: **OC-3212**: 
 
-:white_check_mark: **OC-3020**: Fixed an issue where certain filters did not work when language was set to French.
+:eight_spoked_asterisk: **OC-2515**: In depth refactor of Solution Manager’s branding to align with the new Continuous company brand guidelines.
 
-:white_check_mark: **OC-3610**: Fixed an issue where updating a batch user removed them from the daily job.
+:white_check_mark: **OC-5689**: Fixed issue in Master Jobs Frequency where an "Invalid frequency FinishOkBehavior property found: RecurringInstanceOffsets" error was thrown.
 
-:white_check_mark: **OC-3611**: Fixed an issue where instance properties were removed from the master schedule when the schedule was changed to multi-instance.
+:white_check_mark: **OC-5355**: Fixed an issue with $JOB:ADD events
 
-:white_check_mark: **OC-3639**: Fixed an issue where the URL to fetch daily jobs was longer than allowable by the browser.
+:white_check_mark: **OC-5335**: Fixed an issue where master job cross-references were incorrect when a job's dependency had the same name as another job on the job's own schedule.
 
-:white_check_mark: **OC-3666**: Fixed an issue where migration item value in Service Requests did not display correctly for regex.
+:white_check_mark: **OC-5295**: Fixed an issue where the Machine Groups' page crashes when refreshing with selected ID.
 
-:white_check_mark: **OC-3745**: Fixed an issue where secondary settings for Client Secret (Email and SMS) under Server Options were not cleared when the associated primary setting was deleted.
+:white_check_mark: **OC-5159**: Fixed an issue where the download option in audit history and the schedule job history report only downloads the page you're on so that all subsequent and previous pages are also included in the download.
 
-:white_check_mark: **OC-3779**: Fixed an issue where cross-references were not detected when the job name contained an underscore.
+:white_check_mark: **OC-5086**: Fixed an issue with the notification triggers lookup dialog not closing correctly.
 
-:white_check_mark: **OC-3793**: Fixed an issue where fetching reports timed out and returned an error.
+:white_check_mark: **OC-5063**: Resolved issue where an SSO user is able to reset their password and log back in as a normal user.  We now have a check in place to confirm that credentials entered during the password recovery workflow are not tied to an SSO user account.
 
-:white_check_mark: **OC-3962**: Fixed an issue where machine cross-references was empty.
+:white_check_mark: **OC-5043**: Fixed issue where the "or" operator is not respected when filtering.
 
-:white_check_mark: **OC-3981**: Fixed an issue where the agent's properties were not visible when the agent was communicating.
+:white_check_mark: **OC-4991**: Fixed UI issue where the column order is not retained in the grid when an action on the page is taken.
 
-:white_check_mark: **OC-4145**: Fixed an issue where the schedule name was not filled in when adding a job from the Studio page.
+:white_check_mark: **OC-4756**: Fixed issue in Solution Manager where positive and negative numbers should be considered valid MCP Arguments.
 
-:white_check_mark: **OC-4625**: Fixed an issue on the Master Jobs page where a "Job not found" error appeared after a job was renamed and the user navigated back using the browser’s back button.
+:white_check_mark: **OC-4673**: Fixed issue where the getfrequency by name query wildcards caused problems in Solution Manager.
 
-:white_check_mark: **OC-4653**: Fetching job execution history from the Master Jobs page now returns the correct job history.
+:white_check_mark: **OC-4542**: Fixed an issue in Studio where if a user edits an existing job, the node coordinates for that job node resets back to 0,0.
 
-:white_check_mark: **OC-4812**: Fixed an issue where OpCon roles were missing in SSO group mappings.
+:white_check_mark: **OC-4541**: Fixed validation Error in Studio when clicking and dragging lines in Studio to create dependencies.
 
-:white_check_mark: **OC-4998**: Added proper error handling for cases where a job cannot be found and introduced a loading state while job details are being fetched.
+:white_check_mark: **OC-4537**: CTRL+F now correctly triggers the Script Editor's internal find functionality regardless of Caps Lock status, allowing users to search within their scripts as expected.
 
-:white_check_mark: **OC-5000**: Resolved an issue in the Vision Health dashboard where graphs failed to display on initial load.
+:white_check_mark: **OC-4365**: Fixed the lag between selecting a new job and using the buttons, where during that lag the buttons still retrieve the previously selected job.
+
+:white_check_mark: **OC-4140**: Fixed issue where jobs disappear in Studio but are visible in the mini-map.
+
+#### Netcom/Relay
+:eight_spoked_asterisk: **OC-5885**: 
+* Corrected message deletion logic to use actual minimum and maximum message IDs instead of first/last from result sets
+* Added message ID tracking for debugging
+* Prevents deletion of messages that were never read or newly inserted during processing
+* Enhanced socket resource cleanup exception
+* Ensured reconnection attempts continue even if socket cleanup fails
+* Properly schedules reconnection timers after send failures
+* Automatically deletes stale TX2 messages on SMANetCom startup
+* Deletes TX2 messages for specific agents when they reconnect
+* Prevents processing of duplicate messages that accumulated during downtime
+* Added Message Buildup Monitor, a wew monitoring system that automatically detects when messages are accumulating in the database or queues.
+* Monitors message counts per agent in the MSGS_TO_NETCOM table
+* Monitors in-memory queue sizes per agent
+* Automatically triggers connection resets when buildup is detected
+* Configuration: The monitor can be configured via INI file parameters.
+* Enhanced Message Tracking and Debugging
+* Added detailed logging of message IDs during read and delete operations
+* Improved visibility into which messages are processed
+* Easier troubleshooting of message loss scenarios
 
 #### REST API
 
-:white_check_mark: **OC-45**: Fixed an issue where &lt;reqparams&gt; values were missing in the API request which caused "Output not found" in Solution Manager when viewing SAP BW or SQL job output.
-
-:white_check_mark: **OC-2883**: The api/jobHistories endpoint now returns only the matching jobs when both "scheduleId" and "jobName" are specified.
-
-:white_check_mark: **OC-4261**: Resolved an issue where heavy REST API usage could exhaust the SQL connection pool, causing Solution Manager to become unresponsive. 
-
-#### ImpEx2 Web Service
-
-:white_check_mark: **OC-1906**:
-* Fixed a problem during Schedule Import using Deploy when schedule instance properties are merged if Deploy rule 'Update Schedule Instance Properties Allowed' is not selected.
-* Implemented additional Deploy rule 'Merge Schedule Instance properties'. By default, no changes are made to Schedule Instance properties.
-* If Deploy rule 'Update Schedule Instance Properties Allowed' is not selected and Deploy rule 'Merge Schedule Instance properties' is selected the schedule instance properties will be merged.
-
-:white_check_mark: **OC-3092**: Fixed a problem when performing script runner match. Removed CommandFormat match as runner name and platform id provide the required information.
-
-:white_check_mark: **OC-3683**: Fixed a problem when retrieving batch user definition from the database and the batch user name contains a special character ([,.).
+:white_check_mark: **OC-4593**: Addressed a Logs endpoint path traversal vulnerability.
 
 #### Documentation
 
-:white_check_mark: **OC-3902**: Corrected API Swagger documentation for api/propertyExpression.
+:open_file_folder: **OC-5089**: Updated the API documentation for the Job Histories endpoints.
