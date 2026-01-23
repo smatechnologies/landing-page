@@ -38,7 +38,7 @@ sidebar_label: "OpCon Pre-release Notes"
 
 :eight_spoked_asterisk: **OC-5287**: New reporting tab added to the Server Options UI for reporting configuration.
 
-:eight_spoked_asterisk: **OC-3212**: 
+:eight_spoked_asterisk: **OC-3212**: Added Comparative Job Execution Statistics report to reporting library. 
 
 :eight_spoked_asterisk: **OC-2515**: In depth refactor of Solution Manager’s branding to align with the new Continuous company brand guidelines.
 
