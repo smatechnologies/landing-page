@@ -26,15 +26,15 @@ sidebar_label: "OpCon Pre-release Notes"
 
 :eight_spoked_asterisk: **OC-5902**: Added a reference to SMACommon in order to align ReportingService logging with OpCon conventions.
 
-:eight_spoked_asterisk: **OC-5867**: Added Encryption for Reporting DB to Rest API in Windows
+:eight_spoked_asterisk: **OC-5867**: Added Encryption for Reporting DB to Rest API in Windows.
 
 :eight_spoked_asterisk: **OC-5336**: Upgraded the OpCon core server to use .Net 10 runtime.
 
-:eight_spoked_asterisk: **OC-5323**: Added an Audit Table for to capture Report setting changes.
+:eight_spoked_asterisk: **OC-5323**: Added an Audit Table to capture Report setting changes.
 
-:eight_spoked_asterisk: **OC-5319**: Made Report logs are visible in Solution Manager for on-prem users.
+:eight_spoked_asterisk: **OC-5319**: Made Report logs visible in Solution Manager for on-prem users.
 
-:eight_spoked_asterisk: **OC-5315**: Added Date ranges and columns to various reports.
+:eight_spoked_asterisk: **OC-5315**: Added date ranges and columns to various reports.
 
 :eight_spoked_asterisk: **OC-5287**: New reporting tab added to the Server Options UI for reporting configuration.
 
@@ -54,17 +54,17 @@ sidebar_label: "OpCon Pre-release Notes"
 
 :white_check_mark: **OC-5086**: Fixed an issue with the notification triggers lookup dialog not closing correctly.
 
-:white_check_mark: **OC-5063**: Resolved issue where an SSO user is able to reset their password and log back in as a normal user.  We now have a check in place to confirm that credentials entered during the password recovery workflow are not tied to an SSO user account.
+:white_check_mark: **OC-5063**: Resolved an issue where an SSO user is able to reset their password and log back in as a normal user.  We now have a check in place to confirm that credentials entered during the password recovery workflow are not tied to an SSO user account.
 
 :white_check_mark: **OC-5043**: Fixed issue where the "or" operator is not respected when filtering.
 
-:white_check_mark: **OC-4991**: Fixed UI issue where the column order is not retained in the grid when an action on the page is taken.
+:white_check_mark: **OC-4991**: Fixed UI issue where the column order is not retained in reports' grids when an action on the page is taken.
 
-:white_check_mark: **OC-4756**: Fixed issue in Solution Manager where positive and negative numbers should be considered valid MCP Arguments.
+:white_check_mark: **OC-4756**: Fixed an issue in Solution Manager where positive and negative numbers should be considered valid MCP Arguments.
 
-:white_check_mark: **OC-4673**: Fixed issue where the getfrequency by name query wildcards caused problems in Solution Manager.
+:white_check_mark: **OC-4673**: Fixed an issue where the getfrequency by name query wildcards caused problems in Solution Manager.
 
-:white_check_mark: **OC-4542**: Fixed an issue in Studio where if a user edits an existing job, the node coordinates for that job node resets back to 0,0.
+:white_check_mark: **OC-4542**: Fixed an issue in Studio when a user edits an existing job, the node coordinates for that job node resets back to 0,0.
 
 :white_check_mark: **OC-4541**: Fixed validation Error in Studio when clicking and dragging lines in Studio to create dependencies.
 
