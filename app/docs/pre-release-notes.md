@@ -16,7 +16,7 @@ sidebar_label: "OpCon Pre-release Notes"
 * **Deploy** – 26.0.0 or higher
 * **Relay** - 25.1.1 or higher
 
-2025 December
+2026 February
 
 #### Installation
 
