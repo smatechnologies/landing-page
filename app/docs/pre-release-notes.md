@@ -18,10 +18,6 @@ sidebar_label: "OpCon Pre-release Notes"
 
 2026 February
 
-#### Installation
-
-:white_check_mark: **OC-####**: Coming Soon
-
 #### Solution Manager
 
 :eight_spoked_asterisk: **OC-5902**: Added a reference to SMACommon in order to align ReportingService logging with OpCon conventions.
