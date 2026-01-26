@@ -18,83 +18,131 @@ sidebar_label: "OpCon Pre-release Notes"
 
 2026 February
 
-#### Solution Manager
+# OpCon Release 26 -- What's New
 
-:eight_spoked_asterisk: **OC-5902**: Added a reference to SMACommon in order to align ReportingService logging with OpCon conventions.
+Summary
 
-:eight_spoked_asterisk: **OC-5867**: Added Encryption for Reporting DB to Rest API in Windows.
+Release 26 focuses on **better visibility, stronger reliability, and a more unified user experience** while ensuring existing automations continue to run without disruption.
 
-:eight_spoked_asterisk: **OC-5336**: Upgraded the OpCon core server to use .Net 10 runtime.
+## Reporting & Audit Enhancements
 
-:eight_spoked_asterisk: **OC-5323**: Added an Audit Table to capture Report setting changes.
+### What's New
 
-:eight_spoked_asterisk: **OC-5319**: Made Report logs visible in Solution Manager for on-prem users.
+:eight_spoked_asterisk: **OC-5315, OC-3212: Expanded Reporting Capabilities**  
+New reports and enhancements provide deeper insight into system activity and performance, helping teams monitor operations more effectively.
 
-:eight_spoked_asterisk: **OC-5315**: Added date ranges and columns to various reports.
+:eight_spoked_asterisk: **OC-3212: Comparative Job Execution Statistics Report**  
+A new report enables side‑by‑side analysis of job execution statistics to identify trends and performance changes over time.
 
-:eight_spoked_asterisk: **OC-5287**: New reporting tab added to the Server Options UI for reporting configuration.
+:eight_spoked_asterisk: **OC-5315: Improved Date Filtering & Report Layouts**  
+Reports now support clearer date ranges and additional columns, making it easier to filter and analyze results.
 
-:eight_spoked_asterisk: **OC-3212**: Added Comparative Job Execution Statistics report to reporting library. 
+:eight_spoked_asterisk: **OC-5319: Direct Access to Report Logs**  
+Report logs are now visible directly within Solution Manager for on‑prem customers, improving troubleshooting and transparency.
 
-:eight_spoked_asterisk: **OC-2515**: In depth refactor of Solution Manager’s branding to align with the new Continuous company brand guidelines.
+:eight_spoked_asterisk: **OC-5323: Tracked Changes to Report Settings**  
+All report configuration changes are now recorded in an audit table, providing greater visibility and auditability.
 
-:white_check_mark: **OC-5689**: Fixed issue in Master Jobs Frequency where an "Invalid frequency FinishOkBehavior property found: RecurringInstanceOffsets" error was thrown.
+:eight_spoked_asterisk: **OC-5287: New Reporting Configuration UI**  
+A dedicated Reporting tab has been added to Server Options, centralizing reporting configuration in one place.
 
-:white_check_mark: **OC-5355**: Fixed an issue with $JOB:ADD events
+:eight_spoked_asterisk: **OC-5867: Improved Reporting Security**  
+Reporting database connections exposed through the REST API on Windows now support encryption for stronger data protection.
 
-:white_check_mark: **OC-5335**: Fixed an issue where master job cross-references were incorrect when a job's dependency had the same name as another job on the job's own schedule.
+### Why This Matters
 
-:white_check_mark: **OC-5295**: Fixed an issue where the Machine Groups' page crashes when refreshing with selected ID.
+Customers gain clearer insight into automation performance, better auditability, and faster issue resolution without manual data extraction or external tooling.
 
-:white_check_mark: **OC-5159**: Fixed an issue where the download option in audit history and the schedule job history report only downloads the page you're on so that all subsequent and previous pages are also included in the download.
+## Solution Manager Improvements
 
-:white_check_mark: **OC-5086**: Fixed an issue with the notification triggers lookup dialog not closing correctly.
+### What's New
 
-:white_check_mark: **OC-5063**: Resolved an issue where an SSO user is able to reset their password and log back in as a normal user.  We now have a check in place to confirm that credentials entered during the password recovery workflow are not tied to an SSO user account.
+:eight_spoked_asterisk: **OC-5336: Updated Runtime for Core Server**  
+The OpCon core server has been upgraded to run on the latest .NET 10 runtime, improving performance, stability, and long‑term supportability.
 
-:white_check_mark: **OC-5043**: Fixed issue where the "or" operator is not respected when filtering.
+:eight_spoked_asterisk: **OC-5902: Enhanced Logging Alignment**  
+ReportingService logging now aligns with standard OpCon conventions, improving consistency and simplifying diagnostics.
 
-:white_check_mark: **OC-4991**: Fixed UI issue where the column order is not retained in reports' grids when an action on the page is taken.
+**Visibility Improvements Across Reports**  
+Column ordering is retained during report interactions; filters now adhere to industry standard best practices for ease of use, and downloads now include all pages, not just the current view.
 
-:white_check_mark: **OC-4756**: Fixed an issue in Solution Manager where positive and negative numbers should be considered valid MCP Arguments.
+### Why This Matters
 
-:white_check_mark: **OC-4673**: Fixed an issue where the getfrequency by name query wildcards caused problems in Solution Manager.
+These updates improve reliability and reduce friction when monitoring and managing automation at scale.
 
-:white_check_mark: **OC-4542**: Fixed an issue in Studio when a user edits an existing job, the node coordinates for that job node resets back to 0,0.
+## Studio & Workflow Builder Usability Fixes
 
-:white_check_mark: **OC-4541**: Fixed validation Error in Studio when clicking and dragging lines in Studio to create dependencies.
+### What's New
 
-:white_check_mark: **OC-4537**: CTRL+F now correctly triggers the Script Editor's internal find functionality regardless of Caps Lock status, allowing users to search within their scripts as expected.
+:eight_spoked_asterisk: **OC-5902: Improved Job Editing Experience**  
+Editing existing jobs no longer resets node positions, preserving workflow layouts.
 
-:white_check_mark: **OC-4365**: Fixed the lag between selecting a new job and using the buttons, where during that lag the buttons still retrieve the previously selected job.
+:white_check_mark: **OC-4541: More Reliable Dependency Creation**  
+Validation errors when creating dependencies via drag‑and‑drop have been resolved.
 
-:white_check_mark: **OC-4140**: Fixed issue where jobs disappear in Studio but are visible in the mini-map.
+:white_check_mark: **OC-4140: Improved Workflow Navigation**  
+Issues where jobs disappeared from the canvas but remained visible in the mini‑map have been fixed.
 
-#### Netcom/Relay
-:eight_spoked_asterisk: **OC-5885**: 
-* Corrected message deletion logic to use actual minimum and maximum message IDs instead of first/last from result sets
-* Added message ID tracking for debugging
-* Prevents deletion of messages that were never read or newly inserted during processing
-* Enhanced socket resource cleanup exception
-* Ensured reconnection attempts continue even if socket cleanup fails
-* Properly schedules reconnection timers after send failures
-* Automatically deletes stale TX2 messages on SMANetCom startup
-* Deletes TX2 messages for specific agents when they reconnect
-* Prevents processing of duplicate messages that accumulated during downtime
-* Added Message Buildup Monitor, a wew monitoring system that automatically detects when messages are accumulating in the database or queues.
-* Monitors message counts per agent in the MSGS_TO_NETCOM table
-* Monitors in-memory queue sizes per agent
-* Automatically triggers connection resets when buildup is detected
-* Configuration: The monitor can be configured via INI file parameters.
-* Enhanced Message Tracking and Debugging
-* Added detailed logging of message IDs during read and delete operations
-* Improved visibility into which messages are processed
-* Easier troubleshooting of message loss scenarios
+:white_check_mark: **OC-4365: Faster, More Predictable Interactions**  
+Lag between job selection and toolbar actions has been eliminated, ensuring actions always apply to the correct job.
 
-#### REST API
+:white_check_mark: **OC-4537: Enhanced Script Editor Search**  
+CTRL+F now reliably opens the script editor's internal search, regardless of Caps Lock status.
 
-:white_check_mark: **OC-4593**: Addressed a Logs endpoint path traversal vulnerability.
+### Why This Matters
 
-#### Documentation
+Workflow creation and maintenance is faster, more predictable, and less error‑prone, especially for complex job flows.
 
-:open_file_folder: **OC-5089**: Updated the API documentation for the Job Histories endpoints.
+## NetCom / Relay Reliability & Monitoring
+
+### What's New
+
+:eight_spoked_asterisk: **OC-5885: Smarter Message Cleanup & Processing**  
+Message deletion logic has been corrected to use true message ID boundaries, preventing accidental deletion of unread or newly inserted messages.
+
+:eight_spoked_asterisk: **OC-5885: Automatic Cleanup of Stale Messages**  
+Stale TX2 messages are automatically removed on startup and when agents reconnect, reducing backlog issues.
+
+:eight_spoked_asterisk: **OC-5885: Duplicate Message Prevention**  
+Duplicate messages that accumulated during downtime are now detected and skipped.
+
+:eight_spoked_asterisk: **OC-5885: New Message Buildup Monitor**  
+A new monitoring system automatically detects when messages accumulate in the database or in‑memory queues.
+
+:eight_spoked_asterisk: **OC-5885: Automatic Recovery Actions**  
+When buildup is detected, connections are automatically reset to restore normal processing.
+
+:eight_spoked_asterisk: **OC-5885: Enhanced Debugging & Visibility**  
+Detailed message ID logging improves troubleshooting and visibility into message flow and processing.
+
+### Why This Matters
+
+Customers benefit from improved resilience, faster recovery from network issues, and significantly reduced risk of message backlog or loss.
+
+## Security & API Updates
+
+### What's New
+
+:white_check_mark: **OC-4593: REST API Security Hardening**  
+A path traversal vulnerability in the Logs endpoint has been addressed, strengthening overall API security.
+
+:open_file_folder: **OC-5089: Updated API Documentation**  
+Job History API documentation has been updated to reflect current behavior and improve developer usability.
+
+### Why This Matters
+
+These changes improve security posture while making integrations easier to build and maintain.
+
+## Unified Branding & Modernized Experience
+
+### What's New
+
+:eight_spoked_asterisk: **OC-2515: Consistent OpCon Branding**  
+Solution Manager has been visually updated to align with the broader OpCon and Continuous brand guidelines.
+
+**Standardized Layouts & Interactions**  
+Features now follow consistent visual and interaction patterns, improving usability and reducing cognitive load.
+
+### Why This Matters
+
+A cleaner, more consistent experience makes OpCon easier to learn, faster to use, and more intuitive across teams.
