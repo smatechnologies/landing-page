@@ -6,7 +6,7 @@ sidebar_label: "OpCon Pre-release Notes"
 
 ## Winter 26
 
-#### 26.0.0
+#### 26.0.1
 
 **NOTE****: Verify/Upgrade these components if applicable**: 
 
@@ -56,6 +56,9 @@ Customers gain clearer insight into automation performance, better auditability,
 ## Solution Manager Improvements
 
 ### What's New
+
+:eight_spoked_asterisk: **OC-5051: Updated Deploy Server Log and ImpEx2 Log**  
+Deploy server logs and ImpEx2 logs (now renamed to SMAImpEx2.log) are now visible in the Solution Manager Logs page, improving consistency and simplifying diagnostics.
 
 :eight_spoked_asterisk: **OC-5336: Updated Runtime for Core Server**  
 The OpCon core server has been upgraded to run on the latest .NET 10 runtime, improving performance, stability, and long‑term supportability.
