@@ -10,9 +10,9 @@ title: 'Home'
 
 | Release Date | Name | Type | Release Notes |
 |: ------------ :|: ---- :|:-----:|: ------------- :|
+| February 17, 2026 | OpCon Winter 26 | Cloud | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes) |
 | February 17, 2026 | OpCon 22.0.23 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes#opcon-22023) |
 | February 9, 2026 | OpCon 25.0.5 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2505) |
-| December 22, 2025 | OpCon Fall 25 | Cloud | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes) |
 | August 7, 2025 | OpCon MFT 3.13.8 | Agent | [Release Notes](https://help.smatechnologies.com/opcon/agents/opconmft/release-notes) |
 | July 31, 2025 | SQL Agent 22.2.0 | Agent | [Release Notes](https://help.smatechnologies.com/opcon/agents/sql/release-notes) |
 | July 14, 2025 | OpCon 23.0.11 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-23011) |
