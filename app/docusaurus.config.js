@@ -819,5 +819,17 @@ module.exports = {
 
       },
     ],
+            [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'acs-kubernetes-docs',
+        path: '../content/smatechnologies/webservices-acs-docs/docs',
+        routeBasePath: 'opcon/connectors/acs-kubernetes',
+        sidebarPath: require.resolve('../content/smatechnologies/acs-kubernetes-docs/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/acs-kubernetes-docs/main/blob',
+
+      },
+    ],
 ],
 };
