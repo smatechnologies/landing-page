@@ -823,7 +823,7 @@ module.exports = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'acs-kubernetes-docs',
-        path: '../content/smatechnologies/webservices-acs-docs/docs',
+        path: '../content/smatechnologies/acs-kubernetes-docs/docs',
         routeBasePath: 'opcon/connectors/acs-kubernetes',
         sidebarPath: require.resolve('../content/smatechnologies/acs-kubernetes-docs/sidebars.js'),
         editUrl:
