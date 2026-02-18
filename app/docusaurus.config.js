@@ -123,6 +123,11 @@ module.exports = {
         versions: {
           current: {
             label: "OpCon",
+          },
+          "26.0": {
+            label: "OpCon 26.0 (On-Prem)",
+            path: "v26.0",
+            banner: "none",
           },   
           "25.0": {
             label: "OpCon 25.0 (On-Prem)",
@@ -137,11 +142,6 @@ module.exports = {
           "22.0": {
             label: "OpCon 22.0 (On-Prem)",
             path: "v22.0",
-            banner: "none",
-          },
-          "21.0": {
-            label: "OpCon 21.0 (On-Prem)",
-            path: "v21.0",
             banner: "none",
           },
         },
