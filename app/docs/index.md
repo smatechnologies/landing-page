@@ -9,12 +9,14 @@ title: 'Home'
 
 | Release Date | Name | Type | Release Notes |
 |: ------------ :|: ---- :|:-----:|: ------------- :|
+| February 20, 2026 | OpConMFT 3.13.9 | Agent | [Release Notes](https://help.smatechnologies.com/opcon/agents/opconmft/release-notes) |
 | February 18, 2026 | OpCon 23.0.13 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-23013) |
 | February 17, 2026 | OpCon Winter 26 | Cloud | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes) |
 | February 17, 2026 | OpCon 22.0.23 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes#opcon-22023) |
+| February 10, 2026 | Windows Agent 25.0.0 | Agent | [Release Notes](https://help.smatechnologies.com/opcon/agents/windows/release-notes) |
 | February 9, 2026 | OpCon 25.0.5 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2505) |
-| August 7, 2025 | OpCon MFT 3.13.8 | Agent | [Release Notes](https://help.smatechnologies.com/opcon/agents/opconmft/release-notes) |
-| July 31, 2025 | SQL Agent 22.2.0 | Agent | [Release Notes](https://help.smatechnologies.com/opcon/agents/sql/release-notes) |
+| February 2, 2026 | OpCon Deploy 26.0 | Deploy | [Release Notes](https://help.smatechnologies.com/opcon/deploy/release-notes#version-2600) |
+| January 27, 2026 | Corelation Connector 26.0 | Connector | [Release Notes](https://help.smatechnologies.com/opcon/connectors/corelation/release-notes) |
 
 ## OpCon Cloud Releases
 
@@ -45,51 +47,136 @@ Multiple releases throughout the year. STS Releases include both new features an
 On-Prem releases are supported for 3 years from the date of release. Releases that are no longer supported will not receive patches and technical support will be limited.
 
 
-| Feature Release | Version | General Availability | Anticipated Support Retirement | Release Notes |
-|: --------------- :|: ------- :|: -------------------- :|: ------------------------------ :|: ------------- :|
-| 25.0 LTS | 25.0.3 | 2025-07-14 | 2028-02-28 | [Release Notes](https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2503) |
-| 25.0 LTS | 25.0.2 | 2025-05-12 | 2028-02-28 | [Release Notes](https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2502) |
-| 25.0 LTS | 25.0.1 | 2025-03-31 | 2028-02-28 | [Release Notes](https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2501) |
-| 25.0 LTS | 25.0.0 | 2025-02-28 | 2028-02-28 | [Release Notes](https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2500) |
-| 23.0 LTS | 23.0.11 | 2025-07-14 | 2027-01-29 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2311) |
-| 23.0 LTS | 23.0.9 | 2025-02-03 | 2027-01-29 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2309) |
-| 23.0 LTS | 23.0.8 | 2025-01-22 | 2027-01-29 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2308) |
-| 23.0 LTS | 23.0.7 | 2024-11-25 | 2027-01-29 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2307) |
-| 23.0 LTS | 23.0.6 | 2024-10-21 | 2027-01-29 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2306) |
-| 23.0 LTS | 23.0.5 | 2024-08-03 | 2027-01-29 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2305) |
-| 23.0 LTS | 23.0.4 | 2024-07-31 | 2027-01-29 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2304) |
-| 23.0 LTS | 23.0.3 | 2024-05-13 | 2027-01-29 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2303) |
-| 23.0 LTS | 23.0.1 | 2024-03-04 | 2027-01-29 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2301) |
-| 23.0 LTS | 23.0.0 | 2024-01-29 | 2027-01-29 | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2300) |
-| 22.10 STS | 22.10.0 | 2023-11-13 | 2026-11-13 | [Release Notes](opcon-release-notes-22/#opcon-22100) |
-| 22.9 STS | 22.9.0 | 2023-10-16 | 2026-10-16 | [Release Notes](opcon-release-notes-22#opcon-2290) |
-| 22.8 STS | 22.8.0 | 2023-09-18 | 2026-09-18 | [Release Notes](opcon-release-notes-22/#opcon-2280) |
-| 22.7 STS | 22.7.0 | 2023-08-21 | 2026-08-21 | [Release Notes](opcon-release-notes-22/#opcon-2270) |
-| 22.6 STS | 22.6.0 | 2023-07-24 | 2026-07-24 | [Release Notes](opcon-release-notes-22#opcon-2260) |
-| 22.5 STS | 22.5.0 | 2023-06-26 | 2026-06-26 | [Release Notes](opcon-release-notes-22/#opcon-2250) |
-| 22.4 STS | 22.4.0 | 2023-05-29 | 2026-05-29 | [Release Notes](opcon-release-notes-22/#opcon-2240) |
-| 22.3 STS | 22.3.1 | 2023-05-02 | 2026-05-02 | [Release Notes](opcon-release-notes-22/#opcon-2231) |
-| 22.2 STS | 22.2.0 | 2023-04-03 | 2026-04-03 | [Release Notes](opcon-release-notes-22/#opcon-2220) |
-| 22.1 STS | 22.1.0 | 2023-03-06 | 2026-03-06 | [Release Notes](opcon-release-notes-22/#opcon-2210) |
-| 22.0 LTS | 22.0.21 | 2025-07-14 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22021) |
-| 22.0 LTS | 22.0.19 | 2025-01-22 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22019) |
-| 22.0 LTS | 22.0.17 | 2024-10-21 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22017) |
-| 22.0 LTS | 22.0.16 | 2024-07-31 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22016) |
-| 22.0 LTS | 22.0.15 | 2024-05-14 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22015) |
-| 22.0 LTS | 22.0.13 | 2024-03-04 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22013) |
-| 22.0 LTS | 22.0.12 | 2024-01-15 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22012) |
-| 22.0 LTS | 22.0.11 | 2023-12-18 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22011) |
-| 22.0 LTS | 22.0.10 | 2023-10-27 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22010) |
-| 22.0 LTS | 22.0.9 | 2023-10-23 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2209) |
-| 22.0 LTS | 22.0.8 | 2023-09-25 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2208) |
-| 22.0 LTS | 22.0.7 | 2023-08-28 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2207) |
-| 22.0 LTS | 22.0.6 | 2023-07-31 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2206) |
-| 22.0 LTS | 22.0.5 | 2023-07-03 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2205) |
-| 22.0 LTS | 22.0.4 | 2023-06-05 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2204) |
-| 22.0 LTS | 22.0.3 | 2023-05-08 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2203) |
-| 22.0 LTS | 22.0.2 | 2023-04-10 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2202) |
-| 22.0 LTS | 22.0.1 | 2023-03-13 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2201) |
-| 22.0 LTS | 22.0.0 | 2023-02-20 | 2026-02-20 | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2200) |
+<table>
+<thead>
+<tr>
+<th style={{textAlign: 'center'}}>Feature Release</th>
+<th style={{textAlign: 'center'}}>Version</th>
+<th style={{textAlign: 'center'}}>General Availability</th>
+<th style={{textAlign: 'center'}}>Anticipated Support Retirement</th>
+<th style={{textAlign: 'center'}}>Release Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style={{textAlign: 'center'}}>26.0 LTS</td>
+<td style={{textAlign: 'center'}}>26.0.1</td>
+<td style={{textAlign: 'center'}}>2026-02-17</td>
+<td style={{textAlign: 'center'}}>2028-02-28</td>
+<td style={{textAlign: 'center'}}><a href="https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2503">Release Notes</a></td>
+</tr>
+<tr>
+<td style={{textAlign: 'center'}}>25.0 LTS</td>
+<td style={{textAlign: 'center'}}>25.0.5</td>
+<td style={{textAlign: 'center'}}>2026-02-09</td>
+<td style={{textAlign: 'center'}}>2028-02-28</td>
+<td style={{textAlign: 'center'}}><a href="https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2503">Release Notes</a></td>
+</tr>
+<tr>
+<td colspan="5" style={{padding: '10px'}}>
+<details>
+<summary><strong>This release is a continuation of the below release versions</strong></summary>
+<ul>
+<li><strong>25.0.3</strong> | 2025-07-14 | <a href="https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2503">Release Notes</a></li>
+<li><strong>25.0.2</strong> | 2025-05-12 | <a href="https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2502">Release Notes</a></li>
+<li><strong>25.0.1</strong> | 2025-03-31 | <a href="https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2501">Release Notes</a></li>
+<li><strong>25.0.0</strong> | 2025-02-28 | <a href="https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2500">Release Notes</a></li>
+</ul>
+</details>
+</td>
+</tr>
+<tr>
+<td style={{textAlign: 'center'}}>23.0 LTS</td>
+<td style={{textAlign: 'center'}}>23.0.13</td>
+<td style={{textAlign: 'center'}}>2026-02-26</td>
+<td style={{textAlign: 'center'}}>2027-01-29</td>
+<td style={{textAlign: 'center'}}><a href="https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2313">Release Notes</a></td>
+</tr>
+<tr>
+<td colspan="5" style={{padding: '10px'}}>
+<details>
+<summary><strong>This release is a continuation of the below release versions</strong></summary>
+<ul>
+<li><strong>23.0.11</strong> | 2025-07-14 | <a href="https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2311">Release Notes</a></li>
+<li><strong>23.0.10</strong> | 2025-05-01 | <a href="https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2310">Release Notes</a></li>
+<li><strong>23.0.9</strong> | 2025-02-03 | <a href="https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2309">Release Notes</a></li>
+<li><strong>23.0.8</strong> | 2025-01-22 | <a href="https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2308">Release Notes</a></li>
+<li><strong>23.0.7</strong> | 2024-11-25 | <a href="https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2307">Release Notes</a></li>
+<li><strong>23.0.6</strong> | 2024-10-21 | <a href="https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2306">Release Notes</a></li>
+<li><strong>23.0.5</strong> | 2024-08-03 | <a href="https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2305">Release Notes</a></li>
+<li><strong>23.0.4</strong> | 2024-07-31 | <a href="https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2304">Release Notes</a></li>
+<li><strong>23.0.3</strong> | 2024-05-13 | <a href="https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2303">Release Notes</a></li>
+<li><strong>23.0.1</strong> | 2024-03-04 | <a href="https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2301">Release Notes</a></li>
+<li><strong>23.0.0</strong> | 2024-01-29 | <a href="https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2300">Release Notes</a></li>
+</ul>
+</details>
+</td>
+</tr>
+<tr>
+<td style={{textAlign: 'center'}}>22.0 LTS</td>
+<td style={{textAlign: 'center'}}>22.0.23</td>
+<td style={{textAlign: 'center'}}>2026-02-17</td>
+<td style={{textAlign: 'center'}}>2026-02-20</td>
+<td style={{textAlign: 'center'}}><a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22023">Release Notes</a></td>
+</tr>
+<tr>
+<td colspan="5" style={{padding: '10px'}}>
+<details>
+<summary><strong>This release is a continuation of the below release versions</strong></summary>
+<ul>
+<li><strong>22.0.21</strong> | 2025-07-14 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22021">Release Notes</a></li>
+<li><strong>22.0.20</strong> | 2025-05-01 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22020">Release Notes</a></li>
+<li><strong>22.0.19</strong> | 2025-01-22 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22019">Release Notes</a></li>
+<li><strong>22.0.18</strong> | 2024-11-01 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22018">Release Notes</a></li>
+<li><strong>22.0.17</strong> | 2024-10-21 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22017">Release Notes</a></li>
+<li><strong>22.0.16</strong> | 2024-07-31 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22016">Release Notes</a></li>
+<li><strong>22.0.15</strong> | 2024-05-14 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22015">Release Notes</a></li>
+<li><strong>22.0.14</strong> | 2024-04-01 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22014">Release Notes</a></li>
+<li><strong>22.0.13</strong> | 2024-03-04 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22013">Release Notes</a></li>
+<li><strong>22.0.12</strong> | 2024-01-15 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22012">Release Notes</a></li>
+<li><strong>22.0.11</strong> | 2023-12-18 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22011">Release Notes</a></li>
+<li><strong>22.0.10</strong> | 2023-10-27 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22010">Release Notes</a></li>
+<li><strong>22.0.9</strong> | 2023-10-23 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2209">Release Notes</a></li>
+<li><strong>22.0.8</strong> | 2023-09-25 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2208">Release Notes</a></li>
+<li><strong>22.0.7</strong> | 2023-08-28 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2207">Release Notes</a></li>
+<li><strong>22.0.6</strong> | 2023-07-31 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2206">Release Notes</a></li>
+<li><strong>22.0.5</strong> | 2023-07-03 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2205">Release Notes</a></li>
+<li><strong>22.0.4</strong> | 2023-06-05 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2204">Release Notes</a></li>
+<li><strong>22.0.3</strong> | 2023-05-08 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2203">Release Notes</a></li>
+<li><strong>22.0.2</strong> | 2023-04-10 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2202">Release Notes</a></li>
+<li><strong>22.0.1</strong> | 2023-03-13 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2201">Release Notes</a></li>
+<li><strong>22.0.0</strong> | 2023-02-20 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2200">Release Notes</a></li>
+</ul>
+</details>
+</td>
+</tr>
+<tr>
+<td style={{textAlign: 'center'}}>22.10 STS</td>
+<td style={{textAlign: 'center'}}>22.10.0</td>
+<td style={{textAlign: 'center'}}>2023-11-13</td>
+<td style={{textAlign: 'center'}}>2026-11-13</td>
+<td style={{textAlign: 'center'}}><a href="opcon-release-notes-22/#opcon-22100">Release Notes</a></td>
+</tr>
+<tr>
+<td colspan="5" style={{padding: '10px'}}>
+<details>
+<summary><strong>This release is the last STS release in the series below</strong></summary>
+<ul>
+<li><strong>22.9 STS (22.9.0)</strong> | 2023-10-16 | <a href="opcon-release-notes-22#opcon-2290">Release Notes</a></li>
+<li><strong>22.8 STS (22.8.0)</strong> | 2023-09-18 | <a href="opcon-release-notes-22/#opcon-2280">Release Notes</a></li>
+<li><strong>22.7 STS (22.7.0)</strong> | 2023-08-21 | <a href="opcon-release-notes-22/#opcon-2270">Release Notes</a></li>
+<li><strong>22.6 STS (22.6.0)</strong> | 2023-07-24 | <a href="opcon-release-notes-22#opcon-2260">Release Notes</a></li>
+<li><strong>22.5 STS (22.5.0)</strong> | 2023-06-26 | <a href="opcon-release-notes-22/#opcon-2250">Release Notes</a></li>
+<li><strong>22.4 STS (22.4.0)</strong> | 2023-05-29 | <a href="opcon-release-notes-22/#opcon-2240">Release Notes</a></li>
+<li><strong>22.3 STS (22.3.1)</strong> | 2023-05-02 | <a href="opcon-release-notes-22/#opcon-2231">Release Notes</a></li>
+<li><strong>22.2 STS (22.2.0)</strong> | 2023-04-03 | <a href="opcon-release-notes-22/#opcon-2220">Release Notes</a></li>
+<li><strong>22.1 STS (22.1.0)</strong> | 2023-03-06 | <a href="opcon-release-notes-22/#opcon-2210">Release Notes</a></li>
+</ul>
+</details>
+</td>
+</tr>
+</tbody>
+</table>
 
 
 
