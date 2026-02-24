@@ -11,6 +11,7 @@ title: 'Home'
 |: ------------ :|: ---- :|:-----:|: ------------- :|
 | February 18, 2026 | OpCon 23.0.13 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-23013) |
 | February 17, 2026 | OpCon Winter 26 | Cloud | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes) |
+| February 17, 2026 | OpCon 26.0.1 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v26.0/release-notes#opcon-2600) |
 | February 17, 2026 | OpCon 22.0.23 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes#opcon-22023) |
 | February 9, 2026 | OpCon 25.0.5 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2505) |
 | August 7, 2025 | OpCon MFT 3.13.8 | Agent | [Release Notes](https://help.smatechnologies.com/opcon/agents/opconmft/release-notes) |
