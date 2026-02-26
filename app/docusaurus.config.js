@@ -106,8 +106,38 @@ module.exports = {
   ],
   plugins: [
     [
-      require.resolve('@cmfcmf/docusaurus-search-local'),
+      require.resolve("@easyops-cn/docusaurus-search-local"),
       {
+        // Hashed search index for better performance
+        hashed: true,
+
+        // Language support
+        language: ["en"],
+
+        // Highlight search terms on target page
+        highlightSearchTermsOnTargetPage: true,
+
+        // Show explicit search result paths
+        explicitSearchResultPath: true,
+
+        // Index configuration
+        indexDocs: true,
+        indexBlog: false,
+        indexPages: true,
+
+        // Search across all doc plugin IDs
+        docsPluginIdForPreferredVersion: "opcon-docs",
+
+        // Improve search relevance
+        searchBarShortcutHint: true,
+        searchBarPosition: "right",
+
+        // Context and result limits
+        searchResultLimits: 8,
+        searchResultContextMaxLength: 50,
+
+        // Remove search bar from specific paths if needed
+        ignoreFiles: [],
       }
     ],
     [
