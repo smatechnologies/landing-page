@@ -117,8 +117,11 @@ module.exports = {
         // Highlight search terms on target page
         highlightSearchTermsOnTargetPage: true,
 
-        // Show explicit search result paths
+        // ENHANCED: Show full explicit paths with clear section labels
         explicitSearchResultPath: true,
+
+        // ENHANCED: Use breadcrumbs for clearer navigation context
+        useAllContextsWithNoSearchContext: true,
 
         // Index configuration
         indexDocs: true,
@@ -128,13 +131,13 @@ module.exports = {
         // Search across all doc plugin IDs
         docsPluginIdForPreferredVersion: "opcon-docs",
 
-        // Improve search relevance
+        // ENHANCED: Improve search relevance and display
         searchBarShortcutHint: true,
         searchBarPosition: "right",
 
-        // Context and result limits
+        // ENHANCED: Show more context for better clarity (doubled from 50 to 100)
         searchResultLimits: 8,
-        searchResultContextMaxLength: 50,
+        searchResultContextMaxLength: 100,
 
         // Remove search bar from specific paths if needed
         ignoreFiles: [],
