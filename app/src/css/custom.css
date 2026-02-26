@@ -201,8 +201,8 @@
   font-size: 0.85rem;
   padding: 0.15em 0.4em;
   border-radius: 4px;
-  background-color: var(--ifm-color-emphasis-100);
-  color: var(--ifm-color-primary-darkest);
+  background-color: #000;
+  color: #fff;
 }
 
 /* Fenced code blocks */
@@ -211,6 +211,13 @@
   line-height: 1.55;
   border-radius: 6px;
   margin-bottom: 1.25rem;
+  background-color: #000;
+}
+
+/* Code inside fenced blocks - override syntax highlighting colors */
+.markdown pre code,
+.markdown pre code * {
+  color: #fff !important;
 }
 
 /* ── Breadcrumbs ──────────────────────────────────────────────────────────── */
