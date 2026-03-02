@@ -128,8 +128,13 @@ module.exports = {
         indexBlog: false,
         indexPages: true,
 
-        // Search across all doc plugin IDs
+        // PRIORITY: Prefer "current" (cloud) version in search results
         docsPluginIdForPreferredVersion: "opcon-docs",
+
+        // PRIORITY: Search context - prioritize current version paths
+        searchContextByPaths: [
+          "/opcon/core/",  // Current version (no version prefix) = highest priority
+        ],
 
         // ENHANCED: Improve search relevance and display
         searchBarShortcutHint: true,
