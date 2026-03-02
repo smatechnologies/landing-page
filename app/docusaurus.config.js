@@ -231,18 +231,6 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'opcon-deploy-training',
-        path: '../content/smatechnologies/opcon-deploy-training/docs',
-        routeBasePath: 'training/opcon-deploy',
-        sidebarPath: require.resolve('../content/smatechnologies/opcon-deploy-training/sidebars.js'),
-        editUrl:
-            'https://github.com/smatechnologies/opcon-deploy-training/main/blob',
-
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
         id: 'opcon-advanced-training',
         path: '../content/smatechnologies/opcon-advanced-training/docs',
         routeBasePath: 'training/opcon-advanced',
