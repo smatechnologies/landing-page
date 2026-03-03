@@ -833,7 +833,7 @@ module.exports = {
 
       },
     ],
-            [
+        [
       '@docusaurus/plugin-content-docs',
       {
         id: 'acs-kubernetes-docs',
@@ -842,6 +842,18 @@ module.exports = {
         sidebarPath: require.resolve('../content/smatechnologies/acs-kubernetes-docs/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/acs-kubernetes-docs/main/blob',
+
+      },
+    ],
+        [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'acs-fiservdna-docs',
+        path: '../content/smatechnologies/acs-fiservdna-docs/docs',
+        routeBasePath: 'opcon/connectors/acs-fiservdna',
+        sidebarPath: require.resolve('../content/smatechnologies/acs-fiservdna-docs/sidebars.js'),
+        editUrl:
+            'https://github.com/smatechnologies/acs-fiservdna-docs/main/blob',
 
       },
     ],
