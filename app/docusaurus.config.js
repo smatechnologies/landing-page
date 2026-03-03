@@ -144,7 +144,7 @@ module.exports = {
         searchResultLimits: 8,
         searchResultContextMaxLength: 100,
 
-        // Remove search bar from specific paths if needed
+        // Allow all versions in search, rely on prioritization settings
         ignoreFiles: [],
       }
     ],
@@ -845,17 +845,17 @@ module.exports = {
 
       },
     ],
-        [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'acs-fiservdna-docs',
-        path: '../content/smatechnologies/acs-fiservdna-docs/docs',
-        routeBasePath: 'opcon/connectors/acs-fiservdna',
-        sidebarPath: require.resolve('../content/smatechnologies/acs-fiservdna-docs/sidebars.js'),
-        editUrl:
-            'https://github.com/smatechnologies/acs-fiservdna-docs/main/blob',
-
-      },
-    ],
+     [
+       '@docusaurus/plugin-content-docs',
+       {
+       id: 'acs-fiservdna-docs',
+         path: '../content/smatechnologies/acs-fiservdna-docs/docs',
+         routeBasePath: 'opcon/connectors/acs-fiservdna',
+         sidebarPath: require.resolve('../content/smatechnologies/acs-fiservdna-docs/sidebars.js'),
+         editUrl:
+             'https://github.com/smatechnologies/acs-fiservdna-docs/main/blob',
+    
+       },
+     ],
 ],
 };
