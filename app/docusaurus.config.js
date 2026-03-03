@@ -129,9 +129,11 @@ module.exports = {
         indexPages: true,
 
         // PRIORITY: Prefer "current" (cloud) version in search results
+        // This prioritizes the opcon-docs plugin's current version over older versions
         docsPluginIdForPreferredVersion: "opcon-docs",
 
         // PRIORITY: Search context - prioritize current version paths
+        // Results from /opcon/core/ (current) are ranked higher than /opcon/core/v*.0/
         searchContextByPaths: [
           "/opcon/core/",  // Current version (no version prefix) = highest priority
         ],
@@ -140,9 +142,9 @@ module.exports = {
         searchBarShortcutHint: true,
         searchBarPosition: "right",
 
-        // ENHANCED: Show more context for better clarity and increased result count
-        searchResultLimits: 10,
-        searchResultContextMaxLength: 150,
+        // ENHANCED: Limit to 5 most relevant results with expanded context
+        searchResultLimits: 5,
+        searchResultContextMaxLength: 200,
 
         // Allow all versions in search, rely on prioritization settings
         ignoreFiles: [],
