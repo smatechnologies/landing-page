@@ -140,9 +140,9 @@ module.exports = {
         searchBarShortcutHint: true,
         searchBarPosition: "right",
 
-        // ENHANCED: Show more context for better clarity (doubled from 50 to 100)
-        searchResultLimits: 8,
-        searchResultContextMaxLength: 100,
+        // ENHANCED: Show more context for better clarity and increased result count
+        searchResultLimits: 10,
+        searchResultContextMaxLength: 150,
 
         // Allow all versions in search, rely on prioritization settings
         ignoreFiles: [],
