@@ -321,3 +321,53 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* ── Search Results Enhancements ──────────────────────────────────────────── */
+
+/* Make search result path/breadcrumbs more prominent and visible */
+.search-result-breadcrumbs,
+.search-result-path {
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  color: var(--ifm-color-primary) !important;
+  background-color: var(--ifm-color-emphasis-100) !important;
+  padding: 0.25rem 0.5rem !important;
+  border-radius: 4px !important;
+  margin-bottom: 0.35rem !important;
+  display: block !important;
+  line-height: 1.4 !important;
+}
+
+/* Search result title */
+.search-result-title {
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 0.25rem !important;
+}
+
+/* Search result context/preview text */
+.search-result-match {
+  font-size: 0.875rem !important;
+  line-height: 1.5 !important;
+  color: var(--ifm-color-emphasis-700) !important;
+}
+
+/* Highlight current version results with a subtle accent */
+.search-result-item[data-version="current"] .search-result-breadcrumbs,
+.search-result-item[data-path*="/opcon/core/"] .search-result-breadcrumbs:not([data-path*="/v26.0/"]):not([data-path*="/v25.0/"]):not([data-path*="/v23.0/"]):not([data-path*="/v22.0/"]) {
+  border-left: 3px solid var(--ifm-color-primary) !important;
+  padding-left: 0.75rem !important;
+}
+
+/* Star icon for current version - make it stand out */
+.search-result-breadcrumbs:contains("⭐") {
+  font-weight: 700 !important;
+}
+
+/* Search result container spacing */
+.search-result-item {
+  padding: 0.85rem !important;
+  margin-bottom: 0.5rem !important;
+  border: 1px solid var(--ifm-color-emphasis-300) !important;
+  border-radius: 6px !important;
+}
