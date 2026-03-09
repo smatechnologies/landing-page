@@ -226,18 +226,6 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'opcon-basic-training',
-        path: '../content/smatechnologies/opcon-basic-training/docs',
-        routeBasePath: 'training/opcon-basic',
-        sidebarPath: require.resolve('../content/smatechnologies/opcon-basic-training/sidebars.js'),
-        editUrl:
-            'https://github.com/smatechnologies/opcon-basic-training/main/blob',
-
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
         id: 'modular-training',
         path: '../content/smatechnologies/modular-training/docs',
        routeBasePath: 'training/modular-training',
@@ -256,18 +244,6 @@ module.exports = {
         sidebarPath: require.resolve('../content/smatechnologies/opcon-mft-training/sidebars.js'),
         editUrl:
             'https://github.com/smatechnologies/opcon-mft-training/main/blob',
-
-      },
-    ],
-        [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'opcon-rpa-training',
-        path: '../content/smatechnologies/opcon-rpa-training/docs',
-        routeBasePath: 'training/opcon-rpa-training',
-        sidebarPath: require.resolve('../content/smatechnologies/opcon-rpa-training/sidebars.js'),
-        editUrl:
-            'https://github.com/smatechnologies/opcon-rpa-training/main/blob',
 
       },
     ],
@@ -856,6 +832,18 @@ module.exports = {
          sidebarPath: require.resolve('../content/smatechnologies/acs-fiservdna-docs/sidebars.js'),
          editUrl:
              'https://github.com/smatechnologies/acs-fiservdna-docs/main/blob',
+    
+       },
+     ],
+          [
+       '@docusaurus/plugin-content-docs',
+       {
+       id: 'informatica-onprem-acs-docs',
+         path: '../content/smatechnologies/informatica-onprem-acs-docs/docs',
+         routeBasePath: 'opcon/connectors/informatica-onprem-acs',
+         sidebarPath: require.resolve('../content/smatechnologies/informatica-onprem-acs-docs/sidebars.js'),
+         editUrl:
+             'https://github.com/smatechnologies/informatica-onprem-acs-docs/main/blob',
     
        },
      ],
