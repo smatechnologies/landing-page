@@ -226,18 +226,6 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'modular-training',
-        path: '../content/smatechnologies/modular-training/docs',
-       routeBasePath: 'training/modular-training',
-        sidebarPath: require.resolve('../content/smatechnologies/modular-training/sidebars.js'),
-        editUrl:
-            'https://github.com/smatechnologies/modular-training/main/blob',
-
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
         id: 'opcon-mft-training',
         path: '../content/smatechnologies/opcon-mft-training/docs',
         routeBasePath: 'training/opcon-mft-training',
