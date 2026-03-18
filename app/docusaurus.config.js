@@ -10,6 +10,18 @@ module.exports = {
   favicon: 'img/favicon.png',
   organizationName: 'Continuous',
   projectName: 'help-landing-page',
+  // OpenSearch: allows browsers to use this site as a built-in search engine
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'search',
+        type: 'application/opensearchdescription+xml',
+        title: 'SMA Technologies Help',
+        href: '/opensearch.xml',
+      },
+    },
+  ],
   themeConfig: {
     navbar: {
 //      title: 'Home',
@@ -146,8 +158,16 @@ module.exports = {
         searchResultLimits: 5,
         searchResultContextMaxLength: 200,
 
-        // Allow all versions in search, rely on prioritization settings
-        ignoreFiles: [],
+        // Exclude low-value content to reduce noise in search results:
+        // - Contributor guide (internal authoring docs)
+        // - Training modules (video-based, low text content)
+        // - Oldest archived versions (v22.0, v23.0) — still accessible via URL but not indexed
+        ignoreFiles: [
+          /opcon\/contributor-guide/,
+          /training\//,
+          /opcon\/core\/v22\.0/,
+          /opcon\/core\/v23\.0/,
+        ],
       }
     ],
     [

@@ -25,6 +25,7 @@ import {
 import LoadingRing from "@easyops-cn/docusaurus-search-local/dist/client/client/theme/LoadingRing/LoadingRing";
 import styles from "./SearchBar.module.css";
 import { normalizeContextByPath } from "@easyops-cn/docusaurus-search-local/dist/client/client/utils/normalizeContextByPath";
+import { expandSynonyms, addRecentSearch } from "./searchConstants";
 
 async function fetchAutoCompleteJS() {
     const autoCompleteModule = await import("@easyops-cn/autocomplete.js");
@@ -78,11 +79,10 @@ export default function SearchBar({ handleSearchBarToggle }) {
     const search = useRef(null);
     const prevSearchContext = useRef("");
     const [searchContext, setSearchContext] = useState("");
+    const [focused, setFocused] = useState(false);
 
     useEffect(() => {
-        if (!Array.isArray(searchContextByPaths)) {
-            return;
-        }
+        if (!Array.isArray(searchContextByPaths)) return;
         let nextSearchContext = "";
         if (location.pathname.startsWith(versionUrl)) {
             const uri = location.pathname.substring(versionUrl.length);
@@ -94,9 +94,7 @@ export default function SearchBar({ handleSearchBarToggle }) {
                     break;
                 }
             }
-            if (matchedPath) {
-                nextSearchContext = matchedPath;
-            }
+            if (matchedPath) nextSearchContext = matchedPath;
         }
         if (prevSearchContext.current !== nextSearchContext) {
             indexStateMap.current.delete(nextSearchContext);
@@ -111,9 +109,7 @@ export default function SearchBar({ handleSearchBarToggle }) {
         searchContext === "";
 
     const loadIndex = useCallback(async () => {
-        if (hidden || indexStateMap.current.get(searchContext)) {
-            return;
-        }
+        if (hidden || indexStateMap.current.get(searchContext)) return;
         indexStateMap.current.set(searchContext, "loading");
         search.current?.autocomplete.destroy();
         setLoading(true);
@@ -122,6 +118,12 @@ export default function SearchBar({ handleSearchBarToggle }) {
             fetchIndexes(versionUrl, searchContext),
             fetchAutoCompleteJS(),
         ]);
+
+        // Wrap SearchSourceFactory with synonym expansion
+        const baseSource = SearchSourceFactory(wrappedIndexes, zhDictionary, searchResultLimits);
+        const sourceWithSynonyms = (query, callback) => {
+            baseSource(expandSynonyms(query), callback);
+        };
 
         const searchFooterLinkElement = ({ query, isEmpty }) => {
             const a = document.createElement("a");
@@ -154,7 +156,6 @@ export default function SearchBar({ handleSearchBarToggle }) {
             } else {
                 linkText = translate({ id: "theme.SearchBar.seeAll", message: "See all results" });
             }
-
             if (
                 searchContext &&
                 Array.isArray(searchContextByPaths) &&
@@ -164,13 +165,10 @@ export default function SearchBar({ handleSearchBarToggle }) {
             }
             if (versionUrl !== baseUrl) {
                 if (!versionUrl.startsWith(baseUrl)) {
-                    throw new Error(
-                        `Version url '${versionUrl}' does not start with base url '${baseUrl}'.`
-                    );
+                    throw new Error(`Version url '${versionUrl}' does not start with base url '${baseUrl}'.`);
                 }
                 params.set("version", versionUrl.substring(baseUrl.length));
             }
-
             const url = `${baseUrl}search?${params.toString()}`;
             a.href = url;
             a.textContent = linkText;
@@ -207,14 +205,12 @@ export default function SearchBar({ handleSearchBarToggle }) {
             },
             [
                 {
-                    source: SearchSourceFactory(wrappedIndexes, zhDictionary, searchResultLimits),
+                    source: sourceWithSynonyms,
                     templates: {
                         suggestion: SuggestionTemplate,
                         empty: EmptyTemplate,
                         footer: ({ query, isEmpty }) => {
-                            if (isEmpty && (!searchContext || !useAllContextsWithNoSearchContext)) {
-                                return;
-                            }
+                            if (isEmpty && (!searchContext || !useAllContextsWithNoSearchContext)) return;
                             const a = searchFooterLinkElement({ query, isEmpty });
                             const div = document.createElement("div");
                             div.className = styles.hitFooter;
@@ -227,17 +223,22 @@ export default function SearchBar({ handleSearchBarToggle }) {
         )
             .on("autocomplete:selected", function (event, { document: { u, h }, tokens }) {
                 searchBarRef.current?.blur();
+
+                // Save to recent searches and fire GA event
+                const query = searchBarRef.current?.value || inputValue;
+                addRecentSearch(query);
+                window.gtag?.("event", "search_result_click", {
+                    search_term: query,
+                    result_url: u,
+                });
+
                 let url = u;
                 if (Mark && tokens.length > 0) {
                     const params = new URLSearchParams();
-                    for (const token of tokens) {
-                        params.append(SEARCH_PARAM_HIGHLIGHT, token);
-                    }
+                    for (const token of tokens) params.append(SEARCH_PARAM_HIGHLIGHT, token);
                     url += `?${params.toString()}`;
                 }
-                if (h) {
-                    url += h;
-                }
+                if (h) url += h;
                 history.push(url);
             })
             .on("autocomplete:closed", () => {
@@ -249,36 +250,34 @@ export default function SearchBar({ handleSearchBarToggle }) {
 
         if (focusAfterIndexLoaded.current) {
             const input = searchBarRef.current;
-            if (input.value) {
-                search.current?.autocomplete.open();
-            }
+            if (input.value) search.current?.autocomplete.open();
             input.focus();
         }
     }, [hidden, searchContext, versionUrl, baseUrl, history]);
 
+    // On-page keyword highlighting — excluding code blocks
     useEffect(() => {
-        if (!Mark) {
-            return;
-        }
+        if (!Mark) return;
         const keywords = isBrowser
             ? new URLSearchParams(location.search).getAll(SEARCH_PARAM_HIGHLIGHT)
             : [];
         setTimeout(() => {
             const root = document.querySelector("article");
-            if (!root) {
-                return;
-            }
+            if (!root) return;
             const mark = new Mark(root);
             mark.unmark();
             if (keywords.length !== 0) {
-                mark.mark(keywords);
+                mark.mark(keywords, {
+                    // Skip code blocks — highlighted terms are hard to read on dark backgrounds
+                    exclude: ["pre *", "code *"],
+                    separateWordSearch: false,
+                    acrossElements: false,
+                });
             }
             setInputValue(keywords.join(" "));
             search.current?.autocomplete.setVal(keywords.join(" "));
         });
     }, [isBrowser, location.search, location.pathname]);
-
-    const [focused, setFocused] = useState(false);
 
     const onInputFocus = useCallback(() => {
         focusAfterIndexLoaded.current = true;
@@ -298,9 +297,7 @@ export default function SearchBar({ handleSearchBarToggle }) {
 
     const onInputChange = useCallback((event) => {
         setInputValue(event.target.value);
-        if (event.target.value) {
-            setInputChanged(true);
-        }
+        if (event.target.value) setInputChanged(true);
     }, []);
 
     const isMac = isBrowser
@@ -308,9 +305,7 @@ export default function SearchBar({ handleSearchBarToggle }) {
         : false;
 
     useEffect(() => {
-        if (!searchBarShortcut) {
-            return;
-        }
+        if (!searchBarShortcut) return;
         const handleShortcut = (event) => {
             if (
                 (isMac ? event.metaKey : event.ctrlKey) &&
@@ -322,9 +317,7 @@ export default function SearchBar({ handleSearchBarToggle }) {
             }
         };
         document.addEventListener("keydown", handleShortcut);
-        return () => {
-            document.removeEventListener("keydown", handleShortcut);
-        };
+        return () => document.removeEventListener("keydown", handleShortcut);
     }, [isMac, onInputFocus]);
 
     const onClearSearch = useCallback(() => {

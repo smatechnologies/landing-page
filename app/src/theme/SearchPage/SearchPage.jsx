@@ -99,12 +99,14 @@ const FILTER_SECTIONS = [
 function FilterPills({ activeFilter, counts, onSelect }) {
     return (
         <div className="search-filter-pills">
-            {FILTER_SECTIONS.map(({ key, label }) => {
+            {FILTER_SECTIONS.map(({ key, label }, idx) => {
                 const count = key === "all" ? counts.total : (counts[key] ?? 0);
                 if (key !== "all" && count === 0) return null;
                 return (
                     <button
                         key={key}
+                        data-key={idx + 1}
+                        title={`Keyboard shortcut: press ${idx + 1}`}
                         className={clsx("search-filter-pill", {
                             "search-filter-pill--active": activeFilter === key,
                             "search-filter-pill--current": key === "opcon-current",
@@ -150,7 +152,7 @@ function SearchPageContent() {
         [searchQuery]
     );
 
-    // Run search when query or source changes
+    // Run search when query or source changes; fire GA event
     useEffect(() => {
         updateSearchPath(searchQuery);
         if (searchSource) {
@@ -158,6 +160,8 @@ function SearchPageContent() {
                 searchSource(searchQuery, (results) => {
                     setRawResults(sortResults(results));
                     setActiveFilter("all");
+                    // Analytics: track search queries on the full search page
+                    window.gtag?.("event", "search", { search_term: searchQuery });
                 });
             } else {
                 setRawResults(undefined);
@@ -187,7 +191,7 @@ function SearchPageContent() {
         doFetchIndexes();
     }, [searchContext, versionUrl]);
 
-    // Compute per-section counts and filtered list
+    // Compute per-section counts and filtered list (must come before keyboard shortcut effect)
     const { filteredResults, counts } = useMemo(() => {
         if (!rawResults) return { filteredResults: undefined, counts: {} };
 
@@ -203,6 +207,21 @@ function SearchPageContent() {
 
         return { filteredResults: filtered, counts: countMap };
     }, [rawResults, activeFilter]);
+
+    // Keyboard shortcuts: press 1–6 to activate the corresponding filter pill
+    useEffect(() => {
+        const handleKey = (e) => {
+            if (e.target.tagName === "INPUT" || e.target.tagName === "SELECT") return;
+            const idx = parseInt(e.key, 10) - 1;
+            if (idx >= 0 && idx < FILTER_SECTIONS.length) {
+                const section = FILTER_SECTIONS[idx];
+                const count = section.key === "all" ? (rawResults?.length ?? 0) : (counts?.[section.key] ?? 0);
+                if (section.key === "all" || count > 0) setActiveFilter(section.key);
+            }
+        };
+        document.addEventListener("keydown", handleKey);
+        return () => document.removeEventListener("keydown", handleKey);
+    }, [rawResults, counts]);
 
     return (
         <React.Fragment>
