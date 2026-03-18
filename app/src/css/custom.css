@@ -372,3 +372,78 @@
   background-color: rgba(255, 255, 255, 0.35);
   border-color: rgba(255, 255, 255, 0.5);
 }
+
+/* ── Search Page — Filter Pills ───────────────────────────────────────────── */
+
+.search-filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 1.25rem;
+}
+
+.search-filter-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.search-filter-pill:hover {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.search-filter-pill--active {
+  background-color: var(--ifm-color-emphasis-200);
+  border-color: var(--ifm-color-emphasis-400);
+  font-weight: 600;
+}
+
+/* "OpCon · Current" pill gets branded styling when active */
+.search-filter-pill--current.search-filter-pill--active {
+  background-color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary-dark);
+  color: #fff;
+}
+
+.search-filter-count {
+  display: inline-block;
+  background-color: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-700);
+  border-radius: 10px;
+  padding: 0 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  min-width: 20px;
+  text-align: center;
+}
+
+.search-filter-pill--active .search-filter-count {
+  background-color: var(--ifm-color-emphasis-300);
+}
+
+.search-filter-pill--current.search-filter-pill--active .search-filter-count {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+/* ── Search Page — Result article meta row ────────────────────────────────── */
+
+.search-result-article-meta {
+  margin-bottom: 4px;
+}
+
+.search-results-count {
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.88rem;
+  margin-bottom: 0.75rem;
+}
