@@ -322,6 +322,43 @@
   }
 }
 
+/* ── Navbar responsive overflow fix ──────────────────────────────────────────
+   Docusaurus's hamburger menu activates at ≤996px. With many navbar items the
+   bar overflows at intermediate widths. Each item gets its own breakpoint so
+   they disappear one-by-one as the window narrows ("priority nav" pattern).
+   All items remain accessible in the hamburger sidebar at ≤996px.
+
+   Hide order as viewport shrinks:
+     1480px — Innovation Lab
+     1380px — REST API
+     1260px — Relay
+     1140px — Deploy
+      996px — hamburger takes over (built-in Docusaurus behaviour)
+*/
+
+/* Prevent items from wrapping onto a second row; keep overflow visible so
+   dropdown menus can extend below the navbar. */
+.navbar__inner {
+  flex-wrap: nowrap;
+  overflow: visible;
+}
+
+@media screen and (max-width: 1480px) {
+  .navbar-hide-1480 { display: none !important; }
+}
+
+@media screen and (max-width: 1380px) {
+  .navbar-hide-1380 { display: none !important; }
+}
+
+@media screen and (max-width: 1260px) {
+  .navbar-hide-1260 { display: none !important; }
+}
+
+@media screen and (max-width: 1140px) {
+  .navbar-hide-1140 { display: none !important; }
+}
+
 /* ── Search Results Enhancements ──────────────────────────────────────────── */
 
 /* Allow suggestions to grow taller to accommodate the badge + path line */

@@ -45,11 +45,13 @@ module.exports = {
           href: 'https://github.com/smatechnologies',
           label: 'Innovation Lab',
           position: 'right',
+          className: 'navbar-hide-1480',
         },
         {
           href: 'https://help.smatechnologies.com/opcon/core/api/25-1',
           label: "REST API",
           position: 'right',
+          className: 'navbar-hide-1380',
         },
         {
           to: '/',
@@ -77,11 +79,13 @@ module.exports = {
           href: '/opcon/deploy/',
           label: 'Deploy',
           position: 'left',
+          className: 'navbar-hide-1140',
         },
         {
           href: '/opcon-relay/',
           label: 'Relay',
           position: 'left',
+          className: 'navbar-hide-1260',
         },
       ],
     },
@@ -182,7 +186,7 @@ module.exports = {
         lastVersion: "current",
         versions: {
           current: {
-            label: "⭐ OpCon (Cloud - Current)",
+            label: "OpCon (Cloud - Current)",
           },
           "26.0": {
             label: "OpCon 26.0 (On-Prem)",
