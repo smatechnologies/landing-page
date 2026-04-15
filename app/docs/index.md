@@ -61,23 +61,34 @@ On-Prem releases are supported for 3 years from the date of release. Releases th
 <tbody>
 <tr>
 <td style={{textAlign: 'center'}}>26.0 LTS</td>
-<td style={{textAlign: 'center'}}>26.0.1</td>
-<td style={{textAlign: 'center'}}>2026-02-17</td>
-<td style={{textAlign: 'center'}}>2028-02-28</td>
-<td style={{textAlign: 'center'}}><a href="https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2503">Release Notes</a></td>
-</tr>
-<tr>
-<td style={{textAlign: 'center'}}>25.0 LTS</td>
-<td style={{textAlign: 'center'}}>25.0.5</td>
-<td style={{textAlign: 'center'}}>2026-02-09</td>
-<td style={{textAlign: 'center'}}>2028-02-28</td>
-<td style={{textAlign: 'center'}}><a href="https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2503">Release Notes</a></td>
+<td style={{textAlign: 'center'}}>26.0.2</td>
+<td style={{textAlign: 'center'}}>2026-03-19</td>
+<td style={{textAlign: 'center'}}>2029-02-28</td>
+<td style={{textAlign: 'center'}}><a href="https://help.smatechnologies.com/opcon/core/v26.0/release-notes#opcon-2602">Release Notes</a></td>
 </tr>
 <tr>
 <td colspan="5" style={{padding: '10px'}}>
 <details>
 <summary><strong>This release is a continuation of the below release versions</strong></summary>
 <ul>
+<li><strong>26.0.1</strong> | 2026-02-17 | <a href="https://help.smatechnologies.com/opcon/core/v26.0/release-notes#opcon-2601">Release Notes</a></li>
+</ul>
+</details>
+</td>
+</tr>
+<tr>
+<td style={{textAlign: 'center'}}>25.0 LTS</td>
+<td style={{textAlign: 'center'}}>25.0.6</td>
+<td style={{textAlign: 'center'}}>2026-03-30</td>
+<td style={{textAlign: 'center'}}>2028-02-28</td>
+<td style={{textAlign: 'center'}}><a href="https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2506">Release Notes</a></td>
+</tr>
+<tr>
+<td colspan="5" style={{padding: '10px'}}>
+<details>
+<summary><strong>This release is a continuation of the below release versions</strong></summary>
+<ul>
+<li><strong>25.0.5</strong> | 2026-02-09 | <a href="https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2505">Release Notes</a></li>
 <li><strong>25.0.3</strong> | 2025-07-14 | <a href="https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2503">Release Notes</a></li>
 <li><strong>25.0.2</strong> | 2025-05-12 | <a href="https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2502">Release Notes</a></li>
 <li><strong>25.0.1</strong> | 2025-03-31 | <a href="https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2501">Release Notes</a></li>
@@ -88,16 +99,17 @@ On-Prem releases are supported for 3 years from the date of release. Releases th
 </tr>
 <tr>
 <td style={{textAlign: 'center'}}>23.0 LTS</td>
-<td style={{textAlign: 'center'}}>23.0.13</td>
-<td style={{textAlign: 'center'}}>2026-02-26</td>
+<td style={{textAlign: 'center'}}>23.0.14</td>
+<td style={{textAlign: 'center'}}>2026-03-30</td>
 <td style={{textAlign: 'center'}}>2027-01-29</td>
-<td style={{textAlign: 'center'}}><a href="https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2313">Release Notes</a></td>
+<td style={{textAlign: 'center'}}><a href="https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-23014">Release Notes</a></td>
 </tr>
 <tr>
 <td colspan="5" style={{padding: '10px'}}>
 <details>
 <summary><strong>This release is a continuation of the below release versions</strong></summary>
 <ul>
+<li><strong>23.0.13</strong> | 2026-02-26 | <a href="https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2313">Release Notes</a></li>
 <li><strong>23.0.11</strong> | 2025-07-14 | <a href="https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2311">Release Notes</a></li>
 <li><strong>23.0.10</strong> | 2025-05-01 | <a href="https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2310">Release Notes</a></li>
 <li><strong>23.0.9</strong> | 2025-02-03 | <a href="https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-2309">Release Notes</a></li>
@@ -170,7 +182,6 @@ On-Prem releases are supported for 3 years from the date of release. Releases th
 <li><strong>22.5 STS (22.5.0)</strong> | 2023-06-26 | <a href="opcon-release-notes-22/#opcon-2250">Release Notes</a></li>
 <li><strong>22.4 STS (22.4.0)</strong> | 2023-05-29 | <a href="opcon-release-notes-22/#opcon-2240">Release Notes</a></li>
 <li><strong>22.3 STS (22.3.1)</strong> | 2023-05-02 | <a href="opcon-release-notes-22/#opcon-2231">Release Notes</a></li>
-<li><strong>22.2 STS (22.2.0)</strong> | 2023-04-03 | <a href="opcon-release-notes-22/#opcon-2220">Release Notes</a></li>
 </ul>
 </details>
 </td>
