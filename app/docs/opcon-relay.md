@@ -164,6 +164,7 @@ Right-click SMANetComRelay.exe and choose Run as administrator.
 Select Uninstall Netcom Relay Service and press Enter.
 Confirm the service is removed successfully.
 You can now choose to Exit the install dialog or just close the window.
+Delete SMANetcomRelay.ini file from relay's ProgramData folder (e.g. C:\ProgramData\Opconxps\Relay\)
 
 Step 3 — Install the New Standby Relay on the Standby Machine
 Copy SMANetComRelay.exe from the download folder to the relay install folder on the standby machine (e.g., C:\Program Files\OpConxps\Relay\).
@@ -172,7 +173,7 @@ Right-click SMANetComRelay.exe and choose Run as administrator.
 
 Select Register & Install Netcom Relay Service and press Enter.
 
-Next, you will be prompted to Enter Client Name. The default is the fully qualified domain name of the machine, we recommend taking the default.
+Next, you will be prompted to Enter Client Name. The default is the fully qualified domain name of the machine, we recommend using same client name that you used for registering the primary relay.
 
 Next, you will be prompted to Enter Relay Name. Enter the exact same Relay Name used by the primary relay (** The canonical Relay Name recorded earlier in Step 1). This links both machines together as a failover pair.
 
@@ -201,7 +202,7 @@ You will see the install dialog confirm successful registration. The standby rel
 You can now choose to Exit the install dialog or just close the window.
 
 ** Step 3a — Remove the Old Standby Registration
-The registration entry for the old standby Relay Name (e.g., company-prod-2) is now unused and should be removed. Navigate to the relay management view in Solution Manager and delete the unused Relay name registration entry that was previously used as the standby.
+The registration entry for the old standby Relay Name (e.g., company-prod-2) is now unused and should be removed. Ask OpCon Support to delete the unused Relay name registration entry that was previously used as the standby from database.
 
 Step 4 — Verify
 Log into Solution Manager as ocadm or a user with equivalent rights.
