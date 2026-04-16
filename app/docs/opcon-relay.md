@@ -132,3 +132,81 @@ To set up TLS communication for OpCon agents using Relay, follow the existing do
 6. Confirm the service is "Running"
 7. Open a web browser and navigate to the Solution Manager UI for the instance using the Relay service that was just updated
 8. Confirm all machines are communicating
+
+
+### Upgrade existing Primary/Standby Failover (v25.3.1 and earlier)
+This section applies to environments where two relay instances were installed on separate machines. If the current Standby instance uses a different Relay Name, there will be a few additional steps to follow. These steps will be identified with an "**" prefixing the instruction.
+
+After completing these steps, both relay services will run simultaneously. The active relay continues processing without interruption and failover is managed through Solution Manager — manual service stop/start is no longer required.
+
+Step 1 — Upgrade the Primary Relay
+** This Relay Name is the canonical Relay Name and will be shared by both relay instances after the upgrade. Please record the Relay Name to be used when installing the Standby Relay later.
+
+Download the new release file SMANetComRelay.exe.
+
+Click on Start and type Services to launch the service manager window.
+
+Scroll down the list of services, right-click on SMA OpCon Relay and select Stop.
+
+Overwrite SMANetComRelay.exe with the new file in the relay install folder (e.g., C:\Program Files\OpConxps\Relay\).
+
+Right-click on SMA OpCon Relay in the service manager and select Start.
+
+Confirm the service is Running.
+
+On startup, the new executable detects that no Machine ID is set, uses the machine's hostname, writes it to SMANetComRelay.ini, and connects to NetCommApi. The existing registration entry is automatically updated in-place with the new Machine ID. This relay continues as the primary (Priority 0).
+
+Step 2 — Uninstall the Old Standby Relay
+Note: The second relay cannot be upgraded with a simple executable replacement. Because the primary relay has already claimed the single shared registration entry, the standby machine has no registration of its own and would fail to connect. A fresh installation is required.
+
+On the standby machine, navigate to its relay install folder (e.g., C:\Program Files\OpConxps\Relay\).
+Right-click SMANetComRelay.exe and choose Run as administrator.
+Select Uninstall Netcom Relay Service and press Enter.
+Confirm the service is removed successfully.
+You can now choose to Exit the install dialog or just close the window.
+
+Step 3 — Install the New Standby Relay on the Standby Machine
+Copy SMANetComRelay.exe from the download folder to the relay install folder on the standby machine (e.g., C:\Program Files\OpConxps\Relay\).
+
+Right-click SMANetComRelay.exe and choose Run as administrator.
+
+Select Register & Install Netcom Relay Service and press Enter.
+
+Next, you will be prompted to Enter Client Name. The default is the fully qualified domain name of the machine, we recommend taking the default.
+
+Next, you will be prompted to Enter Relay Name. Enter the exact same Relay Name used by the primary relay (** The canonical Relay Name recorded earlier in Step 1). This links both machines together as a failover pair.
+
+Next, you will be prompted to Enter Machine ID. Press Enter to accept the default (short hostname of this standby machine). This value must differ from the primary relay's Machine ID.
+
+Next, you will be prompted to Enter your OpCon URI (e.g., https://company-prod.opcon.smatechnologies.com).
+
+Finally, you will be prompted to Enter External Token for a User with Super Admin privilege like ocadm.
+
+For this step, generate an external token by logging into Solution Manager as a user like ocadm and navigating to LIBRARY → ACCESS MANAGEMENT → USERS → "+" to add a new user:
+
+First Name: Relay
+Last Name: Install
+Username: relayInstall
+Password: (Set to unique value and remember for later)
+Click on the button labeled Save.
+
+Click on the ROLES tab and check the box for Role_ocadm and click Save.
+
+Click on the SETTINGS tab and check the box for Enable external tokens and click Save.
+
+Log out of Solution Manager and log back in as relayInstall and navigate to RELAYINSTALL → EXTERNAL TOKEN. Select the radio button labeled API Token and click Generate. Copy and paste the generated token to the install dialog.
+
+You will see the install dialog confirm successful registration. The standby relay is automatically assigned Priority 1 because Priority 0 is already held by the primary.
+
+You can now choose to Exit the install dialog or just close the window.
+
+** Step 3a — Remove the Old Standby Registration
+The registration entry for the old standby Relay Name (e.g., company-prod-2) is now unused and should be removed. Navigate to the relay management view in Solution Manager and delete the unused Relay name registration entry that was previously used as the standby.
+
+Step 4 — Verify
+Log into Solution Manager as ocadm or a user with equivalent rights.
+Navigate to the relay management view and confirm:
+The primary relay shows Connected/Active.
+The standby relay shows Connected/Standby.
+Confirm all agents continue to show Communicating. No agent changes are required.
+Navigate to LIBRARY → ACCESS MANAGEMENT → USERS, select relayInstall, click the vertical ellipsis, and Delete the user.
