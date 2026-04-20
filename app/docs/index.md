@@ -9,10 +9,10 @@ title: 'Home'
 
 | Release Date | Name | Type | Release Notes |
 |: ------------ :|: ---- :|:-----:|: ------------- :|
+| April 20, 2026 | OpCon 26.0.4 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v26.0/release-notes#opcon-2604) |
 | March 30, 2026 | OpCon 25.0.6 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2506) |
 | March 30, 2026 | OpCon 23.0.14 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-23014) |
 | March 19, 2026 | OpCon Winter 26 | Cloud | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes) |
-| March 19, 2026 | OpCon 26.0.2 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v26.0/release-notes#opcon-2602) |
 | February 20, 2026 | OpConMFT 3.13.9 | Agent | [Release Notes](https://help.smatechnologies.com/opcon/agents/opconmft/release-notes) |
 | February 17, 2026 | OpCon 22.0.23 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v22.0/release-notes#opcon-22023) |
 | February 10, 2026 | Windows Agent 25.0.0 | Agent | [Release Notes](https://help.smatechnologies.com/opcon/agents/windows/release-notes) |
