@@ -2,7 +2,7 @@
 
 ## Spring 26
 
-#### 26.1.0
+### 26.1.0
 
 **NOTE**: Verify/Upgrade these components if applicable:
 
