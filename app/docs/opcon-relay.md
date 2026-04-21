@@ -13,28 +13,28 @@ https://github.com/smatechnologies/opcon-web-installer/releases/latest
 
 or directly from our SFTP server at: 
 https://files.smatechnologies.com/files/OpCon%20Releases/Relay.
-<br><br>
+
 ### FAQs
-**Q**: What versions of Windows OS are supported?<br>
+**Q**: What versions of Windows OS are supported?
 **A**: All versions of Windows Server currently supported by Microsoft.
 
-**Q**: What specifications should the machine have that is running Relay?<br>
+**Q**: What specifications should the machine have that is running Relay?
 **A**: We suggest 2-4 vcpu, 8-16GB of RAM, and at least 64GB of storage (OS & Logs).
 
-**Q**: What ports need to be open?<br>
+**Q**: What ports need to be open?
 **A**: Typically, none, but if you are blocking outbound traffic to the Internet then `TCP:9012` and `TCP:9013`.  If you choose to install Relay within a DMZ, then you will also need to open inbound traffic for all ports used by Agents (default: 3100-3111).
 
-**Q**: How do I update the Relay software?<br>
+**Q**: How do I update the Relay software?
 **A**: Currently you must manually stop the service, overwrite the executable with the new version, and restart the service.  In a future release, automatic updating will be implemented.
-<br><br>
+
 ### Known Issues
 * Currently will *only install and run on a Windows OS*
 * Requires a Relay *per* OpCon instance.  For example, if you have a production and development instance of OpCon, then you would need to install two (2) relays. As of the Relay 24.3.2 release, multiple instances of Relay can be installed on the same Windows OS. Please see instructions below.
 * When configuring the Agent in OpCon to use Relay (NetComName) and the Relay and Agent are on the same Windows Server machine, you **SHOULD NOT** use `127.0.0.1` as the IP Address.  *Instead you should use the actual name of the server or the actual IP Address of the server*.
-<br><br>
+
 ### Enabling TLS Communication For OpCon Agents Using Relay
 To set up TLS communication for OpCon agents using Relay, follow the existing documentation for the agent (https://help.smatechnologies.com/integrations/) but import the certificates to the Relay server in place of the on-prem OpCon server.
-<br><br>
+
 ### Install Primary Relay Instance
 1. Choose a compatible server within the primary data center.
 2. Download the install file **SMANetComRelay.exe**.
@@ -99,7 +99,7 @@ To set up TLS communication for OpCon agents using Relay, follow the existing do
      * Start the agent
 16. If all Agents show **Communicating**, then you have successfully installed and configured Relay.  If not, please open a case with support so our team can help you troubleshoot the issue.
 17. Log back into Solution Manager as a user like ocadm and navigate to LIBRARY → ACCESS MANAGEMENT → USERS.  Select the user relayInstall, created in Step #8, by clicking on it.  Click on the vertical ellipsis to Delete the selected user.
-<br><br>
+
 ### Uninstall
 1. Open File Explorer in Windows and navigate to `"C:\Program Files\OpConxps\Relay-[[Instance Name]]"` or the path you installed to.
 2. Right-click the file **SMANetComRelay.exe** and choose to **Run as administrator**.
