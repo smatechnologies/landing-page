@@ -116,7 +116,7 @@ You can generate this token by logging into Solution Manager as a user like ocad
 6. Confirm the service is "Running".
 7. Open a web browser and navigate to the Solution Manager UI for the instance using the Relay service that was just updated.
 8. Confirm all machines are communicating.
-<br><br>
+
 ### Upgrade existing Primary/Standby Failover (v25.3.1 and earlier)
 This section applies to environments where two relay instances were installed on separate machines. If the current Standby instance uses a different Relay Name, there will be a few additional steps to follow. These steps will be identified with an "**" prefixing the instruction.
 
