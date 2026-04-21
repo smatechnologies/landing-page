@@ -47,7 +47,7 @@ To set up TLS communication for OpCon agents using Relay, follow the existing do
 9. Next, you will be prompted to **Enter your OpCon URI**.  This will be the URI provided by Continuous that identifies your cloud instance. (E.g.- https://company-prod.opcon.smatechnologies.com)
 10. Finally, you will be prompted to Enter External Token for a User with Super Admin privilege like ocadm.
 
-	You can generate this token by logging into Solution Manager as a user like ocadm and navigating to LIBRARY → ACCESS MANAGEMENT → USERS → “+” to add a new user
+You can generate this token by logging into Solution Manager as a user like ocadm and navigating to LIBRARY → ACCESS MANAGEMENT → USERS → “+” to add a new user
 
 	* First Name: Relay
 	* Last Name: Install
@@ -106,7 +106,7 @@ To set up TLS communication for OpCon agents using Relay, follow the existing do
 3. You will be presented with a text menu, choose the second option labeled **Uninstall Netcom Relay Service**.
 4. You will see the install dialogue confirm successful remove of the Relay services.
 5. You can now choose to **Exit** the install dialog or just close the window.
-<br><br>
+
 ### Upgrade Primary/Standby Relay Instance
 1. Download the new release file **SMANetComRelay.exe**.
 2. Click on Start and type "Services" to launch the service manager window.
