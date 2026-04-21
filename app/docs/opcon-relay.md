@@ -73,7 +73,7 @@ To set up TLS communication for OpCon agents using Relay, follow the existing do
      * Start the agent
 16. If all Agents show **Communicating**, then you have successfully installed and configured Relay.  If not, please open a case with support so our team can help you troubleshoot the issue.
 17. **If you are installing a second instance of Relay on the same Windows OS, you may skip this step until you are finished with that installation**. Log back into Solution Manager as a user like ocadm and navigate to LIBRARY → ACCESS MANAGEMENT → USERS.  Select the user relayInstall, created in Step #8, by clicking on it.  Click on the vertical ellipsis to Delete the selected user.
-<br><br>
+
 ### Install Standby Relay Instance
 1. Choose a compatible server within the secondary data center.
 2. Download the install file **SMANetComRelay.exe**.
