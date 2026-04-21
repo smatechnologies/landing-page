@@ -4,13 +4,16 @@
 
 ### 26.1.0
 
-**NOTE**: Verify/Upgrade these components if applicable:
+**NOTE**: For compatibility, the following packages require updating if used on-premises:
 
-* **Enterprise Manager** - 26.0
-* **ServiceNow** Connector – 21.4 or higher
-* **WebServices** Connector – 21.2 or higher
+* **ACS AzureWebservices** - 25.0.2
+* **ACS Ease** - 25.0.3
+* **ACS WebServices** - 25.0.2
 * **Deploy** – 26.0.0 or higher
+* **Enterprise Manager** - 26.0.1 or higher
 * **Relay** - 26.1.0 or higher
+* **ServiceNow Connector** – 25.0 or higher
+* **WebServices Connector** – 21.6 or higher
 
 # OpCon Release 26.1 – What's New
 
