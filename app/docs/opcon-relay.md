@@ -15,16 +15,16 @@ or directly from our SFTP server at:
 https://files.smatechnologies.com/files/OpCon%20Releases/Relay.
 <br><br>
 ### FAQs
-**Q**: What versions of Windows OS are supported?
+**Q**: What versions of Windows OS are supported?<br>
 **A**: All versions of Windows Server currently supported by Microsoft.
 
-**Q**: What specifications should the machine have that is running Relay?
+**Q**: What specifications should the machine have that is running Relay?<br>
 **A**: We suggest 2-4 vcpu, 8-16GB of RAM, and at least 64GB of storage (OS & Logs).
 
-**Q**: What ports need to be open?
+**Q**: What ports need to be open?<br>
 **A**: Typically, none, but if you are blocking outbound traffic to the Internet then `TCP:9012` and `TCP:9013`.  If you choose to install Relay within a DMZ, then you will also need to open inbound traffic for all ports used by Agents (default: 3100-3111).
 
-**Q**: How do I update the Relay software?
+**Q**: How do I update the Relay software?<br>
 **A**: Currently you must manually stop the service, overwrite the executable with the new version, and restart the service.  In a future release, automatic updating will be implemented.
 <br><br>
 ### Known Issues
