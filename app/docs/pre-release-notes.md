@@ -215,8 +215,6 @@ Dozens of friction points across the daily Solution Manager experience have been
 
 :white_check_mark: **OC-6154: SMASchedMan Log Cleanup Job** Added a job, SMASchedMan Folder Log Cleanup, to the SMA Utility folder to remove old SMASchedMan log files from cloud instances.
 
-:white_check_mark: **OC-6104: MaxPoolSize API Configuration** Added support for a MaxPoolSize configuration key in the API, allowing administrators to specify the maximum connection pool size via SMAODBCConfig.DAT.
-
 :white_check_mark: **OC-6096: Master Job Save — Connection Pool Fix** Fixed connection pool exhaustion when saving master jobs. Saving a job was opening 10+ simultaneous SQL connections per request, causing pool exhaustion under load. Database queries are now executed sequentially and frequency, threshold, and resource updates are batched into single SQL statements instead of one per row.
 
 :white_check_mark: **OC-6119: Master Job Load — Performance Fix** Fixed slow master job loading under concurrent load. Each database query was opening a new connection and triggering a sign-in event, so a single page load could generate ~12 sign-in events causing contention when multiple users loaded jobs simultaneously. The fix reuses a single database connection per HTTP request, reducing sign-in events to one per request.
