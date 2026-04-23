@@ -44,8 +44,9 @@ To set up TLS communication for OpCon agents using Relay, follow the existing do
 6. You will be presented with a text menu, choose the first option labeled **Register & Install Netcom Relay Service**.
 7. Next, you will be prompted to **Enter Client Name**.  The default is the fully qualified domain name of the machine; we recommend using the **company** name from the prefix of the URL to your OpCon instance.
 8. Next, you will be prompted to **Enter Relay Name**.  The default is the name of the machine, we recommend the prefix of the URL to your OpCon instance.  For example, `company-prod`, where **company** would be your company identifier and **prod** would be the instance identifier.  These are usually found in the provided URI before `opcon.smatechnologies.com`.
-9. Next, you will be prompted to **Enter your OpCon URI**.  This will be the URI provided by Continuous that identifies your cloud instance. (E.g.- https://company-prod.opcon.smatechnologies.com)
-10. Finally, you will be prompted to Enter External Token for a User with Super Admin privilege like ocadm.
+9. Next, you will be prompted to Enter Machine ID. Press Enter to accept the default (short hostname of this primary machine).
+10. Next, you will be prompted to **Enter your OpCon URI**.  This will be the URI provided by Continuous that identifies your cloud instance. (E.g.- https://company-prod.opcon.smatechnologies.com)
+11. Finally, you will be prompted to Enter External Token for a User with Super Admin privilege like ocadm.
 
 You can generate this token by logging into Solution Manager as a user like ocadm and navigating to LIBRARY → ACCESS MANAGEMENT → USERS → “+” to add a new user
 
@@ -83,22 +84,23 @@ You can generate this token by logging into Solution Manager as a user like ocad
 6. You will be presented with a text menu, choose the first option labeled **Register & Install Netcom Relay Service**.
 7. Next, you will be prompted to **Enter Client Name**.  Use the same **Client Name** that was used when installing the Primary Relay instance.
 8. Next, you will be prompted to **Enter Relay Name**.  Use the same **Relay Name** that was used when installing the Primary Relay instance.
-9. Next, you will be prompted to **Enter your OpCon URI**.  Use the same **OpCon URI** that was used when installing the Primary Relay instance.
-10. Finally, you will be prompted to Enter External Token for a User with Super Admin privilege like ocadm.
+9. Next, you will be prompted to Enter Machine ID. Press Enter to accept the default (short hostname of this standby machine). This value must differ from the primary/secondary relay's Machine ID(s) used earlier
+10. Next, you will be prompted to **Enter your OpCon URI**.  Use the same **OpCon URI** that was used when installing the Primary Relay instance.
+11. Finally, you will be prompted to Enter External Token for a User with Super Admin privilege like ocadm.
 
 	For this step, you may use the token for the relayInstall user that was created while installing the first Relay. If that user no longer exists, please follow the instructions under **Step 10** in the **Install Primary Relay Instance** section above.
 
-11. You will see the install dialogue confirm authentication to the URI entered in **Step 9** with the token entered in **Step 10** and then register to relay with the names given in **Steps 7 & 8**.
-12.  You can now choose to **Exit** the install dialog or just close the window.
-13.  Log into Solution Manager as `ocadm` or user with equivalent rights.
-14.  Navigate to **Library -> Agents**
-15.  For each Agent that will use the installed Relay:
+12. You will see the install dialogue confirm authentication to the URI entered in **Step 9** with the token entered in **Step 10** and then register to relay with the names given in **Steps 7 & 8**.
+13.  You can now choose to **Exit** the install dialog or just close the window.
+14.  Log into Solution Manager as `ocadm` or user with equivalent rights.
+15.  Navigate to **Library -> Agents**
+16.  For each Agent that will use the installed Relay:
      * Stop the agent
      * Modify the agent and add the name of the Relay from Step 6 to the **NetComName** field under **General Settings**
      * Save the changes
      * Start the agent
-16. If all Agents show **Communicating**, then you have successfully installed and configured Relay.  If not, please open a case with support so our team can help you troubleshoot the issue.
-17. Log back into Solution Manager as a user like ocadm and navigate to LIBRARY → ACCESS MANAGEMENT → USERS.  Select the user relayInstall, created in Step #8, by clicking on it.  Click on the vertical ellipsis to Delete the selected user.
+17. If all Agents show **Communicating**, then you have successfully installed and configured Relay.  If not, please open a case with support so our team can help you troubleshoot the issue.
+18. Log back into Solution Manager as a user like ocadm and navigate to LIBRARY → ACCESS MANAGEMENT → USERS.  Select the user relayInstall, created in Step #8, by clicking on it.  Click on the vertical ellipsis to Delete the selected user.
 
 ### Uninstall
 1. Open File Explorer in Windows and navigate to `"C:\Program Files\OpConxps\Relay-[[Instance Name]]"` or the path you installed to.
@@ -160,7 +162,7 @@ Next, you will be prompted to Enter Client Name. The default is the fully qualif
 
 Next, you will be prompted to Enter Relay Name. Enter the exact same Relay Name used by the primary relay (** The canonical Relay Name recorded earlier in Step 1). This links both machines together as a failover pair.
 
-Next, you will be prompted to Enter Machine ID. Press Enter to accept the default (short hostname of this standby machine). This value must differ from the primary relay's Machine ID.
+Next, you will be prompted to Enter Machine ID. Press Enter to accept the default (short hostname of this standby machine). This value must differ from the primary/secondary relay's Machine ID(s) used earlier.
 
 Next, you will be prompted to Enter your OpCon URI (e.g., https://company-prod.opcon.smatechnologies.com).
 
