@@ -8,12 +8,17 @@ set -e
 echo "Patching versioned sidebar names for Docusaurus 3 compatibility..."
 
 # Docusaurus 3 no longer accepts "version-X.Y/" prefix in versioned sidebar keys or doc IDs.
-for VERSION in 21.0 22.0; do
-  FILE="app/opcon-docs_versioned_sidebars/version-${VERSION}-sidebars.json"
+# Fix all sidebar files that contain the legacy prefix pattern, regardless of version number.
+for FILE in app/opcon-docs_versioned_sidebars/version-*-sidebars.json \
+            app/ibm-i-agent-docs_versioned_sidebars/version-*-sidebars.json; do
   if [ -f "$FILE" ]; then
-    sed -i "s/\"version-${VERSION}\/mySidebar\"/\"mySidebar\"/g" "$FILE"
-    sed -i "s/\"id\": \"version-${VERSION}\//\"id\": \"/g" "$FILE"
-    echo "  Patched: $FILE"
+    # Extract version from filename (e.g. version-26.0-sidebars.json -> 26.0)
+    VERSION=$(basename "$FILE" | sed 's/version-\(.*\)-sidebars\.json/\1/')
+    if grep -q "\"version-${VERSION}/" "$FILE"; then
+      sed -i "s/\"version-${VERSION}\/mySidebar\"/\"mySidebar\"/g" "$FILE"
+      sed -i "s/\"id\": \"version-${VERSION}\//\"id\": \"/g" "$FILE"
+      echo "  Patched: $FILE"
+    fi
   fi
 done
 
