@@ -4,14 +4,12 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useIsBrowser from "@docusaurus/useIsBrowser";
 import { useHistory, useLocation } from "@docusaurus/router";
 import { translate } from "@docusaurus/Translate";
-import { ReactContextError, useDocsPreferredVersion } from "@docusaurus/theme-common";
+import { useDocsPreferredVersion } from "@docusaurus/theme-common";
 import { useActivePlugin } from "@docusaurus/plugin-content-docs/client";
-import { fetchIndexes } from "./fetchIndexes";
-import { SearchSourceFactory } from "@easyops-cn/docusaurus-search-local/dist/client/client/utils/SearchSourceFactory";
+import { fetchIndexesByWorker, searchByWorker } from "@easyops-cn/docusaurus-search-local/dist/client/client/theme/searchByWorker";
 import { SuggestionTemplate } from "./SuggestionTemplate";
 import { EmptyTemplate } from "./EmptyTemplate";
 import {
-    searchResultLimits,
     Mark,
     searchBarShortcut,
     searchBarShortcutHint,
@@ -22,6 +20,7 @@ import {
     hideSearchBarWithNoSearchContext,
     useAllContextsWithNoSearchContext,
 } from "@easyops-cn/docusaurus-search-local/dist/client/client/utils/proxiedGenerated";
+import { searchResultLimits } from "@easyops-cn/docusaurus-search-local/dist/client/client/utils/proxiedGeneratedConstants";
 import LoadingRing from "@easyops-cn/docusaurus-search-local/dist/client/client/theme/LoadingRing/LoadingRing";
 import styles from "./SearchBar.module.css";
 import { normalizeContextByPath } from "@easyops-cn/docusaurus-search-local/dist/client/client/utils/normalizeContextByPath";
@@ -60,11 +59,7 @@ export default function SearchBar({ handleSearchBarToggle }) {
         }
     } catch (e) {
         if (indexDocs) {
-            if (e instanceof ReactContextError) {
-                /* ignore */
-            } else {
-                throw e;
-            }
+            throw e;
         }
     }
 
@@ -114,16 +109,10 @@ export default function SearchBar({ handleSearchBarToggle }) {
         search.current?.autocomplete.destroy();
         setLoading(true);
 
-        const [{ wrappedIndexes, zhDictionary }, autoComplete] = await Promise.all([
-            fetchIndexes(versionUrl, searchContext),
+        const [autoComplete] = await Promise.all([
             fetchAutoCompleteJS(),
+            fetchIndexesByWorker(versionUrl, searchContext),
         ]);
-
-        // Wrap SearchSourceFactory with synonym expansion
-        const baseSource = SearchSourceFactory(wrappedIndexes, zhDictionary, searchResultLimits);
-        const sourceWithSynonyms = (query, callback) => {
-            baseSource(expandSynonyms(query), callback);
-        };
 
         const searchFooterLinkElement = ({ query, isEmpty }) => {
             const a = document.createElement("a");
@@ -205,7 +194,10 @@ export default function SearchBar({ handleSearchBarToggle }) {
             },
             [
                 {
-                    source: sourceWithSynonyms,
+                    source: async (input, callback) => {
+                        const results = await searchByWorker(versionUrl, searchContext, expandSynonyms(input), searchResultLimits);
+                        callback(results);
+                    },
                     templates: {
                         suggestion: SuggestionTemplate,
                         empty: EmptyTemplate,

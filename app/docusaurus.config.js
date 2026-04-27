@@ -7,6 +7,24 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    format: 'detect',
+    hooks: {
+      onBrokenMarkdownImages: 'warn',
+    },
+    preprocessor: ({ filePath, fileContent }) => {
+      // Only process .md files (not .mdx — those have intentional JSX expressions)
+      if (!filePath.endsWith('.md')) return fileContent;
+      // Split on code fences and inline code spans so we never escape inside them
+      const parts = fileContent.split(/(```[\s\S]*?```|`[^`\n]+`)/g);
+      return parts.map((part, i) => {
+        if (i % 2 === 1) return part; // code block/span — leave verbatim
+        // Escape {identifier} in prose so MDX doesn't evaluate them as JS variables
+        // Excludes {#anchor} (heading IDs) and {/* comments */}
+        return part.replace(/\{([A-Za-z_$][A-Za-z0-9_$]*)\}/g, '\\{$1\\}');
+      }).join('');
+    },
+  },
   favicon: 'img/favicon.png',
   organizationName: 'Continuous',
   projectName: 'help-landing-page',

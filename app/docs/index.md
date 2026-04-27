@@ -1,4 +1,4 @@
----
+﻿---
 slug: '/'
 hide_title: 'true'
 title: 'Home'
@@ -8,7 +8,7 @@ title: 'Home'
 ## Recent Releases
 
 | Release Date | Name | Type | Release Notes |
-|: ------------ :|: ---- :|:-----:|: ------------- :|
+|:---:|:---:|:---:|:---:|
 | April 20, 2026 | OpCon 26.0.4 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v26.0/release-notes#opcon-2604) |
 | March 30, 2026 | OpCon 25.0.6 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2506) |
 | March 30, 2026 | OpCon 23.0.14 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-23014) |
@@ -51,23 +51,23 @@ On-Prem releases are supported for 3 years from the date of release. Releases th
 <table>
 <thead>
 <tr>
-<th style={{textAlign: 'center'}}>Feature Release</th>
-<th style={{textAlign: 'center'}}>Version</th>
-<th style={{textAlign: 'center'}}>General Availability</th>
-<th style={{textAlign: 'center'}}>Anticipated Support Retirement</th>
-<th style={{textAlign: 'center'}}>Release Notes</th>
+<th style="text-align: center">Feature Release</th>
+<th style="text-align: center">Version</th>
+<th style="text-align: center">General Availability</th>
+<th style="text-align: center">Anticipated Support Retirement</th>
+<th style="text-align: center">Release Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style={{textAlign: 'center'}}>26.0 LTS</td>
-<td style={{textAlign: 'center'}}>26.0.2</td>
-<td style={{textAlign: 'center'}}>2026-03-19</td>
-<td style={{textAlign: 'center'}}>2029-02-28</td>
-<td style={{textAlign: 'center'}}><a href="https://help.smatechnologies.com/opcon/core/v26.0/release-notes#opcon-2602">Release Notes</a></td>
+<td style="text-align: center">26.0 LTS</td>
+<td style="text-align: center">26.0.2</td>
+<td style="text-align: center">2026-03-19</td>
+<td style="text-align: center">2029-02-28</td>
+<td style="text-align: center"><a href="https://help.smatechnologies.com/opcon/core/v26.0/release-notes#opcon-2602">Release Notes</a></td>
 </tr>
 <tr>
-<td colspan="5" style={{padding: '10px'}}>
+<td colspan="5" style="padding: 10px">
 <details>
 <summary><strong>This release is a continuation of the below release versions</strong></summary>
 <ul>
@@ -77,14 +77,14 @@ On-Prem releases are supported for 3 years from the date of release. Releases th
 </td>
 </tr>
 <tr>
-<td style={{textAlign: 'center'}}>25.0 LTS</td>
-<td style={{textAlign: 'center'}}>25.0.6</td>
-<td style={{textAlign: 'center'}}>2026-03-30</td>
-<td style={{textAlign: 'center'}}>2028-02-28</td>
-<td style={{textAlign: 'center'}}><a href="https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2506">Release Notes</a></td>
+<td style="text-align: center">25.0 LTS</td>
+<td style="text-align: center">25.0.6</td>
+<td style="text-align: center">2026-03-30</td>
+<td style="text-align: center">2028-02-28</td>
+<td style="text-align: center"><a href="https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2506">Release Notes</a></td>
 </tr>
 <tr>
-<td colspan="5" style={{padding: '10px'}}>
+<td colspan="5" style="padding: 10px">
 <details>
 <summary><strong>This release is a continuation of the below release versions</strong></summary>
 <ul>
@@ -98,14 +98,14 @@ On-Prem releases are supported for 3 years from the date of release. Releases th
 </td>
 </tr>
 <tr>
-<td style={{textAlign: 'center'}}>23.0 LTS</td>
-<td style={{textAlign: 'center'}}>23.0.14</td>
-<td style={{textAlign: 'center'}}>2026-03-30</td>
-<td style={{textAlign: 'center'}}>2027-01-29</td>
-<td style={{textAlign: 'center'}}><a href="https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-23014">Release Notes</a></td>
+<td style="text-align: center">23.0 LTS</td>
+<td style="text-align: center">23.0.14</td>
+<td style="text-align: center">2026-03-30</td>
+<td style="text-align: center">2027-01-29</td>
+<td style="text-align: center"><a href="https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-23014">Release Notes</a></td>
 </tr>
 <tr>
-<td colspan="5" style={{padding: '10px'}}>
+<td colspan="5" style="padding: 10px">
 <details>
 <summary><strong>This release is a continuation of the below release versions</strong></summary>
 <ul>
@@ -126,14 +126,14 @@ On-Prem releases are supported for 3 years from the date of release. Releases th
 </td>
 </tr>
 <tr>
-<td style={{textAlign: 'center'}}>22.0 LTS</td>
-<td style={{textAlign: 'center'}}>22.0.23</td>
-<td style={{textAlign: 'center'}}>2026-02-17</td>
-<td style={{textAlign: 'center'}}>2026-02-20</td>
-<td style={{textAlign: 'center'}}><a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22023">Release Notes</a></td>
+<td style="text-align: center">22.0 LTS</td>
+<td style="text-align: center">22.0.23</td>
+<td style="text-align: center">2026-02-17</td>
+<td style="text-align: center">2026-02-20</td>
+<td style="text-align: center"><a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22023">Release Notes</a></td>
 </tr>
 <tr>
-<td colspan="5" style={{padding: '10px'}}>
+<td colspan="5" style="padding: 10px">
 <details>
 <summary><strong>This release is a continuation of the below release versions</strong></summary>
 <ul>
@@ -164,14 +164,14 @@ On-Prem releases are supported for 3 years from the date of release. Releases th
 </td>
 </tr>
 <tr>
-<td style={{textAlign: 'center'}}>22.10 STS</td>
-<td style={{textAlign: 'center'}}>22.10.0</td>
-<td style={{textAlign: 'center'}}>2023-11-13</td>
-<td style={{textAlign: 'center'}}>2026-11-13</td>
-<td style={{textAlign: 'center'}}><a href="opcon-release-notes-22/#opcon-22100">Release Notes</a></td>
+<td style="text-align: center">22.10 STS</td>
+<td style="text-align: center">22.10.0</td>
+<td style="text-align: center">2023-11-13</td>
+<td style="text-align: center">2026-11-13</td>
+<td style="text-align: center"><a href="opcon-release-notes-22/#opcon-22100">Release Notes</a></td>
 </tr>
 <tr>
-<td colspan="5" style={{padding: '10px'}}>
+<td colspan="5" style="padding: 10px">
 <details>
 <summary><strong>This release is the last STS release in the series below</strong></summary>
 <ul>

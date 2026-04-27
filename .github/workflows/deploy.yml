@@ -26,6 +26,8 @@ jobs:
         continue-on-error: true
       - run: azcopy_v10 copy '${{ secrets.HELP_CONTENT_URL }}/api/*?${{ secrets.HELP_CONTENT_TOKEN }}' './api/' --overwrite=false
         continue-on-error: false
+      - name: Patch downloaded content for Docusaurus 3 compatibility
+        run: bash patch-content.sh
       - run: tree
       - uses: docker/login-action@v2
         with:

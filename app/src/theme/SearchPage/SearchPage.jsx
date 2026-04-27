@@ -7,8 +7,7 @@ import { translate } from "@docusaurus/Translate";
 import { usePluralForm } from "@docusaurus/theme-common";
 import clsx from "clsx";
 import useSearchQuery from "@easyops-cn/docusaurus-search-local/dist/client/client/theme/hooks/useSearchQuery";
-import { fetchIndexes } from "../SearchBar/fetchIndexes";
-import { SearchSourceFactory } from "@easyops-cn/docusaurus-search-local/dist/client/client/utils/SearchSourceFactory";
+import { fetchIndexesByWorker, searchByWorker } from "@easyops-cn/docusaurus-search-local/dist/client/client/theme/searchByWorker";
 import { highlight } from "@easyops-cn/docusaurus-search-local/dist/client/client/utils/highlight";
 import { highlightStemmed } from "@easyops-cn/docusaurus-search-local/dist/client/client/utils/highlightStemmed";
 import { getStemmedPositions } from "@easyops-cn/docusaurus-search-local/dist/client/client/utils/getStemmedPositions";
@@ -182,11 +181,12 @@ function SearchPageContent() {
 
     useEffect(() => {
         async function doFetchIndexes() {
-            const { wrappedIndexes, zhDictionary } =
-                !Array.isArray(searchContextByPaths) || searchContext || useAllContextsWithNoSearchContext
-                    ? await fetchIndexes(versionUrl, searchContext)
-                    : { wrappedIndexes: [], zhDictionary: [] };
-            setSearchSource(() => SearchSourceFactory(wrappedIndexes, zhDictionary, 100));
+            if (!Array.isArray(searchContextByPaths) || searchContext || useAllContextsWithNoSearchContext) {
+                await fetchIndexesByWorker(versionUrl, searchContext);
+            }
+            setSearchSource(() => (query, callback) => {
+                searchByWorker(versionUrl, searchContext, query, 100).then(callback);
+            });
         }
         doFetchIndexes();
     }, [searchContext, versionUrl]);
