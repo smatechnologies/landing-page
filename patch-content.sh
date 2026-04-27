@@ -82,4 +82,19 @@ find content app/opcon-docs_versioned_docs app/ibm-i-agent-docs_versioned_docs \
   fi
 done
 
+echo "Adding displayed_sidebar to index pages for Docusaurus 3 sidebar fix..."
+
+# In Docusaurus 3, docs with slug: "/" in non-root plugins lose sidebar association.
+# displayed_sidebar explicitly forces the correct sidebar to render.
+# Also replace any displayed_sidebar: null (which explicitly hides the sidebar).
+find content -name "index.md" -type f | while read -r FILE; do
+  if grep -q "^displayed_sidebar: null" "$FILE"; then
+    sed -i 's/^displayed_sidebar: null$/displayed_sidebar: mySidebar/' "$FILE"
+    echo "  Fixed displayed_sidebar null: $FILE"
+  elif grep -q "^slug:" "$FILE" && ! grep -q "^displayed_sidebar:" "$FILE"; then
+    sed -i '/^slug:/a displayed_sidebar: mySidebar' "$FILE"
+    echo "  Added displayed_sidebar: $FILE"
+  fi
+done
+
 echo "Content patching complete."
