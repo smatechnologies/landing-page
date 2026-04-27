@@ -50,4 +50,36 @@ if [ -f "$JASPER" ]; then
   echo "  Patched: $JASPER"
 fi
 
+echo "Patching admonition syntax for Docusaurus 3 compatibility..."
+
+# Docusaurus 3 requires lowercase admonition types and exactly three colons.
+# Find all .md files in content/ and versioned_docs, fix known issues:
+#   :::NOTE  -> :::note
+#   :::CAUTION -> :::caution
+#   :::WARNING -> :::warning
+#   :::TIP -> :::tip
+#   :::INFO -> :::info
+#   :::DANGER -> :::danger
+#   ::note (two colons) -> :::note  (three colons)
+find content app/opcon-docs_versioned_docs app/ibm-i-agent-docs_versioned_docs \
+  -name "*.md" -type f | while read -r FILE; do
+  if grep -qE '^:::NOTE|^:::CAUTION|^:::WARNING|^:::TIP|^:::INFO|^:::DANGER|^::note|^::tip|^::warning|^::info|^::caution|^::danger' "$FILE" 2>/dev/null; then
+    sed -i \
+      -e 's/^:::NOTE$/:::note/' \
+      -e 's/^:::CAUTION$/:::caution/' \
+      -e 's/^:::WARNING$/:::warning/' \
+      -e 's/^:::TIP$/:::tip/' \
+      -e 's/^:::INFO$/:::info/' \
+      -e 's/^:::DANGER$/:::danger/' \
+      -e 's/^::note$/:::note/' \
+      -e 's/^::tip$/:::tip/' \
+      -e 's/^::warning$/:::warning/' \
+      -e 's/^::info$/:::info/' \
+      -e 's/^::caution$/:::caution/' \
+      -e 's/^::danger$/:::danger/' \
+      "$FILE"
+    echo "  Patched admonitions: $FILE"
+  fi
+done
+
 echo "Content patching complete."
