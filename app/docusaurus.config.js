@@ -21,7 +21,14 @@ module.exports = {
         if (i % 2 === 1) return part; // code block/span — leave verbatim
         // Escape {identifier} in prose so MDX doesn't evaluate them as JS variables
         // Excludes {#anchor} (heading IDs) and {/* comments */}
-        return part.replace(/\{([A-Za-z_$][A-Za-z0-9_$]*)\}/g, '\\{$1\\}');
+        let result = part.replace(/\{([A-Za-z_$][A-Za-z0-9_$]*)\}/g, '\\{$1\\}');
+        // Wrap URLs with non-numeric ports in backticks (e.g. https://server:port/...)
+        // remark/MDX URL parser rejects these — wrapping as inline code avoids parsing
+        result = result.replace(
+          /(?<![`\]]|\]\()https?:\/\/[a-zA-Z0-9._%-]+:[a-zA-Z][a-zA-Z0-9_-]*(?:\/[^\s"'<>`)\n]*)?/g,
+          (match) => `\`${match}\``
+        );
+        return result;
       }).join('');
     },
   },
