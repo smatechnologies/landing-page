@@ -106,4 +106,21 @@ find content -name "index.md" -type f | while read -r FILE; do
   fi
 done
 
+echo "Applying tracked file overrides from patches/..."
+
+# Files in patches/ mirror the app/ directory structure and override
+# the corresponding azcopy-downloaded files. Add subdirectories here
+# as needed for future per-version overrides.
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+if [ -d "$SCRIPT_DIR/patches" ]; then
+  find "$SCRIPT_DIR/patches" -type f | while read -r PATCH_FILE; do
+    REL="${PATCH_FILE#$SCRIPT_DIR/patches/}"
+    TARGET="$REL"
+    if [ -f "$TARGET" ] || [ -d "$(dirname "$TARGET")" ]; then
+      cp "$PATCH_FILE" "$TARGET"
+      echo "  Applied patch: $TARGET"
+    fi
+  done
+fi
+
 echo "Content patching complete."
