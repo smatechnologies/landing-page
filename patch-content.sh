@@ -82,6 +82,17 @@ find content app/opcon-docs_versioned_docs app/ibm-i-agent-docs_versioned_docs \
   fi
 done
 
+echo "Converting Pandoc RST table formats to GFM pipe tables..."
+
+# Pandoc-generated content from FrameMaker/Word uses RST simple table syntax
+# (space-aligned columns) and grid tables (+---+---+) that Docusaurus cannot render.
+# convert-rst-tables.js converts them to GFM pipe tables.
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+node "$SCRIPT_DIR/convert-rst-tables.js" \
+  content \
+  app/opcon-docs_versioned_docs \
+  app/ibm-i-agent-docs_versioned_docs
+
 echo "Setting MDX format for index pages with JSX card grids..."
 
 # In Docusaurus 3, .md files are processed as CommonMark by default (not MDX).
