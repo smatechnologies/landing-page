@@ -9,6 +9,8 @@ title: 'Home'
 
 | Release Date | Name | Type | Release Notes |
 |:---:|:---:|:---:|:---:|
+| April 29, 2026 | Deploy 25.2.2 | Deploy | [Release Notes](https://help.smatechnologies.com/opcon/deploy/release-notes) |
+| April 29, 2026 | UNIX Agent 26.0.0 | Agent | [Release Notes](https://help.smatechnologies.com/opcon/agents/unix/release-notes) |
 | April 20, 2026 | OpCon 26.0.4 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v26.0/release-notes#opcon-2604) |
 | March 30, 2026 | OpCon 25.0.6 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2506) |
 | March 30, 2026 | OpCon 23.0.14 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-23014) |
