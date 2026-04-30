@@ -6,7 +6,7 @@ The Relay (NetComApi) utility provides communication for our **OpCon Relay** clo
 
 This is accomplished by relaying traffic from/to the Agents internal to a customer network with the customer's cloud instance(s).
 ### Diagram
-![](../static/img/Relay_Diagram_2024-10-09.png)
+![](../static/img/Relay_Diagram_20260426.png)
 ### Download
 You can download the latest version of the Relay install package using the OpCon Web Installer located at:
 https://github.com/smatechnologies/opcon-web-installer/releases/latest 
@@ -119,7 +119,7 @@ You can generate this token by logging into Solution Manager as a user like ocad
 7. Open a web browser and navigate to the Solution Manager UI for the instance using the Relay service that was just updated.
 8. Confirm all machines are communicating.
 
-### Upgrade existing Primary/Standby Failover (v25.3.1 and earlier)
+### Upgrade existing Primary/Standby Failover (v25.1.1 and earlier)
 This section applies to environments where two relay instances were installed on separate machines. If the current Standby instance uses a different Relay Name, there will be a few additional steps to follow. These steps will be identified with an "**" prefixing the instruction.
 
 After completing these steps, both relay services will run simultaneously. The active relay continues processing without interruption and failover is managed through Solution Manager — manual service stop/start is no longer required.
