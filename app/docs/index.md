@@ -123,44 +123,6 @@ On-Prem releases are supported for 3 years from the date of release. Releases th
 </td>
 </tr>
 <tr>
-<td style="text-align: center">22.0 LTS</td>
-<td style="text-align: center">22.0.23</td>
-<td style="text-align: center">2026-02-17</td>
-<td style="text-align: center">2026-02-20</td>
-<td style="text-align: center"><a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22023">Release Notes</a></td>
-</tr>
-<tr>
-<td colspan="5" style="padding: 10px">
-<details>
-<summary><strong>This release is a continuation of the below release versions</strong></summary>
-<ul>
-<li><strong>22.0.21</strong> | 2025-07-14 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22021">Release Notes</a></li>
-<li><strong>22.0.20</strong> | 2025-05-01 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22020">Release Notes</a></li>
-<li><strong>22.0.19</strong> | 2025-01-22 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22019">Release Notes</a></li>
-<li><strong>22.0.18</strong> | 2024-11-01 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22018">Release Notes</a></li>
-<li><strong>22.0.17</strong> | 2024-10-21 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22017">Release Notes</a></li>
-<li><strong>22.0.16</strong> | 2024-07-31 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22016">Release Notes</a></li>
-<li><strong>22.0.15</strong> | 2024-05-14 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22015">Release Notes</a></li>
-<li><strong>22.0.14</strong> | 2024-04-01 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22014">Release Notes</a></li>
-<li><strong>22.0.13</strong> | 2024-03-04 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22013">Release Notes</a></li>
-<li><strong>22.0.12</strong> | 2024-01-15 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22012">Release Notes</a></li>
-<li><strong>22.0.11</strong> | 2023-12-18 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22011">Release Notes</a></li>
-<li><strong>22.0.10</strong> | 2023-10-27 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-22010">Release Notes</a></li>
-<li><strong>22.0.9</strong> | 2023-10-23 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2209">Release Notes</a></li>
-<li><strong>22.0.8</strong> | 2023-09-25 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2208">Release Notes</a></li>
-<li><strong>22.0.7</strong> | 2023-08-28 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2207">Release Notes</a></li>
-<li><strong>22.0.6</strong> | 2023-07-31 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2206">Release Notes</a></li>
-<li><strong>22.0.5</strong> | 2023-07-03 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2205">Release Notes</a></li>
-<li><strong>22.0.4</strong> | 2023-06-05 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2204">Release Notes</a></li>
-<li><strong>22.0.3</strong> | 2023-05-08 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2203">Release Notes</a></li>
-<li><strong>22.0.2</strong> | 2023-04-10 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2202">Release Notes</a></li>
-<li><strong>22.0.1</strong> | 2023-03-13 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2201">Release Notes</a></li>
-<li><strong>22.0.0</strong> | 2023-02-20 | <a href="https://help.smatechnologies.com/opcon/core/v22.0/release-notes/#opcon-2200">Release Notes</a></li>
-</ul>
-</details>
-</td>
-</tr>
-<tr>
 <td style="text-align: center">22.10 STS</td>
 <td style="text-align: center">22.10.0</td>
 <td style="text-align: center">2023-11-13</td>
