@@ -109,7 +109,7 @@ Scheduling is more reliable and predictable. Frequency configurations behave as 
 
 ### What's New
 
-:eight_spoked_asterisk: **OC- **OC-3856: Relay/NetCom Administration Page** Added a new Relays/NetComs administration page in Solution Manager displaying all Relays and NetComs registered in the OpCon instance. From this page, OpCon admins can remotely restart, upgrade, and request logs for Relay instances, as well as manually transition workload from a Primary relay to a failover relay using the new Relay Failover modal. Relay 26.1.0 is required. (See Relay Management section above.)
+:eight_spoked_asterisk: **OC-3856: Relay/NetCom Administration Page** Added a new Relays/NetComs administration page in Solution Manager displaying all Relays and NetComs registered in the OpCon instance. From this page, OpCon admins can remotely restart, upgrade, and request logs for Relay instances, as well as manually transition workload from a Primary relay to a failover relay using the new Relay Failover modal. Relay 26.1.0 is required. (See Relay Management section above.)
 
 :white_check_mark: **OC-4434: NetCom Name Now a Validated Dropdown** The NetCom Name on the Machine Definition page is now a validated dropdown instead of a free text field.
 
@@ -197,6 +197,12 @@ Scheduling is more reliable and predictable. Frequency configurations behave as 
 
 :white_check_mark: **OC-6133: Embedded Script Job Action Fix** Fixed an issue where changing the job action of an embedded script job would clear the embedded script configuration.
 
+:white_check_mark: **OC-7108: Schedule and Job History Report Filter Fix** Fixed an issue where certain filters on the Schedule and Job History Report page were breaking results.
+
+:white_check_mark: **OC-7221: Hide/Unhide Schedules Fix** Fixed an issue with hiding and unhiding schedules in Operations and Process view.
+
+:white_check_mark: **OC-7227: OpCon REST API - Max Payload Limit Increased to 8,000 Characters** Updated the error message when creating Operations Filters to be more descriptive.
+
 ### Why This Matters
 
 Dozens of friction points across the daily Solution Manager experience have been resolved — from data integrity improvements to display fixes to permission gaps. The cumulative effect is a more consistent, trustworthy interface that requires less workaround and generates fewer support escalations.
@@ -229,6 +235,20 @@ Dozens of friction points across the daily Solution Manager experience have been
 
 :white_check_mark: **OC-5988: User Deletion Event Fix** Fixed an issue where deleting a user could prevent jobs with associated events from loading.
 
+:white_check_mark: **OC-6795: Windows Batch User — Case-Sensitive Collation Fix** Fixed an issue on case-sensitive SQL Server collations where a Windows batch user's login name stored with different casing would cause SAM to report "Windows Password not found" and the batch user to appear blank when editing master and daily jobs. The fix applies case-insensitive matching across the SAM password lookup, master job batch user retrieval, and daily job batch user display.
+
+:white_check_mark: **OC-7222: ServMan — Ghost Process and Shutdown Fix** Fixed ServMan to prevent PlatformNotSupportedException errors and ghost processes on service shutdown. 
+
 ### Why This Matters
 
 Infrastructure improvements reduce operational overhead, improve cloud stability, and eliminate a class of performance and reliability issues that surfaced under concurrent load — making the platform more resilient as usage scales.
+
+## Documentation
+
+### What's New
+
+:white_check_mark: **OC-36: Large Schedule Dependency Display Clarification** Updated documentation to explain the dependencies display issue for large schedules.
+
+### Why This Matters
+
+On large schedules, a job can look like it has no dependencies when the predecessor is simply off-screen, leading to confusion, incorrect edits, and extra troubleshooting.
