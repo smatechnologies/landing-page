@@ -140,7 +140,6 @@ On-Prem releases are supported for 3 years from the date of release. Releases th
 <li><strong>22.6 STS (22.6.0)</strong> | 2023-07-24 | <a href="opcon-release-notes-22#opcon-2260">Release Notes</a></li>
 <li><strong>22.5 STS (22.5.0)</strong> | 2023-06-26 | <a href="opcon-release-notes-22/#opcon-2250">Release Notes</a></li>
 <li><strong>22.4 STS (22.4.0)</strong> | 2023-05-29 | <a href="opcon-release-notes-22/#opcon-2240">Release Notes</a></li>
-<li><strong>22.3 STS (22.3.1)</strong> | 2023-05-02 | <a href="opcon-release-notes-22/#opcon-2231">Release Notes</a></li>
 </ul>
 </details>
 </td>
