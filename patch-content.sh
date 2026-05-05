@@ -93,6 +93,16 @@ node "$SCRIPT_DIR/convert-rst-tables.js" \
   app/opcon-docs_versioned_docs \
   app/ibm-i-agent-docs_versioned_docs
 
+echo "Wrapping event type headings in backticks for correct TOC display..."
+
+# Headings like '### $CALENDAR:ADD' contain special characters that cause
+# Docusaurus's TOC to display only the text before the colon. Wrapping in
+# backticks makes them inlineCode nodes, serialized in full by the TOC builder.
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+node "$SCRIPT_DIR/fix-event-headings.js" \
+  content \
+  app/opcon-docs_versioned_docs
+
 echo "Setting MDX format for index pages with JSX card grids..."
 
 # In Docusaurus 3, .md files are processed as CommonMark by default (not MDX).
