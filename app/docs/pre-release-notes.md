@@ -2,7 +2,7 @@
 
 ## Spring 26
 
-### 26.1.0
+### 26.1.1
 
 **NOTE**: For compatibility, the following packages require updating if used on-premises:
 
@@ -15,7 +15,7 @@
 * **ServiceNow Connector** – 25.0 or higher
 * **WebServices Connector** – 21.6 or higher
 
-# OpCon Release 26.1 – What's New
+# OpCon Release 26.1.1 – What's New
 
 ## Summary
 
@@ -210,6 +210,8 @@ Dozens of friction points across the daily Solution Manager experience have been
 ## Core Engine & Infrastructure
 
 ### What's New
+
+:white_check_mark: **OC-6412: Request Router Request Processing Fix** Fixed an issue where SMARequestRouter could occasionally skip processing requests submitted by SAM, causing automated schedule builds, deletes, checks, and forecasts to be silently missed. Customers may have noticed automated schedule builds skipped or not running for upcoming run dates, missing SMASchedMan log files for affected schedules, or repeated "has not yet been submitted by SMARequestRouter" warnings in the SAM critical log. SMARequestRouter now performs a periodic recovery check that detects any previously skipped requests and re-dispatches them, with log entries confirming both the detection and the recovery for operator visibility.
 
 :white_check_mark: **OC-6184: SMANetCom Startup — Machine Connection Fix** Fixed an issue where LSAM machine connections could be permanently lost at SMANetCom startup when multiple machines connected simultaneously, requiring a service restart to recover.
 
