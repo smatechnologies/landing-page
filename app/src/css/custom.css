@@ -16,6 +16,30 @@
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
   --ifm-color-hover-orange: #d2b184;
+
+  /* ── Continuous brand palette (used by lesson-style components) ─── */
+  --brand-navy:        #01111f;
+  --brand-navy-text:   #ffffff;
+  --brand-blue:        #0f4bbd;
+  --brand-blue-light:  #90c8f8;
+  --brand-blue-soft:   #e3f1fd;
+  --brand-blue-border: #bcdefb;
+  --brand-orange:      #fa4716;
+  --brand-orange-soft: #fdf1ec;
+  --brand-text-strong: #01111f;
+  --brand-text-body:   #132739;
+  --brand-text-muted:  #677079;
+}
+
+[data-theme='dark'] {
+  /* Dark-mode adjustments — keep accents, soften surfaces */
+  --brand-navy:        #0a1f33;
+  --brand-blue-soft:   #14304d;
+  --brand-blue-border: #1d4677;
+  --brand-orange-soft: #3d1d10;
+  --brand-text-strong: #e8eef7;
+  --brand-text-body:   #c8d4e3;
+  --brand-text-muted:  #8a96a3;
 }
 
 .docusaurus-highlight-code-line {
