@@ -2,6 +2,33 @@
 
 ## Spring 26
 
+### 26.1.2
+
+**NOTE**: For compatibility, the following packages require updating if used on-premises:
+
+* **ACS AzureWebservices** - 25.0.2
+* **ACS Ease** - 25.0.3
+* **ACS WebServices** - 25.0.2
+* **Deploy** – 26.0.0 or higher
+* **Enterprise Manager** - 26.0.1 or higher
+* **Relay** - 26.1.2 or higher
+* **ServiceNow Connector** – 25.0 or higher
+* **WebServices Connector** – 21.6 or higher
+
+# OpCon Release 26.1.2 – What's New
+
+## Summary
+
+Release 26.1.2 addressed several issues with schedule builds, job output retrieval, and resolved values of the global properties $NOW and $TIME.
+
+## Core Engine & Infrastructure
+
+:white_check_mark: **OC-7278: Schedule Built for Wrong Date** Fix an issue with build date selection.
+
+:white_check_mark: **OC-7316: Question Mark in Resolved Values of [[\$NOW]] and [[\$TIME]]** Resolved values of the $NOW and $TIME global properties no longer contain an unexpected question mark before AM/PM (for example, 12:27:01?PM now correctly displays as 12:27:01 PM). This affected SAM logs, console display events, notifications, and any other location where these properties were resolved.
+
+:white_check_mark: **OC-7321: Job Output Retrieval Through Relay Over TLS** Resolved an issue where JORS (Job Output Retrieval Service) requests routed through SMANetComRelay over TLS would fail with a "Client Certificate with Serial Number not found in repository" error in environments where TLS client certificate validation was not configured.
+
 ### 26.1.1
 
 **NOTE**: For compatibility, the following packages require updating if used on-premises:
@@ -19,7 +46,30 @@
 
 ## Summary
 
-Release 26.1 focuses on relay management and high availability, reporting reliability, security hardening, and a broad sweep of fixes across Solution Manager, job scheduling, and integrations — delivering a more stable, efficient, and easier-to-manage platform.
+Release 26.1.1 addressed an issue where some requests for schedule builds, deletes, checks, and forecasts were occasionally skipped.
+
+## Core Engine & Infrastructure
+
+:white_check_mark: **OC-6412: Request Router Request Processing Fix** Fixed an issue where SMARequestRouter could occasionally skip processing requests submitted by SAM, causing automated schedule builds, deletes, checks, and forecasts to be silently missed. Customers may have noticed automated schedule builds skipped or not running for upcoming run dates, missing SMASchedMan log files for affected schedules, or repeated "has not yet been submitted by SMARequestRouter" warnings in the SAM critical log. SMARequestRouter now performs a periodic recovery check that detects any previously skipped requests and re-dispatches them, with log entries confirming both the detection and the recovery for operator visibility.
+
+### 26.1.0
+
+**NOTE**: For compatibility, the following packages require updating if used on-premises:
+
+* **ACS AzureWebservices** - 25.0.2
+* **ACS Ease** - 25.0.3
+* **ACS WebServices** - 25.0.2
+* **Deploy** – 26.0.0 or higher
+* **Enterprise Manager** - 26.0.1 or higher
+* **Relay** - 26.1.0 or higher
+* **ServiceNow Connector** – 25.0 or higher
+* **WebServices Connector** – 21.6 or higher
+
+# OpCon Release 26.1.0 – What's New
+
+## Summary
+
+Release 26.1.0 focuses on relay management and high availability, reporting reliability, security hardening, and a broad sweep of fixes across Solution Manager, job scheduling, and integrations — delivering a more stable, efficient, and easier-to-manage platform.
 
 ## Relay Management & High Availability
 
@@ -210,8 +260,6 @@ Dozens of friction points across the daily Solution Manager experience have been
 ## Core Engine & Infrastructure
 
 ### What's New
-
-:white_check_mark: **OC-6412: Request Router Request Processing Fix** Fixed an issue where SMARequestRouter could occasionally skip processing requests submitted by SAM, causing automated schedule builds, deletes, checks, and forecasts to be silently missed. Customers may have noticed automated schedule builds skipped or not running for upcoming run dates, missing SMASchedMan log files for affected schedules, or repeated "has not yet been submitted by SMARequestRouter" warnings in the SAM critical log. SMARequestRouter now performs a periodic recovery check that detects any previously skipped requests and re-dispatches them, with log entries confirming both the detection and the recovery for operator visibility.
 
 :white_check_mark: **OC-6184: SMANetCom Startup — Machine Connection Fix** Fixed an issue where LSAM machine connections could be permanently lost at SMANetCom startup when multiple machines connected simultaneously, requiring a service restart to recover.
 
