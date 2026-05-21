@@ -14,6 +14,9 @@ https://github.com/smatechnologies/opcon-web-installer/releases/latest
 or directly from our SFTP server at: 
 https://files.smatechnologies.com/files/OpCon%20Releases/Relay.
 
+### Supported Versions
+The current version is the supported release. The previous version remains available during the upgrade window.
+
 ### FAQs
 **Q**: What versions of Windows OS are supported?<br>
 **A**: All versions of Windows Server currently supported by Microsoft.
