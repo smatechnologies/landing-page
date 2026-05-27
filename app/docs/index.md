@@ -58,16 +58,17 @@ On-Prem releases are supported for 3 years from the date of release. Releases th
 <tbody>
 <tr>
 <td style="text-align: center">26.0 LTS</td>
-<td style="text-align: center">26.0.2</td>
-<td style="text-align: center">2026-03-19</td>
+<td style="text-align: center">26.0.4</td>
+<td style="text-align: center">2026-04-20</td>
 <td style="text-align: center">2029-02-28</td>
-<td style="text-align: center"><a href="https://help.smatechnologies.com/opcon/core/v26.0/release-notes#opcon-2602">Release Notes</a></td>
+<td style="text-align: center"><a href="https://help.smatechnologies.com/opcon/core/v26.0/release-notes#opcon-2604">Release Notes</a></td>
 </tr>
 <tr>
 <td colspan="5" style="padding: 10px">
 <details>
 <summary><strong>This release is a continuation of the below release versions</strong></summary>
 <ul>
+<li><strong>26.0.2</strong> | 2026-03-19 | <a href="https://help.smatechnologies.com/opcon/core/v26.0/release-notes#opcon-2602">Release Notes</a></li>
 <li><strong>26.0.1</strong> | 2026-02-17 | <a href="https://help.smatechnologies.com/opcon/core/v26.0/release-notes#opcon-2601">Release Notes</a></li>
 </ul>
 </details>
