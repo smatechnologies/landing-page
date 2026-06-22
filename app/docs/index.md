@@ -76,16 +76,17 @@ On-Prem releases are supported for 3 years from the date of release. Releases th
 </tr>
 <tr>
 <td style="text-align: center">25.0 LTS</td>
-<td style="text-align: center">25.0.6</td>
-<td style="text-align: center">2026-03-30</td>
+<td style="text-align: center">25.0.7</td>
+<td style="text-align: center">2026-06-08</td>
 <td style="text-align: center">2028-02-28</td>
-<td style="text-align: center"><a href="https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2506">Release Notes</a></td>
+<td style="text-align: center"><a href="https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2507">Release Notes</a></td>
 </tr>
 <tr>
 <td colspan="5" style="padding: 10px">
 <details>
 <summary><strong>This release is a continuation of the below release versions</strong></summary>
 <ul>
+<li><strong>25.0.6</strong> | 2026-03-30 | <a href="https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2506">Release Notes</a></li>
 <li><strong>25.0.5</strong> | 2026-02-09 | <a href="https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2505">Release Notes</a></li>
 <li><strong>25.0.3</strong> | 2025-07-14 | <a href="https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2503">Release Notes</a></li>
 <li><strong>25.0.2</strong> | 2025-05-12 | <a href="https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2502">Release Notes</a></li>
@@ -139,8 +140,6 @@ On-Prem releases are supported for 3 years from the date of release. Releases th
 <li><strong>22.8 STS (22.8.0)</strong> | 2023-09-18 | <a href="opcon-release-notes-22/#opcon-2280">Release Notes</a></li>
 <li><strong>22.7 STS (22.7.0)</strong> | 2023-08-21 | <a href="opcon-release-notes-22/#opcon-2270">Release Notes</a></li>
 <li><strong>22.6 STS (22.6.0)</strong> | 2023-07-24 | <a href="opcon-release-notes-22#opcon-2260">Release Notes</a></li>
-<li><strong>22.5 STS (22.5.0)</strong> | 2023-06-26 | <a href="opcon-release-notes-22/#opcon-2250">Release Notes</a></li>
-<li><strong>22.4 STS (22.4.0)</strong> | 2023-05-29 | <a href="opcon-release-notes-22/#opcon-2240">Release Notes</a></li>
 </ul>
 </details>
 </td>
