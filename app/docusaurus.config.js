@@ -36,7 +36,7 @@ module.exports = {
   // Web-font fallbacks for the Continuous brand fonts (Kaleko / BDO Grotesk are
   // licensed; Poppins/Inter approximate them for display/body, JetBrains Mono for code).
   stylesheets: [
-    'https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap',
+    'https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap',
   ],
   organizationName: 'Continuous',
   projectName: 'help-landing-page',

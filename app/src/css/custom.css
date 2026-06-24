@@ -7,14 +7,14 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #007db5;
-  /* Shades derived from the #007db5 brand blue (previously stray green defaults) */
-  --ifm-color-primary-dark: #0071a3;
-  --ifm-color-primary-darker: #006a9a;
-  --ifm-color-primary-darkest: #00577f;
-  --ifm-color-primary-light: #008bcc;
-  --ifm-color-primary-lighter: #0096db;
-  --ifm-color-primary-lightest: #00a4f0;
+  /* Continuous teal-blue, matched to the Continuum test site (#0076a8). */
+  --ifm-color-primary: #0076a8;
+  --ifm-color-primary-dark: #006a97;
+  --ifm-color-primary-darker: #00648e;
+  --ifm-color-primary-darkest: #005275;
+  --ifm-color-primary-light: #0082b9;
+  --ifm-color-primary-lighter: #0088c2;
+  --ifm-color-primary-lightest: #0099db;
   --ifm-code-font-size: 95%;
   --ifm-color-hover-orange: #d2b184;
 }
@@ -232,25 +232,10 @@
 }
 
 /* ── Sidebar menu styles ──────────────────────────────────────────────────── */
-
-/* All sidebar links and labels */
-.menu__link {
-  font-size: 0.9rem;
-  line-height: 1.4;
-}
-
-/* Spacing between sidebar items */
-.menu__list-item {
-  margin-bottom: 0.3rem;
-}
-
-/* Category heading labels — uppercase + letter-spaced like h3 */
-.menu__list-item-collapsible > .menu__link,
-.menu__list > .menu__list-item > .menu__link:not(.menu__link--sublist) {
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--ifm-color-primary);
-}
+/* Sidebar styling is governed by the "Continuous brand refresh" block at the end
+   of this file so it matches the Continuum test site exactly (leaf links in
+   normal-case emphasis-800; level-1 categories as teal eyebrow tags). The
+   previous uppercase/primary rules were removed to avoid overriding it. */
 
 /* ── Index page column grid ───────────────────────────────────────────────── */
 .nav-grid {
@@ -584,8 +569,11 @@
    ════════════════════════════════════════════════════════════════════════════ */
 
 :root {
+  --continuous-teal: #0076a8;
   --continuous-teal-dark: #003d4c; /* gradient dark end + heading color */
   --continuous-navy: #01111f;
+  --continuous-cta: #0f4bbd;
+  --continuous-link: var(--continuous-teal); /* = lightest shade in the hero banner (#0076a8) */
   --continuous-accent: #db380b; /* hover accent (cards, active sidebar item) */
   --continuous-tint: #e3f1fd; /* light table header / active sidebar fill */
   --continuous-tint-2: #f0f6f7; /* zebra rows / sidebar hover fill */
@@ -598,12 +586,41 @@
   --ifm-font-family-monospace: "JetBrains Mono", ui-monospace, SFMono-Regular,
     Menlo, Consolas, monospace;
   --ifm-heading-color: var(--continuous-teal-dark);
+  --ifm-link-color: var(--continuous-link);
+  --ifm-link-hover-color: var(--continuous-teal-dark);
+  --ifm-h1-font-size: 1.7rem;
+  --ifm-font-weight-base: 300; /* thinner (light) body text */
 }
 
 [data-theme='dark'] {
+  /* Lighter, higher-contrast teal palette for dark mode (matches test site). */
+  --ifm-color-primary: #34b6e0;
+  --ifm-color-primary-dark: #20abda;
+  --ifm-color-primary-darker: #1ea2cf;
+  --ifm-color-primary-darkest: #1985aa;
+  --ifm-color-primary-light: #4cbfe4;
+  --ifm-color-primary-lighter: #58c4e6;
+  --ifm-color-primary-lightest: #7fd2ec;
+
   --continuous-tint: rgba(52, 182, 224, 0.16);
   --continuous-tint-2: rgba(52, 182, 224, 0.1);
   --ifm-heading-color: #e8f4f8;
+  --ifm-link-color: #6aa8ff;
+  --ifm-link-hover-color: #9ec6ff;
+}
+
+/* Content links use a lighter blue with a teal hover (matches the test site). */
+.markdown a {
+  color: var(--continuous-link);
+}
+.markdown a:hover {
+  color: var(--continuous-teal-dark);
+}
+[data-theme='dark'] .markdown a {
+  color: var(--ifm-link-color);
+}
+[data-theme='dark'] .markdown a:hover {
+  color: var(--ifm-link-hover-color);
 }
 
 /* ---- Top navbar links: smaller ---- */
@@ -626,15 +643,23 @@
   border-bottom: none; /* override the underline these pages put on h1 */
   padding-bottom: 0;
 }
-/* In-page headings scaled in parallel with the smaller title */
+/* In-page headings scaled in parallel with the smaller title (matches test site) */
 .theme-doc-markdown > header ~ h2 {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 .theme-doc-markdown > header ~ h3 {
-  font-size: 1rem;
+  font-size: 1.05rem;
 }
 .theme-doc-markdown > header ~ h4 {
   font-size: 0.95rem;
+}
+/* Section headings: subtle brand underline to match the test site rhythm */
+.theme-doc-markdown h2 {
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid var(--continuous-tint);
+}
+[data-theme='dark'] .theme-doc-markdown h2 {
+  border-bottom-color: rgba(52, 182, 224, 0.2);
 }
 
 /* ---- Tables styled like the index cards (rounded, tint header) ---- */
@@ -677,9 +702,17 @@
   border-top-color: rgba(255, 255, 255, 0.07);
 }
 
-/* ---- Sidebar links with a card-style active accent ---- */
+/* ---- Sidebar menu (matches the test site card style) ---- */
+.menu {
+  padding: 1rem 0.75rem;
+  font-size: 0.92rem;
+}
 .menu__link {
   border-radius: 8px;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--ifm-color-emphasis-800);
   transition: background-color 0.15s ease, color 0.15s ease,
     box-shadow 0.15s ease;
 }
@@ -691,14 +724,36 @@
   background: var(--continuous-tint);
   color: var(--continuous-teal-dark);
   font-weight: 600;
-  box-shadow: inset 3px 0 0 var(--ifm-color-primary);
+  box-shadow: inset 3px 0 0 var(--continuous-teal);
 }
 .menu__link--active:not(.menu__link--sublist):hover {
   box-shadow: inset 3px 0 0 var(--continuous-accent);
 }
+/* Top-level category labels render like the card "eyebrow" tags */
+.theme-doc-sidebar-item-category-level-1
+  > .menu__list-item-collapsible
+  > .menu__link {
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--continuous-teal);
+}
+.theme-doc-sidebar-item-category-level-1
+  > .menu__list-item-collapsible
+  > .menu__link:hover {
+  background: var(--continuous-tint-2);
+  color: var(--continuous-teal-dark);
+}
 [data-theme='dark'] .menu__link:hover,
 [data-theme='dark'] .menu__link--active:not(.menu__link--sublist) {
   color: #e8f4f8;
+}
+[data-theme='dark']
+  .theme-doc-sidebar-item-category-level-1
+  > .menu__list-item-collapsible
+  > .menu__link {
+  color: var(--ifm-color-primary);
 }
 
 /* ---- Index nav cards: teal edge + lift, matching the doc test site ---- */
@@ -712,4 +767,46 @@
   transform: translateY(-3px);
   box-shadow: 0 10px 24px rgba(0, 61, 76, 0.16);
   border-left-color: var(--continuous-accent);
+}
+
+/* ---- Overview-page menu cards: match the test site index cards ----
+   These cards are authored with inline styles in the (gitignored) content
+   markdown — anonymous <div style="...border-radius:10px;...emphasis-400...">
+   with an h3 + link list — so they're targeted by their inline-style signature
+   and the inline properties are overridden with !important. */
+.theme-doc-markdown div[style*="border-radius:10px"][style*="emphasis-400"] {
+  border: 1px solid rgba(0, 61, 76, 0.12) !important;
+  border-left: 4px solid var(--continuous-teal) !important;
+  border-radius: 12px !important;
+  background: var(--ifm-background-surface-color) !important;
+  padding: 1.25rem 1.5rem !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease,
+    border-color 0.15s ease;
+}
+.theme-doc-markdown div[style*="border-radius:10px"][style*="emphasis-400"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 61, 76, 0.16);
+  border-left-color: var(--continuous-accent) !important;
+}
+.theme-doc-markdown
+  div[style*="border-radius:10px"][style*="emphasis-400"]
+  h3 {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  font-size: 1.15rem;
+  color: var(--ifm-heading-color);
+  text-transform: none;
+  letter-spacing: normal;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.theme-doc-markdown
+  div[style*="border-radius:10px"][style*="emphasis-400"]
+  ul {
+  margin-bottom: 0;
+}
+[data-theme='dark']
+  .theme-doc-markdown
+  div[style*="border-radius:10px"][style*="emphasis-400"] {
+  border-color: rgba(255, 255, 255, 0.1) !important;
 }
