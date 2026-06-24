@@ -773,8 +773,13 @@
    These cards are authored with inline styles in the (gitignored) content
    markdown — anonymous <div style="...border-radius:10px;...emphasis-400...">
    with an h3 + link list — so they're targeted by their inline-style signature
-   and the inline properties are overridden with !important. */
-.theme-doc-markdown div[style*="border-radius:10px"][style*="emphasis-400"] {
+   and overridden with !important.
+   NOTE: match on the spacing-agnostic substrings "border-radius" and
+   "emphasis-400" (property/var names), NOT "border-radius:10px". On first load
+   the SSR attribute has no space after the colon, but on client-side navigation
+   React re-serializes it via the CSSOM with a space ("border-radius: 10px"), so
+   a value-based match would only work after a hard refresh. */
+.theme-doc-markdown div[style*="border-radius"][style*="emphasis-400"] {
   border: 1px solid rgba(0, 61, 76, 0.12) !important;
   border-left: 4px solid var(--continuous-teal) !important;
   border-radius: 12px !important;
@@ -783,13 +788,13 @@
   transition: transform 0.15s ease, box-shadow 0.15s ease,
     border-color 0.15s ease;
 }
-.theme-doc-markdown div[style*="border-radius:10px"][style*="emphasis-400"]:hover {
+.theme-doc-markdown div[style*="border-radius"][style*="emphasis-400"]:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 24px rgba(0, 61, 76, 0.16);
   border-left-color: var(--continuous-accent) !important;
 }
 .theme-doc-markdown
-  div[style*="border-radius:10px"][style*="emphasis-400"]
+  div[style*="border-radius"][style*="emphasis-400"]
   h3 {
   margin-top: 0;
   margin-bottom: 0.6rem;
@@ -801,12 +806,12 @@
   padding-bottom: 0;
 }
 .theme-doc-markdown
-  div[style*="border-radius:10px"][style*="emphasis-400"]
+  div[style*="border-radius"][style*="emphasis-400"]
   ul {
   margin-bottom: 0;
 }
 [data-theme='dark']
   .theme-doc-markdown
-  div[style*="border-radius:10px"][style*="emphasis-400"] {
+  div[style*="border-radius"][style*="emphasis-400"] {
   border-color: rgba(255, 255, 255, 0.1) !important;
 }
