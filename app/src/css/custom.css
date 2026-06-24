@@ -7,13 +7,14 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #007DB5;;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-color-primary: #007db5;
+  /* Shades derived from the #007db5 brand blue (previously stray green defaults) */
+  --ifm-color-primary-dark: #0071a3;
+  --ifm-color-primary-darker: #006a9a;
+  --ifm-color-primary-darkest: #00577f;
+  --ifm-color-primary-light: #008bcc;
+  --ifm-color-primary-lighter: #0096db;
+  --ifm-color-primary-lightest: #00a4f0;
   --ifm-code-font-size: 95%;
   --ifm-color-hover-orange: #d2b184;
 }
@@ -572,4 +573,143 @@
   margin-right: 5px;
   opacity: 0.7;
   font-family: monospace;
+}
+
+/* ════════════════════════════════════════════════════════════════════════════
+   Continuous brand refresh — ported from the Continuum documentation test site.
+   Additive layer placed after the existing rules so it intentionally wins on the
+   elements it targets (fonts, page-title hero, tables, sidebar, index cards).
+   The search / navbar / responsive-grid CSS above is left untouched. Brand
+   primary (--ifm-color-primary) is also left as-is.
+   ════════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  --continuous-teal-dark: #003d4c; /* gradient dark end + heading color */
+  --continuous-navy: #01111f;
+  --continuous-accent: #db380b; /* hover accent (cards, active sidebar item) */
+  --continuous-tint: #e3f1fd; /* light table header / active sidebar fill */
+  --continuous-tint-2: #f0f6f7; /* zebra rows / sidebar hover fill */
+
+  /* Brand fonts first, with loaded Poppins/Inter/JetBrains Mono as fallbacks. */
+  --ifm-font-family-base: "BDO Grotesk", "Inter", system-ui, -apple-system,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --ifm-heading-font-family: "Kaleko", "Poppins", "BDO Grotesk", "Inter",
+    system-ui, sans-serif;
+  --ifm-font-family-monospace: "JetBrains Mono", ui-monospace, SFMono-Regular,
+    Menlo, Consolas, monospace;
+  --ifm-heading-color: var(--continuous-teal-dark);
+}
+
+[data-theme='dark'] {
+  --continuous-tint: rgba(52, 182, 224, 0.16);
+  --continuous-tint-2: rgba(52, 182, 224, 0.1);
+  --ifm-heading-color: #e8f4f8;
+}
+
+/* ---- Top navbar links: smaller ---- */
+.navbar__link {
+  font-size: 0.85rem;
+}
+
+/* ---- Page title rendered as a gradient hero band ---- */
+.theme-doc-markdown > header {
+  background: linear-gradient(135deg, #003d4c 0%, var(--ifm-color-primary) 100%);
+  border-radius: 14px;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 26px rgba(0, 61, 76, 0.2);
+}
+.theme-doc-markdown > header h1 {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 0;
+  border-bottom: none; /* override the underline these pages put on h1 */
+  padding-bottom: 0;
+}
+/* In-page headings scaled in parallel with the smaller title */
+.theme-doc-markdown > header ~ h2 {
+  font-size: 1.2rem;
+}
+.theme-doc-markdown > header ~ h3 {
+  font-size: 1rem;
+}
+.theme-doc-markdown > header ~ h4 {
+  font-size: 0.95rem;
+}
+
+/* ---- Tables styled like the index cards (rounded, tint header) ---- */
+.theme-doc-markdown table {
+  /* Infima sets `table{display:block}` for mobile scroll, which leaves narrow
+     tables (e.g. Recent Releases) short with whitespace on the right. Use real
+     table layout so columns distribute across the full content width; text
+     wraps within cells instead of overflowing. */
+  display: table;
+  width: 100%;
+  table-layout: auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid rgba(0, 61, 76, 0.12);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.theme-doc-markdown table thead tr {
+  background: var(--continuous-tint);
+  color: var(--continuous-teal-dark);
+}
+.theme-doc-markdown table thead th {
+  color: var(--continuous-teal-dark);
+  font-family: var(--ifm-heading-font-family);
+}
+.theme-doc-markdown table tbody td {
+  border: none;
+  border-top: 1px solid rgba(0, 61, 76, 0.08);
+}
+.theme-doc-markdown table tbody tr:nth-child(even) {
+  background: var(--continuous-tint-2);
+}
+[data-theme='dark'] .theme-doc-markdown table {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+[data-theme='dark'] .theme-doc-markdown table thead th {
+  color: #e8f4f8;
+}
+[data-theme='dark'] .theme-doc-markdown table tbody td {
+  border-top-color: rgba(255, 255, 255, 0.07);
+}
+
+/* ---- Sidebar links with a card-style active accent ---- */
+.menu__link {
+  border-radius: 8px;
+  transition: background-color 0.15s ease, color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+.menu__link:hover {
+  background: var(--continuous-tint-2);
+  color: var(--continuous-teal-dark);
+}
+.menu__link--active:not(.menu__link--sublist) {
+  background: var(--continuous-tint);
+  color: var(--continuous-teal-dark);
+  font-weight: 600;
+  box-shadow: inset 3px 0 0 var(--ifm-color-primary);
+}
+.menu__link--active:not(.menu__link--sublist):hover {
+  box-shadow: inset 3px 0 0 var(--continuous-accent);
+}
+[data-theme='dark'] .menu__link:hover,
+[data-theme='dark'] .menu__link--active:not(.menu__link--sublist) {
+  color: #e8f4f8;
+}
+
+/* ---- Index nav cards: teal edge + lift, matching the doc test site ---- */
+.nav-card {
+  border-left: 4px solid var(--ifm-color-primary);
+  border-radius: 12px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease,
+    border-color 0.15s ease;
+}
+.nav-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 61, 76, 0.16);
+  border-left-color: var(--continuous-accent);
 }
