@@ -877,6 +877,18 @@ module.exports = {
     
        },
      ],
+     [
+       '@docusaurus/plugin-content-docs',
+       {
+       id: 'acs-fiservccm-docs',
+         path: '../content/smatechnologies/acs-fiservccm-docs/docs',
+         routeBasePath: 'opcon/connectors/acs-fiservccm',
+         sidebarPath: require.resolve('../content/smatechnologies/acs-fiservccm-docs/sidebars.js'),
+         editUrl:
+             'https://github.com/smatechnologies/acs-fiservccm-docs/main/blob',
+    
+       },
+     ],
           [
        '@docusaurus/plugin-content-docs',
        {
