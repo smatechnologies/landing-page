@@ -35,9 +35,9 @@ These fixes improve installer reliability and environment setup, reducing fricti
 
 ### What's New
 
-✅ **OC-7724: Container now completed when all jobs in the subschedule finish** Fixed an issue with container sub-schedule not closing when all jobs fail.
+✅ **OC-7724: Container Now Completed When All Jobs In The Subschedule Finish** Fixed an issue with container sub-schedule not closing when all jobs fail.
 
-✅ **OC-7709: Automated schedule build more reliable now under heavy load** Resolved a reliability issue in the NetCom, Request Router, SchedMan, and LSAM Data Retriever services that could cause them to fail under heavy system load. Logging and configuration handling in these services have been improved to prevent recurrence.
+✅ **OC-7709: Automated Schedule Build More Reliable Now Under Heavy Load** Resolved a reliability issue in the NetCom, Request Router, SchedMan, and LSAM Data Retriever services that could cause them to fail under heavy system load. Logging and configuration handling in these services have been improved to prevent recurrence.
 
 ✅ **OC-7547: API SAM Time Zone Logging Reduced** Resolved an issue where the OpCon API was logging the SAM time zone every 5 minutes, creating unnecessary log noise.
 
@@ -64,11 +64,11 @@ These updates improve API accuracy, reduce log noise, and ensure date and privil
 
 ### What's New
 
-✅ **OC-7766: Number of Runs now defaults to 2** Fixed Number of Runs defaulting to "false" on Restart Offset.
+✅ **OC-7766: Number Of Runs Now Defaults To 2** Fixed Number of Runs defaulting to "false" on Restart Offset.
 
-✅ **OC-7763: RPA instance property name casing now preserved** Resolved an issue with preserving instance property name casing for RPA/ACS jobs.
+✅ **OC-7763: RPA Instance Property Name Casing Now Preserved** Resolved an issue with preserving instance property name casing for RPA/ACS jobs.
 
-✅ **OC-7710: RestApi memory leak resolved** Resolved a memory leak issue with recyclable memory stream manager.
+✅ **OC-7710: RestApi Memory Leak Resolved** Resolved a memory leak issue with recyclable memory stream manager.
 
 ✅ **OC-7661: Invalid Tag Deletion No Longer Closes Master Job Page** Fixed an issue where deleting an invalid tag unexpectedly closed the Master Job Definition page.
 
