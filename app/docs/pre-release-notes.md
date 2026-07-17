@@ -18,15 +18,6 @@
 
 ---
 
-## Security & Platform Updates
-
-### What's New
-
-### Why This Matters
-These updates address known security vulnerabilities in third-party dependencies, keeping OpCon environments protected and compliant.
-
----
-
 ## Installation & Infrastructure
 
 ### What's New
