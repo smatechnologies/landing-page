@@ -18,21 +18,6 @@
 
 ---
 
-## Security & Platform Updates
-
-### What's New
-
-✅ **OC-7145: MailKit STARTTLS Vulnerability Remediated** Resolved GHSA-9j88-vvj5-vhgr, a STARTTLS response injection vulnerability allowing SASL downgrade in MailKit.
-
-✅ **OC-7129: Rollup CVE-2026-27606 Remediated (26.0.x)** Resolved CVE-2026-27606 in `rollup@4.13.0` on the 26.0.x support branch.
-
-✅ **OC-7011: Rollup Arbitrary File Write Vulnerability Resolved** Resolved CVE-2026-27606, which allowed arbitrary file write via path traversal in Rollup 4.
-
-### Why This Matters
-These updates address known security vulnerabilities in third-party dependencies, keeping OpCon environments protected and compliant.
-
----
-
 ## Installation & Infrastructure
 
 ### What's New
@@ -40,10 +25,6 @@ These updates address known security vulnerabilities in third-party dependencies
 ✅ **OC-7607: Installer SSL Validation Fixed** Resolved an issue where the OpCon installer bypassed the configured DSN and failed SSL validation when using ODBC Driver 18.
 
 ✅ **OC-4379: SMAConnectionConfig Special Character Password Support** Resolved an issue where SQL Server user passwords containing special characters (such as semicolons) caused failures when updating SMAConnectionConfig.exe.
-
-✅ **OC-7277: Docker Compose License Updated for 2026** Updated the license declaration in `docker-compose.yml` for the 2026 release year.
-
-✅ **OC-6013: Reporting Projects Load Location Fixed** Resolved an issue where reporting projects were being loaded in the wrong location within `core.sln`.
 
 ### Why This Matters
 These fixes improve installer reliability and environment setup, reducing friction during upgrades and new deployments.
@@ -54,13 +35,17 @@ These fixes improve installer reliability and environment setup, reducing fricti
 
 ### What's New
 
+✅ **OC-7724: Container now completed when all jobs in the subschedule finish** Fixed an issue with container sub-schedule not closing when all jobs fail.
+
+✅ **OC-7709: Automated schedule build more reliable now under heavy load** Resolved a reliability issue in the NetCom, Request Router, SchedMan, and LSAM Data Retriever services that could cause them to fail under heavy system load. Logging and configuration handling in these services have been improved to prevent recurrence.
+
 ✅ **OC-7547: API SAM Time Zone Logging Reduced** Resolved an issue where the OpCon API was logging the SAM time zone every 5 minutes, creating unnecessary log noise.
 
 ✅ **OC-7529: Admin Role Privilege Fields Now Populated** Fixed an issue where the admin role returned empty arrays for `accessCodePrivileges`, `machinePrivileges`, `machineGroupPrivileges`, and `accessibleBatchUserIds`.
 
 ✅ **OC-7469: OpCon API Inconsistencies Corrected** Resolved a set of inconsistencies in OpCon API behavior that could cause unpredictable responses.
 
-✅ **OC-7407: Department Function Privilege API Endpoint Added** Added a new API endpoint that returns department function privilege details, improving integration and reporting capabilities.
+✳️ **OC-7407: Department Function Privilege API Endpoint Added** Added a new API endpoint that returns department function privilege details, improving integration and reporting capabilities.
 
 ✅ **OC-7372: API Date Handling No Longer Affected by Regional Settings** Resolved an issue where dates submitted via the API were incorrectly influenced by the server's environmental regional settings.
 
@@ -78,6 +63,12 @@ These updates improve API accuracy, reduce log noise, and ensure date and privil
 ## Solution Manager Improvements
 
 ### What's New
+
+✅ **OC-7766: Number of Runs now defaults to 2** Fixed Number of Runs defaulting to "false" on Restart Offset.
+
+✅ **OC-7763: RPA instance property name casing now preserved** Resolved an issue with preserving instance property name casing for RPA/ACS jobs.
+
+✅ **OC-7710: RestApi memory leak resolved** Resolved a memory leak issue with recyclable memory stream manager.
 
 ✅ **OC-7661: Invalid Tag Deletion No Longer Closes Master Job Page** Fixed an issue where deleting an invalid tag unexpectedly closed the Master Job Definition page.
 
