@@ -8,7 +8,7 @@
 * **ACS AzureWebservices** - 25.0.2
 * **ACS Ease** - 25.0.3
 * **ACS WebServices** - 25.0.2
-* **Deploy** – 26.0.2 or higher
+* **Deploy** – 26.0.3 or higher
 * **Enterprise Manager** - 26.0.1 or higher
 * **Relay** - 26.1.2 or higher
 * **ServiceNow Connector** – 25.0 or higher
