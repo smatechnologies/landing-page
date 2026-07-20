@@ -42,6 +42,7 @@ We support the current version and the previous version (for up to one year afte
 - [MCP](/opcon/agents/mcp)
 - [OS2200](/opcon/agents/os2200)
 - [PEOPLESOFT](/opcon/connectors/peoplesoft)
+- [RESOURCE MONITOR](/resource-monitor-release-notes)
 - [ROBOTIC PROCESS AUTOMATION (RPA)](/opcon/agents/opcon-rpa)
 - [SAP](/opcon/agents/sap)
 - [SAP BW](/opcon/agents/sap-bw)
