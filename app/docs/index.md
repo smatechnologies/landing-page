@@ -14,7 +14,6 @@ title: 'Home'
 | June 8, 2026 | OpCon 25.0.7 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2507) |
 | April 29, 2026 | Deploy 25.2.2 | Deploy | [Release Notes](https://help.smatechnologies.com/opcon/deploy/release-notes) |
 | April 29, 2026 | UNIX Agent 26.0.0 | Agent | [Release Notes](https://help.smatechnologies.com/opcon/agents/unix/release-notes) |
-| March 30, 2026 | OpCon 23.0.14 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v23.0/release-notes#opcon-23014) |
 
 ## OpCon Cloud Releases
 
@@ -58,16 +57,17 @@ On-Prem releases are supported for 3 years from the date of release. Releases th
 <tbody>
 <tr>
 <td style="text-align: center">26.0 LTS</td>
-<td style="text-align: center">26.0.4</td>
-<td style="text-align: center">2026-04-20</td>
+<td style="text-align: center">26.0.5</td>
+<td style="text-align: center">2026-07-07</td>
 <td style="text-align: center">2029-02-28</td>
-<td style="text-align: center"><a href="https://help.smatechnologies.com/opcon/core/v26.0/release-notes#opcon-2604">Release Notes</a></td>
+<td style="text-align: center"><a href="https://help.smatechnologies.com/opcon/core/v26.0/release-notes#opcon-2605">Release Notes</a></td>
 </tr>
 <tr>
 <td colspan="5" style="padding: 10px">
 <details>
 <summary><strong>This release is a continuation of the below release versions</strong></summary>
 <ul>
+<li><strong>26.0.4</strong> | 2026-04-20 | <a href="https://help.smatechnologies.com/opcon/core/v26.0/release-notes#opcon-2604">Release Notes</a></li>
 <li><strong>26.0.2</strong> | 2026-03-19 | <a href="https://help.smatechnologies.com/opcon/core/v26.0/release-notes#opcon-2602">Release Notes</a></li>
 <li><strong>26.0.1</strong> | 2026-02-17 | <a href="https://help.smatechnologies.com/opcon/core/v26.0/release-notes#opcon-2601">Release Notes</a></li>
 </ul>

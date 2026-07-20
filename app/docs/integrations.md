@@ -8,202 +8,56 @@ We support the current version and the previous version (for up to one year afte
 
 ### Agents and Connectors
 
-<div class="grid-container">
+<div class="nav-card integrations-list">
 
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/asyscoamt-acs">ACS ASYSCO AMT</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/ease-acs-docs">ACS EASE</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/informatica-onprem-acs">ACS Informatica (On Prem)</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/acs-fiservccm">ACS Fiserv CCM</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/acs-fiservdna">ACS Fiserv DNA</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/acs-kubernetes">ACS Kubernetes</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/webservices-acs">ACS WEBSERVICES</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/asysco-amt">ASYSCO AMT</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/awsec2">AMAZON EC2</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/azure-storage">AZURE STORAGE</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/azure-vm">AZURE VM</a>
-</div>
-
-<div class="grid-item">
- <a class="button button--link button--block button--primary" href="/opcon/connectors/cegid-cbr">CEGID CBR</a>
-</div>
-
-<div class="grid-item">
- <a class="button button--link button--block button--primary" href="/opcon/connectors/cegid-orli">CEGID ORLI</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/commvault">COMMVAULT</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/corelation">CORELATION</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/easyvista">EASYVISTA</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/episys">EPISYS (RSJ)</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/exigen">EXIGEN</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/fics">FICS</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/fiserv-dna">FISERV DNA</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--link button--block button--primary" href="/opcon/connectors/xp2">FISERV XP2</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/agents/guidewire">GUIDEWIRE</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/agents/ibm-i-2101">IBM I (Version 21.1)</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/agents/ibm-i-1801">IBM I (Version 18.1)</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/jaspersoft">JASPERSOFT</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/agents/java">JAVA</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/jdedwards">JD EDWARDS</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/jboss">JBOSS</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/agents/opconmft">MANAGED FILE TRANSFER (MFT)</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/agents/mcp">MCP</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/agents/os2200">OS2200</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/peoplesoft">PEOPLESOFT</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/agents/opcon-rpa">ROBOTIC PROCESS AUTOMATION (RPA)</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/agents/sap">SAP</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/agents/sap-bw">SAP BW</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/sapbo">SAPBO</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/sap-data-services">SAP DATA SERVICES</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/servicenow">SERVICE NOW</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/smart-email">SMART EMAIL</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/agents/sql">SQL</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/symphonysummit">SYMPHONY SUMMIT</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/agents/tuxedo-art">TUXEDO ART</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/unikix">UNIKIX</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/agents/unix">UNIX</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/vmware">VMWARE</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/connectors/webservices">WEBSERVICES</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/agents/windows">WINDOWS</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="https://help.smatechnologies.com/opcon/connectors/wsus">WSUS</a>
-</div>
-
-<div class="grid-item">
-<a class="button button--link button--block button--primary" href="/opcon/agents/zos">ZOS</a>
-</div>
+- [ACS ASYSCO AMT](/opcon/connectors/asyscoamt-acs)
+- [ACS EASE](/opcon/connectors/ease-acs-docs)
+- [ACS Informatica (On Prem)](/opcon/connectors/informatica-onprem-acs)
+- [ACS Fiserv CCM](/opcon/connectors/acs-fiservccm)
+- [ACS Fiserv DNA](/opcon/connectors/acs-fiservdna)
+- [ACS Kubernetes](/opcon/connectors/acs-kubernetes)
+- [ACS WEBSERVICES](/opcon/connectors/webservices-acs)
+- [ASYSCO AMT](/opcon/connectors/asysco-amt)
+- [AMAZON EC2](/opcon/connectors/awsec2)
+- [AZURE STORAGE](/opcon/connectors/azure-storage)
+- [AZURE VM](/opcon/connectors/azure-vm)
+- [CEGID CBR](/opcon/connectors/cegid-cbr)
+- [CEGID ORLI](/opcon/connectors/cegid-orli)
+- [COMMVAULT](/opcon/connectors/commvault)
+- [CORELATION](/opcon/connectors/corelation)
+- [EASYVISTA](/opcon/connectors/easyvista)
+- [EPISYS (RSJ)](/opcon/connectors/episys)
+- [EXIGEN](/opcon/connectors/exigen)
+- [FICS](/opcon/connectors/fics)
+- [FISERV DNA](/opcon/connectors/fiserv-dna)
+- [FISERV XP2](/opcon/connectors/xp2)
+- [GUIDEWIRE](/opcon/agents/guidewire)
+- [IBM I (Version 21.1)](/opcon/agents/ibm-i-2101)
+- [IBM I (Version 18.1)](/opcon/agents/ibm-i-1801)
+- [JASPERSOFT](/opcon/connectors/jaspersoft)
+- [JAVA](/opcon/agents/java)
+- [JD EDWARDS](/opcon/connectors/jdedwards)
+- [JBOSS](/opcon/connectors/jboss)
+- [MANAGED FILE TRANSFER (MFT)](/opcon/agents/opconmft)
+- [MCP](/opcon/agents/mcp)
+- [OS2200](/opcon/agents/os2200)
+- [PEOPLESOFT](/opcon/connectors/peoplesoft)
+- [ROBOTIC PROCESS AUTOMATION (RPA)](/opcon/agents/opcon-rpa)
+- [SAP](/opcon/agents/sap)
+- [SAP BW](/opcon/agents/sap-bw)
+- [SAPBO](/opcon/connectors/sapbo)
+- [SAP DATA SERVICES](/opcon/connectors/sap-data-services)
+- [SERVICE NOW](/opcon/connectors/servicenow)
+- [SMART EMAIL](/opcon/connectors/smart-email)
+- [SQL](/opcon/agents/sql)
+- [SYMPHONY SUMMIT](/opcon/connectors/symphonysummit)
+- [TUXEDO ART](/opcon/agents/tuxedo-art)
+- [UNIKIX](/opcon/connectors/unikix)
+- [UNIX](/opcon/agents/unix)
+- [VMWARE](/opcon/connectors/vmware)
+- [WEBSERVICES](/opcon/connectors/webservices)
+- [WINDOWS](/opcon/agents/windows)
+- [WSUS](https://help.smatechnologies.com/opcon/connectors/wsus)
+- [ZOS](/opcon/agents/zos)
 
 </div>
