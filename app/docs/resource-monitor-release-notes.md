@@ -7,9 +7,19 @@ description: Release notes for the most recent releases of SMA Resource Monitor.
 
 This page lists changes for each SMA Resource Monitor release, organized by version.
 
-## Release 21.1.0
+## Release 21.2.0
 
 July 2026
+
+### Fixes
+
+:eight_spoked_asterisk: **OCAG-860**: Fixed Installer to retain the service Logon value during upgrades.
+
+:eight_spoked_asterisk: **OCAG-1115**: Fixed ResourceMonitor File watcher handling for different rules watching same file path in different time intervals.
+
+## Release 21.1.0
+
+April 2026
 
 ### Fixes
 
@@ -17,7 +27,7 @@ July 2026
 
 ## Release 21.0.0
 
-July 2026
+October 2025
 
 ### New Features
 
