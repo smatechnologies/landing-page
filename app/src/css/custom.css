@@ -657,6 +657,11 @@
   font-size: 0.85rem;
 }
 
+/* ---- Hide the external-link icon on navbar (and its dropdown) links ---- */
+.navbar [class*="iconExternalLink"] {
+  display: none;
+}
+
 /* ---- Page title rendered as a gradient hero band ---- */
 .theme-doc-markdown > header {
   background: linear-gradient(135deg, #003d4c 0%, var(--ifm-color-primary) 100%);
