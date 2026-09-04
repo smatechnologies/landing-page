@@ -32,7 +32,7 @@ module.exports = {
       }).join('');
     },
   },
-  favicon: 'img/favicon.png',
+  favicon: 'img/continuous-favicon.ico',
   // Web-font fallbacks for the Continuous brand fonts (Kaleko / BDO Grotesk are
   // licensed; Poppins/Inter approximate them for display/body, JetBrains Mono for code).
   stylesheets: [
@@ -56,8 +56,11 @@ module.exports = {
     navbar: {
 //      title: 'Home',
       logo: {
-        alt: 'SMA Technologies Help Logo',
-        src: 'img/continuous-logomark-blue.png',
+        alt: 'Continuous',
+        src: 'img/continuous-horizontal-blue.png',
+        // The brand mark is navy (#01111f) and disappears against the dark
+        // theme background, so dark mode gets the white lockup.
+        srcDark: 'img/continuous-horizontal-white.png',
         href: 'https://continuous.com',
       },
       items: [
@@ -75,13 +78,13 @@ module.exports = {
           href: 'https://github.com/smatechnologies',
           label: 'Innovation Lab',
           position: 'right',
-          className: 'navbar-hide-1480',
+          className: 'navbar-hide-1',
         },
         {
           href: 'https://help.smatechnologies.com/opcon/core/api/25-1',
           label: "REST API",
           position: 'right',
-          className: 'navbar-hide-1380',
+          className: 'navbar-hide-2',
         },
         {
           to: '/',
@@ -109,13 +112,13 @@ module.exports = {
           href: '/opcon/deploy/',
           label: 'Deploy',
           position: 'left',
-          className: 'navbar-hide-1140',
+          className: 'navbar-hide-4',
         },
         {
           href: '/opcon-relay/',
           label: 'Relay',
           position: 'left',
-          className: 'navbar-hide-1260',
+          className: 'navbar-hide-3',
         },
       ],
     },
