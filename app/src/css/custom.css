@@ -7,16 +7,23 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  /* Continuous teal-blue, matched to the Continuum test site (#0076a8). */
-  --ifm-color-primary: #0076a8;
-  --ifm-color-primary-dark: #006a97;
-  --ifm-color-primary-darker: #00648e;
-  --ifm-color-primary-darkest: #005275;
-  --ifm-color-primary-light: #0082b9;
-  --ifm-color-primary-lighter: #0088c2;
-  --ifm-color-primary-lightest: #0099db;
+  /* Continuous "Sapphire" — the brand blue, read directly from the
+     continuous.com theme CSS (--tw-color-sapphire). 7.60:1 on white and behind
+     white text, so it is safe for links, buttons and filled headers alike.
+     Shades follow Infima's relative-lightness ramp (+/-10%, +/-15%, +/-30%). */
+  --ifm-color-primary: #0f4bbd;
+  --ifm-color-primary-dark: #0e43aa;
+  --ifm-color-primary-darker: #0d40a1;
+  --ifm-color-primary-darkest: #0a3484;
+  --ifm-color-primary-light: #1152d0;
+  --ifm-color-primary-lighter: #1156d9;
+  --ifm-color-primary-lightest: #1c64ed;
   --ifm-code-font-size: 95%;
-  --ifm-color-hover-orange: #d2b184;
+  /* Legacy token, kept only so the old `.button:hover` rules below still
+     resolve. Points at the darkened accent rather than the raw brand orange
+     because those rules put white text on it: white on #fa4716 is 3.51:1
+     (fails AA), white on the darkened #cd2f04 is 5.24:1. */
+  --ifm-color-hover-orange: var(--continuous-accent-text);
 }
 
 .docusaurus-highlight-code-line {
@@ -102,7 +109,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: var(--ifm-color-emphasis-700);
+  color: var(--continuous-heading-muted);
   margin-top: 1.25rem;
   margin-bottom: 0.5rem;
 }
@@ -112,7 +119,7 @@
   font-size: 0.875rem;
   font-weight: 600;
   font-style: italic;
-  color: var(--ifm-color-emphasis-600);
+  color: var(--continuous-heading-subtle);
   margin-top: 1rem;
   margin-bottom: 0.4rem;
 }
@@ -121,7 +128,7 @@
 .markdown h6 {
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--ifm-color-emphasis-500);
+  color: var(--continuous-heading-subtle);
   margin-top: 0.75rem;
   margin-bottom: 0.35rem;
 }
@@ -170,9 +177,12 @@
   margin-bottom: 1.25rem;
 }
 
+/* Base table shading. Uses the same tokens as the brand layer below so the two
+   never diverge — notably in dark mode, where a hardcoded #fff on the lightened
+   primary would only reach 3.30:1. */
 .markdown table thead tr {
-  background-color: var(--ifm-color-primary);
-  color: #fff;
+  background-color: var(--continuous-table-head);
+  color: var(--continuous-table-head-fg);
 }
 
 .markdown table thead th {
@@ -186,7 +196,7 @@
 }
 
 .markdown table tbody tr:nth-child(even) {
-  background-color: var(--ifm-color-emphasis-100);
+  background-color: var(--continuous-table-stripe);
 }
 
 .markdown table tbody td {
@@ -337,19 +347,41 @@
   }
 }
 
-/* ── Navbar responsive overflow fix ──────────────────────────────────────────
+/* ── Navbar branding + responsive overflow fix ───────────────────────────────
    Docusaurus's hamburger menu activates at ≤996px. With many navbar items the
    bar overflows at intermediate widths. Each item gets its own breakpoint so
    they disappear one-by-one as the window narrows ("priority nav" pattern).
    All items remain accessible in the hamburger sidebar at ≤996px.
 
-   Hide order as viewport shrinks:
-     1480px — Innovation Lab
-     1380px — REST API
-     1260px — Relay
-     1140px — Deploy
+   Hide order as viewport shrinks (classes are named by hide order, so these
+   pixel values live only here and can be retuned without touching the config):
+     1630px — Innovation Lab  (.navbar-hide-1)
+     1530px — REST API        (.navbar-hide-2)
+     1410px — Relay           (.navbar-hide-3)
+     1290px — Deploy          (.navbar-hide-4)
       996px — hamburger takes over (built-in Docusaurus behaviour)
-*/
+
+   These sit higher than they used to because the navbar now carries the full
+   "Continuous" horizontal lockup rather than the infinity logomark. The
+   wordmark is ~8.4:1, so at the capped 1.36rem height below it occupies ~183px
+   versus ~66px for the logomark at Infima's default size — items therefore need
+   to start collapsing sooner to keep the bar on one row.
+
+   Note: the values above were set when the lockup was 1.6rem (~215px). The
+   reduction to 1.36rem reclaimed ~32px, so each breakpoint now carries about
+   that much slack — items hide marginally earlier than strictly necessary,
+   which is the safe direction (the alternative is the bar overflowing). */
+
+/* Cap the lockup height: Infima's default 2rem would render the wordmark ~269px
+   wide and crowd out the nav items. 1.36rem is 15% down from the 1.6rem this
+   started at. */
+.navbar__logo {
+  height: 1.36rem;
+}
+.navbar__logo img {
+  height: 100%;
+  width: auto;
+}
 
 /* Prevent items from wrapping onto a second row; keep overflow visible so
    dropdown menus can extend below the navbar. */
@@ -358,20 +390,20 @@
   overflow: visible;
 }
 
-@media screen and (max-width: 1480px) {
-  .navbar-hide-1480 { display: none !important; }
+@media screen and (max-width: 1630px) {
+  .navbar-hide-1 { display: none !important; }
 }
 
-@media screen and (max-width: 1380px) {
-  .navbar-hide-1380 { display: none !important; }
+@media screen and (max-width: 1530px) {
+  .navbar-hide-2 { display: none !important; }
 }
 
-@media screen and (max-width: 1260px) {
-  .navbar-hide-1260 { display: none !important; }
+@media screen and (max-width: 1410px) {
+  .navbar-hide-3 { display: none !important; }
 }
 
-@media screen and (max-width: 1140px) {
-  .navbar-hide-1140 { display: none !important; }
+@media screen and (max-width: 1290px) {
+  .navbar-hide-4 { display: none !important; }
 }
 
 /* ── Search Results Enhancements ──────────────────────────────────────────── */
@@ -590,22 +622,76 @@
 }
 
 /* ════════════════════════════════════════════════════════════════════════════
-   Continuous brand refresh — ported from the Continuum documentation test site.
-   Additive layer placed after the existing rules so it intentionally wins on the
-   elements it targets (fonts, page-title hero, tables, sidebar, index cards).
-   The search / navbar / responsive-grid CSS above is left untouched. Brand
-   primary (--ifm-color-primary) is also left as-is.
+   Continuous brand layer. Placed after the existing rules so it intentionally
+   wins on the elements it targets (fonts, page-title hero, tables, sidebar,
+   index cards). The search and responsive-grid CSS above is left untouched.
+
+   Every value below is a real Continuous brand token, read from the
+   continuous.com theme CSS (the --tw-color-* custom properties and the
+   block-level variables in the page source):
+
+     primary / navy      #01111f   (also the logo artwork colour)
+     sapphire            #0f4bbd   the brand blue
+     secondary           #34414c   body copy
+     sky                 #90c8f8
+     tint                #e3f1fd   card + section backgrounds
+     accent orange       #fa4716
+     neutrals            #e6e7e9 / #99a0a5 / #677079
+
+   Where a brand value could not be used as-is it was adjusted by lightness
+   only, keeping the hue and saturation, and the reason is noted inline. Every
+   foreground/background pair was checked to clear WCAG AA 4.5:1.
    ════════════════════════════════════════════════════════════════════════════ */
 
 :root {
-  --continuous-teal: #0076a8;
-  --continuous-teal-dark: #003d4c; /* gradient dark end + heading color */
-  --continuous-navy: #01111f;
-  --continuous-cta: #0f4bbd;
-  --continuous-link: var(--continuous-teal); /* = lightest shade in the hero banner (#0076a8) */
-  --continuous-accent: #db380b; /* hover accent (cards, active sidebar item) */
-  --continuous-tint: #e3f1fd; /* light table header / active sidebar fill */
-  --continuous-tint-2: #f0f6f7; /* zebra rows / sidebar hover fill */
+  --continuous-navy: #01111f; /* brand primary; also the logo artwork colour */
+  --continuous-blue: var(--ifm-color-primary); /* sapphire #0f4bbd */
+  /* The brand uses navy, not a mid blue, for headings and dark surfaces. */
+  --continuous-blue-deep: var(--continuous-navy);
+  --continuous-sky: #90c8f8; /* brand light blue (borders/accents on dark) */
+  --continuous-sky-rgb: 144, 200, 248;
+  --continuous-link: var(--continuous-blue);
+
+  /* Brand accent orange. Used by the real site for icon-hover fills and the
+     divider bars — decorative surfaces, not text, which matches its contrast:
+     3.51:1 is AA-large only. */
+  --continuous-accent: #fa4716;
+  /* Same hue (13deg) darkened to L=41% so the accent is usable as text:
+     5.24:1 on white, 4.56:1 on the brand tint. */
+  --continuous-accent-text: #cd2f04;
+
+  --continuous-tint: #e3f1fd; /* brand tint — cards, table stripe, sidebar fill */
+  --continuous-tint-2: #eef7fe; /* tint lightened for sidebar hover */
+
+  /* Table shading. Header is solid sapphire with white text (7.60:1); the
+     stripe is the brand tint itself, which leaves sapphire links on it at
+     6.61:1. */
+  --continuous-table-head: var(--ifm-color-primary);
+  --continuous-table-head-fg: #ffffff;
+  --continuous-table-stripe: var(--continuous-tint);
+
+  /* Channels for the rgba() borders and shadows further down. */
+  --continuous-blue-deep-rgb: 1, 17, 31; /* navy */
+  --continuous-blue-bright-rgb: 76, 131, 235; /* dark-mode sapphire */
+
+  /* Heading tiers below h3, all brand values: h1/h2 navy, h3 sapphire,
+     h4 navy (set apart by size and uppercase), h5/h6 the brand neutral. */
+  --continuous-heading-muted: var(--continuous-navy); /* h4 */
+  /* Brand neutral #677079, one lightness step darker so it also clears AA on
+     the tinted table stripe (4.52:1 rather than 4.38:1). */
+  --continuous-heading-subtle: #656e76; /* h5, h6 */
+
+  /* Body copy: the brand's "secondary" colour. 10.47:1 on white. */
+  --ifm-font-color-base: #34414c;
+
+  /* Docusaurus renders every <details> block as `alert alert--info`, so these
+     drive the collapsible release-history rows on the home page as well as
+     :::info admonitions. Infima's default info colour is a cyan (#54c7ec) that
+     clashes with the brand blue, so the whole info channel is rebranded. */
+  --ifm-color-info: var(--ifm-color-primary);
+  --ifm-color-info-dark: var(--ifm-color-primary-dark);
+  --ifm-color-info-contrast-background: var(--continuous-tint);
+  --ifm-color-info-contrast-foreground: var(--continuous-navy);
 
   /* Brand fonts first, with loaded Poppins/Inter/JetBrains Mono as fallbacks. */
   --ifm-font-family-base: "BDO Grotesk", "Inter", system-ui, -apple-system,
@@ -614,36 +700,67 @@
     system-ui, sans-serif;
   --ifm-font-family-monospace: "JetBrains Mono", ui-monospace, SFMono-Regular,
     Menlo, Consolas, monospace;
-  --ifm-heading-color: var(--continuous-teal-dark);
+  --ifm-heading-color: var(--continuous-blue-deep);
   --ifm-link-color: var(--continuous-link);
-  --ifm-link-hover-color: var(--continuous-teal-dark);
+  --ifm-link-hover-color: var(--continuous-blue-deep);
   --ifm-h1-font-size: 1.7rem;
   --ifm-font-weight-base: 300; /* thinner (light) body text */
 }
 
 [data-theme='dark'] {
-  /* Lighter, higher-contrast teal palette for dark mode (matches test site). */
-  --ifm-color-primary: #34b6e0;
-  --ifm-color-primary-dark: #20abda;
-  --ifm-color-primary-darker: #1ea2cf;
-  --ifm-color-primary-darkest: #1985aa;
-  --ifm-color-primary-light: #4cbfe4;
-  --ifm-color-primary-lighter: #58c4e6;
-  --ifm-color-primary-lightest: #7fd2ec;
+  /* Sapphire's own hue, lightened to L=61%: the brand value itself is only
+     2.8:1 on the Infima dark background, and L=58% still misses at 4.20:1. */
+  --ifm-color-primary: #4c83eb;
+  --ifm-color-primary-dark: #3070e8;
+  --ifm-color-primary-darker: #2266e6;
+  --ifm-color-primary-darkest: #1652c4;
+  --ifm-color-primary-light: #6896ee;
+  --ifm-color-primary-lighter: #76a0f0;
+  --ifm-color-primary-lightest: #a0bdf4;
 
-  --continuous-tint: rgba(52, 182, 224, 0.16);
-  --continuous-tint-2: rgba(52, 182, 224, 0.1);
-  --ifm-heading-color: #e8f4f8;
-  --ifm-link-color: #6aa8ff;
-  --ifm-link-hover-color: #9ec6ff;
+  --continuous-tint: rgba(var(--continuous-blue-bright-rgb), 0.16);
+  --continuous-tint-2: rgba(var(--continuous-blue-bright-rgb), 0.1);
+  /* --continuous-blue-deep intentionally keeps its light-mode value (navy): it
+     backs the hero gradient as well as text, so flipping it would put white
+     text on a near-white band. Dark-mode text uses the token below instead. */
+  /* The brand tint's literal value — near-white on a dark background (14.96:1).
+     Not var(--continuous-tint), which is redefined above as a translucent
+     overlay for fills and would be unusable as a text colour. */
+  --continuous-on-dark: #e3f1fd;
+  --ifm-heading-color: var(--continuous-on-dark);
+  --ifm-link-color: var(--ifm-color-primary-light);
+  --ifm-link-hover-color: var(--ifm-color-primary-lighter);
+
+  /* Heading tiers and body copy use the brand neutrals rather than inverted
+     blues: #cccfd2 and #99a0a5 are both taken from the real site's dark
+     sections. */
+  --continuous-heading-muted: #e3f1fd;
+  --continuous-heading-subtle: #99a0a5;
+  --ifm-font-color-base: #cccfd2;
+  --continuous-accent-text: #ee582f; /* accent lightened for dark bg, 4.97:1 */
+
+  /* Info channel (drives <details> blocks) rebranded for dark mode too. */
+  --ifm-color-info-contrast-background: #0d295e; /* deep sapphire */
+  --ifm-color-info-contrast-foreground: #e3f1fd;
+
+  /* Dark mode cannot reuse the light header: white on the lightened dark-mode
+     sapphire (#4c83eb) is only 3.0:1. Use a deep sapphire with the light
+     foreground instead (12.21:1). The stripe becomes a white overlay so it
+     reads as a subtle lift over the dark background rather than a blue cast. */
+  --continuous-table-head: #0d295e;
+  --continuous-table-head-fg: var(--continuous-on-dark);
+  --continuous-table-stripe: rgba(255, 255, 255, 0.045);
+
+  /* Text accent lightens rather than darkens on the dark background (4.72:1). */
+  --continuous-accent-text: #e8552c;
 }
 
-/* Content links use a lighter blue with a teal hover (matches the test site). */
+/* Content links use the brand blue, deepening to the near-navy on hover. */
 .markdown a {
   color: var(--continuous-link);
 }
 .markdown a:hover {
-  color: var(--continuous-teal-dark);
+  color: var(--continuous-blue-deep);
 }
 [data-theme='dark'] .markdown a {
   color: var(--ifm-link-color);
@@ -664,11 +781,15 @@
 
 /* ---- Page title rendered as a gradient hero band ---- */
 .theme-doc-markdown > header {
-  background: linear-gradient(135deg, #003d4c 0%, var(--ifm-color-primary) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--continuous-blue-deep) 0%,
+    var(--ifm-color-primary) 100%
+  );
   border-radius: 14px;
   padding: 1.5rem 1.75rem;
   margin-bottom: 2rem;
-  box-shadow: 0 10px 26px rgba(0, 61, 76, 0.2);
+  box-shadow: 0 10px 26px rgba(var(--continuous-blue-deep-rgb), 0.2);
 }
 .theme-doc-markdown > header h1 {
   color: #fff;
@@ -692,8 +813,10 @@
   padding-bottom: 0.3rem;
   border-bottom: 2px solid var(--continuous-tint);
 }
+/* The brand uses "sky" for hairlines on dark sections, so the underline
+   follows suit rather than using a translucent primary. */
 [data-theme='dark'] .theme-doc-markdown h2 {
-  border-bottom-color: rgba(52, 182, 224, 0.2);
+  border-bottom-color: rgba(var(--continuous-sky-rgb), 0.28);
 }
 
 /* ---- Tables styled like the index cards (rounded, tint header) ---- */
@@ -707,31 +830,30 @@
   table-layout: auto;
   border-collapse: separate;
   border-spacing: 0;
-  border: 1px solid rgba(0, 61, 76, 0.12);
+  border: 1px solid rgba(var(--continuous-blue-deep-rgb), 0.12);
   border-radius: 12px;
   overflow: hidden;
 }
 .theme-doc-markdown table thead tr {
-  background: var(--continuous-tint);
-  color: var(--continuous-teal-dark);
+  background: var(--continuous-table-head);
+  color: var(--continuous-table-head-fg);
 }
 .theme-doc-markdown table thead th {
-  color: var(--continuous-teal-dark);
+  color: var(--continuous-table-head-fg);
   font-family: var(--ifm-heading-font-family);
 }
 .theme-doc-markdown table tbody td {
   border: none;
-  border-top: 1px solid rgba(0, 61, 76, 0.08);
+  border-top: 1px solid rgba(var(--continuous-blue-deep-rgb), 0.08);
 }
 .theme-doc-markdown table tbody tr:nth-child(even) {
-  background: var(--continuous-tint-2);
+  background: var(--continuous-table-stripe);
 }
 [data-theme='dark'] .theme-doc-markdown table {
   border-color: rgba(255, 255, 255, 0.1);
 }
-[data-theme='dark'] .theme-doc-markdown table thead th {
-  color: #e8f4f8;
-}
+/* Header foreground now comes from --continuous-table-head-fg, which the dark
+   block already redefines, so no separate dark override is needed here. */
 [data-theme='dark'] .theme-doc-markdown table tbody td {
   border-top-color: rgba(255, 255, 255, 0.07);
 }
@@ -752,13 +874,13 @@
 }
 .menu__link:hover {
   background: var(--continuous-tint-2);
-  color: var(--continuous-teal-dark);
+  color: var(--continuous-blue-deep);
 }
 .menu__link--active:not(.menu__link--sublist) {
   background: var(--continuous-tint);
-  color: var(--continuous-teal-dark);
+  color: var(--continuous-blue-deep);
   font-weight: 600;
-  box-shadow: inset 3px 0 0 var(--continuous-teal);
+  box-shadow: inset 3px 0 0 var(--continuous-blue);
 }
 .menu__link--active:not(.menu__link--sublist):hover {
   box-shadow: inset 3px 0 0 var(--continuous-accent);
@@ -771,17 +893,17 @@
   letter-spacing: 0.07em;
   font-size: 0.74rem;
   font-weight: 700;
-  color: var(--continuous-teal);
+  color: var(--continuous-blue);
 }
 .theme-doc-sidebar-item-category-level-1
   > .menu__list-item-collapsible
   > .menu__link:hover {
   background: var(--continuous-tint-2);
-  color: var(--continuous-teal-dark);
+  color: var(--continuous-blue-deep);
 }
 [data-theme='dark'] .menu__link:hover,
 [data-theme='dark'] .menu__link--active:not(.menu__link--sublist) {
-  color: #e8f4f8;
+  color: var(--continuous-on-dark);
 }
 [data-theme='dark']
   .theme-doc-sidebar-item-category-level-1
@@ -799,7 +921,7 @@
 }
 .nav-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(0, 61, 76, 0.16);
+  box-shadow: 0 10px 24px rgba(var(--continuous-blue-deep-rgb), 0.16);
   border-left-color: var(--continuous-accent);
 }
 
@@ -814,8 +936,8 @@
    React re-serializes it via the CSSOM with a space ("border-radius: 10px"), so
    a value-based match would only work after a hard refresh. */
 .theme-doc-markdown div[style*="border-radius"][style*="emphasis-400"] {
-  border: 1px solid rgba(0, 61, 76, 0.12) !important;
-  border-left: 4px solid var(--continuous-teal) !important;
+  border: 1px solid rgba(var(--continuous-blue-deep-rgb), 0.12) !important;
+  border-left: 4px solid var(--continuous-blue) !important;
   border-radius: 12px !important;
   background: var(--ifm-background-surface-color) !important;
   padding: 1.25rem 1.5rem !important;
@@ -824,7 +946,7 @@
 }
 .theme-doc-markdown div[style*="border-radius"][style*="emphasis-400"]:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(0, 61, 76, 0.16);
+  box-shadow: 0 10px 24px rgba(var(--continuous-blue-deep-rgb), 0.16);
   border-left-color: var(--continuous-accent) !important;
 }
 .theme-doc-markdown
@@ -848,4 +970,44 @@
   .theme-doc-markdown
   div[style*="border-radius"][style*="emphasis-400"] {
   border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* ---- Release-history tables: shade by row role, not nth-child parity ----
+   The home page's support-lifecycle table interleaves a data row with a
+   full-width <td colspan="5"> row holding a collapsible release history. Plain
+   zebra striping therefore lands on whichever rows happen to be even, and the
+   pattern inverts the moment a release is added or removed. Shade by what the
+   row *is* instead: data rows plain, history rows tinted.
+
+   Scoped with :has() to tables that actually contain a colspan cell, so normal
+   two-column tables elsewhere keep their zebra striping. The td[colspan] rule
+   is the fallback for engines without :has() — it paints the same tint on the
+   cell rather than the row, so those browsers still get a correct result. */
+.theme-doc-markdown table tbody td[colspan] {
+  background: var(--continuous-table-stripe);
+}
+.theme-doc-markdown table:has(td[colspan]) tbody tr:has(> td[colspan]) {
+  background: var(--continuous-table-stripe);
+}
+.theme-doc-markdown table:has(td[colspan]) tbody tr:not(:has(> td[colspan])) {
+  background: transparent;
+}
+
+/* ---- <details> blocks ----
+   Docusaurus wraps every <details> in `alert alert--info`, so these pick up the
+   rebranded info channel defined at the top of this layer. The remaining job is
+   the summary line, which Infima leaves at body colour. */
+.theme-doc-markdown details > summary {
+  color: var(--ifm-color-primary);
+  font-family: var(--ifm-heading-font-family);
+}
+/* Text, so it uses the contrast-safe accent rather than the raw brand orange. */
+.theme-doc-markdown details > summary:hover {
+  color: var(--continuous-accent-text);
+}
+/* Inside a tinted history row the alert's own background would double up on the
+   row tint, so let the row colour show through. */
+.theme-doc-markdown table td[colspan] > details {
+  background: transparent;
+  border-left-color: var(--ifm-color-primary);
 }

@@ -3,6 +3,6 @@
   <ShortName>SMA Help</ShortName>
   <Description>Search SMA Technologies documentation</Description>
   <Url type="text/html" template="https://help.smatechnologies.com/search?q={searchTerms}"/>
-  <Image width="16" height="16" type="image/png">https://help.smatechnologies.com/img/favicon.png</Image>
+  <Image width="16" height="16" type="image/x-icon">https://help.smatechnologies.com/img/continuous-favicon.ico</Image>
   <InputEncoding>UTF-8</InputEncoding>
 </OpenSearchDescription>
