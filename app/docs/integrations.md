@@ -1,12 +1,40 @@
 ---
 hide_title: true
+title: Integrations
+description: Reference list of the supported OpCon Agents and Connectors, including the version support policy for integrations.
+tags:
+  - reference
+  - administrator
+  - integrations
 ---
 
 ### Support of Integrations (Agents and Connectors)
 
 We support the current version and the previous version (for up to one year after the new version is available). Older versions are not supported. Support means we will assist with issues and verify bugs, but only current version receive patches; previous version is supported for troubleshooting, not fixes.
 
-### Agents and Connectors
+### Agents
+
+<div class="nav-card integrations-list">
+
+- [GUIDEWIRE](/opcon/agents/guidewire)
+- [IBM I (Version 21.1)](/opcon/agents/ibm-i-2101)
+- [IBM I (Version 18.1)](/opcon/agents/ibm-i-1801)
+- [JAVA](/opcon/agents/java)
+- [MANAGED FILE TRANSFER (MFT)](/opcon/agents/opconmft)
+- [MCP](/opcon/agents/mcp)
+- [OS2200](/opcon/agents/os2200)
+- [ROBOTIC PROCESS AUTOMATION (RPA)](/opcon/agents/opcon-rpa)
+- [SAP](/opcon/agents/sap)
+- [SAP BW](/opcon/agents/sap-bw)
+- [SQL](/opcon/agents/sql)
+- [TUXEDO ART](/opcon/agents/tuxedo-art)
+- [UNIX](/opcon/agents/unix)
+- [WINDOWS](/opcon/agents/windows)
+- [ZOS](/opcon/agents/zos)
+
+</div>
+
+### Connectors
 
 <div class="nav-card integrations-list">
 
@@ -31,34 +59,26 @@ We support the current version and the previous version (for up to one year afte
 - [FICS](/opcon/connectors/fics)
 - [FISERV DNA](/opcon/connectors/fiserv-dna)
 - [FISERV XP2](/opcon/connectors/xp2)
-- [GUIDEWIRE](/opcon/agents/guidewire)
-- [IBM I (Version 21.1)](/opcon/agents/ibm-i-2101)
-- [IBM I (Version 18.1)](/opcon/agents/ibm-i-1801)
 - [JASPERSOFT](/opcon/connectors/jaspersoft)
-- [JAVA](/opcon/agents/java)
 - [JD EDWARDS](/opcon/connectors/jdedwards)
 - [JBOSS](/opcon/connectors/jboss)
-- [MANAGED FILE TRANSFER (MFT)](/opcon/agents/opconmft)
-- [MCP](/opcon/agents/mcp)
-- [OS2200](/opcon/agents/os2200)
 - [PEOPLESOFT](/opcon/connectors/peoplesoft)
-- [RESOURCE MONITOR](/resource-monitor-release-notes)
-- [ROBOTIC PROCESS AUTOMATION (RPA)](/opcon/agents/opcon-rpa)
-- [SAP](/opcon/agents/sap)
-- [SAP BW](/opcon/agents/sap-bw)
 - [SAPBO](/opcon/connectors/sapbo)
 - [SAP DATA SERVICES](/opcon/connectors/sap-data-services)
 - [SERVICE NOW](/opcon/connectors/servicenow)
 - [SMART EMAIL](/opcon/connectors/smart-email)
-- [SQL](/opcon/agents/sql)
 - [SYMPHONY SUMMIT](/opcon/connectors/symphonysummit)
-- [TUXEDO ART](/opcon/agents/tuxedo-art)
 - [UNIKIX](/opcon/connectors/unikix)
-- [UNIX](/opcon/agents/unix)
 - [VMWARE](/opcon/connectors/vmware)
 - [WEBSERVICES](/opcon/connectors/webservices)
-- [WINDOWS](/opcon/agents/windows)
 - [WSUS](https://help.smatechnologies.com/opcon/connectors/wsus)
-- [ZOS](/opcon/agents/zos)
+
+</div>
+
+### Utilities
+
+<div class="nav-card integrations-list">
+
+- [RESOURCE MONITOR](/resource-monitor-release-notes)
 
 </div>

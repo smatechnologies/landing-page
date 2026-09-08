@@ -1,0 +1,11 @@
+reference:
+  label: Reference
+  description: Lookup-oriented pages such as supported-integration lists and release notes.
+
+administrator:
+  label: Administrator
+  description: Pages aimed at OpCon administrators.
+
+integrations:
+  label: Integrations
+  description: Pages about OpCon Agents and Connectors.
