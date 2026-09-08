@@ -66,7 +66,6 @@ We support the current version and the previous version (for up to one year afte
 - [SAPBO](/opcon/connectors/sapbo)
 - [SAP DATA SERVICES](/opcon/connectors/sap-data-services)
 - [SERVICE NOW](/opcon/connectors/servicenow)
-- [SMART EMAIL](/opcon/connectors/smart-email)
 - [SYMPHONY SUMMIT](/opcon/connectors/symphonysummit)
 - [UNIKIX](/opcon/connectors/unikix)
 - [VMWARE](/opcon/connectors/vmware)
@@ -80,5 +79,6 @@ We support the current version and the previous version (for up to one year afte
 <div class="nav-card integrations-list">
 
 - [RESOURCE MONITOR](/resource-monitor-release-notes)
+- [SMART EMAIL](/opcon/connectors/smart-email)
 
 </div>
