@@ -1,5 +1,28 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 const VersionsArchived = require("./opcon-docs_versionsArchived.json");
+
+// Source repos whose pages are written as MDX (import Tabs, <TabItem>, JSX) even in .md files,
+// because Docusaurus 3 parses every file as MDX by default. This site's markdown.format is
+// 'detect' (.md is plain CommonMark), which would print their `import` lines as visible text.
+// Each repo's own setting is applied per file through front matter below. This list matches
+// products with "format": "mdx" in the integrations repo's sources.json.
+const MDX_SOURCE_REPOS = new Set([
+  'acs-fiservccm-docs', 'acs-fiservdna-docs', 'acs-kubernetes-docs', 'asyscoamt-acs-docs',
+  'awsec2-connector-docs', 'azurevm-connector-docs', 'cegid-cbr-connector-docs',
+  'cegid-orli-connector-docs', 'commvault-connector-docs', 'corelation-connector-docs',
+  'dna-connector-docs', 'ease-acs-docs', 'easyvista-connector-docs', 'episys-connector-docs',
+  'exigen-connector-docs', 'fics-connector-docs', 'informatica-onprem-acs-docs',
+  'jaspersoft-connector-docs', 'java-agent-docs', 'jboss-connector-docs',
+  'jdedwards-connector-docs', 'opcon-deploy-docs', 'opcon-rpa-docs',
+  'peoplesoft-connector-docs', 'sap-data-services-docs', 'sapbo-connector-docs',
+  'servicenow-connector-docs', 'smart-email-docs', 'sql-agent-docs',
+  'symphonysummit-connector-docs', 'tuxedo-art-agent-docs', 'unikix-connector-docs',
+  'vmware-connector-docs', 'webservices-acs-docs', 'webservices-connector-docs',
+  'wsus-connector-docs', 'xp2-connector-docs',
+]);
+// zos-agent-docs is "mdx" in sources.json but three of its pages (advanced-features/ispf.md,
+// customization.md, reference/saf-resources.md) do not compile as MDX here, so it stays on 'detect'.
+
 module.exports = {
   title: 'Help',
   tagline: 'Continuous Help',
@@ -11,6 +34,14 @@ module.exports = {
     format: 'detect',
     hooks: {
       onBrokenMarkdownImages: 'warn',
+    },
+    parseFrontMatter: async (params) => {
+      const result = await params.defaultParseFrontMatter(params);
+      const repo = /[\\/]content[\\/]smatechnologies[\\/]([^\\/]+)[\\/]/.exec(params.filePath)?.[1];
+      if (repo && MDX_SOURCE_REPOS.has(repo) && result.frontMatter.mdx?.format === undefined) {
+        result.frontMatter = { ...result.frontMatter, mdx: { ...result.frontMatter.mdx, format: 'mdx' } };
+      }
+      return result;
     },
     preprocessor: ({ filePath, fileContent }) => {
       // Only process .md files (not .mdx — those have intentional JSX expressions)
