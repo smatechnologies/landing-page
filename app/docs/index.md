@@ -18,9 +18,6 @@ title: 'Home'
 | October 30, 2026 | Deploy 26.0.5 | Product | [Release Notes](https://help.smatechnologies.com/opcon/deploy/release-notes) |
 | October 13, 2026 | ServiceNow Connector 26.1.0 | Connector | [Release Notes](https://help.smatechnologies.com/opcon/connectors/servicenow/release-notes) |
 | September 17, 2026 | RPA Agent 1.2.1 | Agent | [Release Notes](https://help.smatechnologies.com/opcon/agents/opcon-rpa/release-notes) |
-| August 10, 2026 | OpCon Summer 26 | Cloud | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes) |
-| July 7, 2026 | OpCon 26.0.5 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v26.0/release-notes#opcon-2605) |
-| June 8, 2026 | OpCon 25.0.7 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2507) |
 
 ## OpCon Cloud Releases
 
@@ -137,18 +134,6 @@ On-Prem releases are supported for 3 years from the date of release. Releases th
 <td style="text-align: center">2023-11-13</td>
 <td style="text-align: center">2026-11-13</td>
 <td style="text-align: center"><a href="opcon-release-notes-22/#opcon-22100">Release Notes</a></td>
-</tr>
-<tr>
-<td colspan="5" style="padding: 10px">
-<details>
-<summary><strong>This release is the last STS release in the series below</strong></summary>
-<ul>
-<li><strong>22.9 STS (22.9.0)</strong> | 2023-10-16 | <a href="opcon-release-notes-22#opcon-2290">Release Notes</a></li>
-<li><strong>22.8 STS (22.8.0)</strong> | 2023-09-18 | <a href="opcon-release-notes-22/#opcon-2280">Release Notes</a></li>
-<li><strong>22.7 STS (22.7.0)</strong> | 2023-08-21 | <a href="opcon-release-notes-22/#opcon-2270">Release Notes</a></li>
-</ul>
-</details>
-</td>
 </tr>
 </tbody>
 </table>
