@@ -9,6 +9,7 @@ title: 'Home'
 
 | Release Date | Name | Type | Release Notes |
 |:---:|:---:|:---:|:---:|
+| November 16, 2026 | OpCon Fall 26 | Cloud | [Release Notes](https://help.smatechnologies.com/opcon/core/release-notes) |
 | November 9, 2026 | CommVault Connector 26.0.1 | Connector | [Release Notes](https://help.smatechnologies.com/opcon/connectors/commvault/release-notes) |
 | November 4, 2026 | SAP Agent 22.0.0 | Agent | [Release Notes](https://help.smatechnologies.com/opcon/agents/sap/release-notes) |
 | November 4, 2026 | SAP BW Agent 23.0.0 | Agent | [Release Notes](https://help.smatechnologies.com/opcon/agents/sap-bw/release-notes) |
@@ -17,6 +18,8 @@ title: 'Home'
 | October 30, 2026 | Deploy 26.0.5 | Product | [Release Notes](https://help.smatechnologies.com/opcon/deploy/release-notes) |
 | October 13, 2026 | ServiceNow Connector 26.1.0 | Connector | [Release Notes](https://help.smatechnologies.com/opcon/connectors/servicenow/release-notes) |
 | September 17, 2026 | RPA Agent 1.2.1 | Agent | [Release Notes](https://help.smatechnologies.com/opcon/agents/opcon-rpa/release-notes) |
+| July 7, 2026 | OpCon 26.0.5 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v26.0/release-notes#opcon-2605) |
+| June 8, 2026 | OpCon 25.0.7 | On-Prem | [Release Notes](https://help.smatechnologies.com/opcon/core/v25.0/release-notes#opcon-2507) |
 
 ## OpCon Cloud Releases
 
