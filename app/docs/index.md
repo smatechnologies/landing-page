@@ -14,7 +14,6 @@ title: 'Home'
 | November 4, 2026 | SAP BW Agent 23.0.0 | Agent | [Release Notes](https://help.smatechnologies.com/opcon/agents/sap-bw/release-notes) |
 | November 4, 2026 | SQL Agent 23.0.0 | Agent | [Release Notes](https://help.smatechnologies.com/opcon/agents/sql/release-notes) |
 | November 3, 2026 | FICS Connector 26.0.2 | Connector | [Release Notes](https://help.smatechnologies.com/opcon/connectors/fics/release-notes) |
-| November 3, 2026 | Relay 26.3.0 | Utility | [Relay](https://help.smatechnologies.com/opcon-relay/) |
 | October 30, 2026 | Deploy 26.0.5 | Product | [Release Notes](https://help.smatechnologies.com/opcon/deploy/release-notes) |
 | October 13, 2026 | ServiceNow Connector 26.1.0 | Connector | [Release Notes](https://help.smatechnologies.com/opcon/connectors/servicenow/release-notes) |
 | September 17, 2026 | RPA Agent 1.2.1 | Agent | [Release Notes](https://help.smatechnologies.com/opcon/agents/opcon-rpa/release-notes) |
@@ -127,13 +126,6 @@ On-Prem releases are supported for 3 years from the date of release. Releases th
 </ul>
 </details>
 </td>
-</tr>
-<tr>
-<td style="text-align: center">22.10 STS</td>
-<td style="text-align: center">22.10.0</td>
-<td style="text-align: center">2023-11-13</td>
-<td style="text-align: center">2026-11-13</td>
-<td style="text-align: center"><a href="opcon-release-notes-22/#opcon-22100">Release Notes</a></td>
 </tr>
 </tbody>
 </table>
