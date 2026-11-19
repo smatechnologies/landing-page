@@ -23,6 +23,37 @@ const MDX_SOURCE_REPOS = new Set([
 // zos-agent-docs is "mdx" in sources.json but three of its pages (advanced-features/ispf.md,
 // customization.md, reference/saf-resources.md) do not compile as MDX here, so it stays on 'detect'.
 
+// Returns the smatechnologies source repo a file belongs to, or undefined.
+const sourceRepo = (filePath) => /[\\/]content[\\/]smatechnologies[\\/]([^\\/]+)[\\/]/.exec(filePath)?.[1];
+
+// Many pages in the MDX repos were converted from Word and still hold text that is valid
+// CommonMark but not valid MDX. These rewrites make that text literal so the page compiles.
+// They run only on prose (code fences and inline code are excluded by the caller).
+// Matches only a "<" that is not already escaped: preceded by an even number of backslashes,
+// so "\<" is skipped but "\\<" (an escaped backslash, then a real "<") is not.
+const UNESCAPED_LT = String.raw`(?<=(?:^|[^\\])(?:\\\\)*)<`;
+
+const escapeForMdx = (text, fileContent) => {
+  // Pandoc span attributes: [Enterprise Manager]{.GeneralDesktopUI} -> Enterprise Manager
+  let out = text.replace(/\[([^\]\n]+)\]\{\.[^}\n]*\}/g, '$1');
+  // Placeholders written as <Configuration Directory\> -> literal \<Configuration Directory\>
+  out = out.replace(new RegExp(UNESCAPED_LT + String.raw`([^<>\n]*?)\\>`, 'gm'), '\\<$1\\>');
+  // A "<" that cannot start a JSX tag (<90%, << >>, "a < b") -> literal \<
+  // Skips link destinations such as ![](<../static/img/name with spaces.png>)
+  out = out.replace(new RegExp(String.raw`(?<!\]\()` + UNESCAPED_LT + '(?![A-Za-z/!>])', 'gm'), '\\<');
+  // A capitalized tag that is never closed and never imported, such as "enter <Default> or ...",
+  // is a placeholder, not a component. Real components (<Tabs>, <TabItem>) have closing tags.
+  out = out.replace(new RegExp(UNESCAPED_LT + '([A-Z][A-Za-z0-9]*)>', 'gm'), (match, name) =>
+    fileContent.includes(`</${name}>`) || new RegExp(`^import\\b[^\\n]*\\b${name}\\b`, 'm').test(fileContent)
+      ? match
+      : `\\<${name}>`);
+  // Unfenced JSON (indented blocks are not code in MDX): a "{" that ends a line, and a "}" or
+  // "}," that stands alone on a line. Inline JSX expressions such as style={{...}} are untouched.
+  out = out.replace(/\{(?=[ \t]*$)/gm, '\\{');
+  out = out.replace(/^([ \t]*)\}(?=[ \t]*,?[ \t]*$)/gm, '$1\\}');
+  return out;
+};
+
 module.exports = {
   title: 'Help',
   tagline: 'Continuous Help',
@@ -37,7 +68,7 @@ module.exports = {
     },
     parseFrontMatter: async (params) => {
       const result = await params.defaultParseFrontMatter(params);
-      const repo = /[\\/]content[\\/]smatechnologies[\\/]([^\\/]+)[\\/]/.exec(params.filePath)?.[1];
+      const repo = sourceRepo(params.filePath);
       if (repo && MDX_SOURCE_REPOS.has(repo) && result.frontMatter.mdx?.format === undefined) {
         result.frontMatter = { ...result.frontMatter, mdx: { ...result.frontMatter.mdx, format: 'mdx' } };
       }
@@ -46,10 +77,15 @@ module.exports = {
     preprocessor: ({ filePath, fileContent }) => {
       // Only process .md files (not .mdx — those have intentional JSX expressions)
       if (!filePath.endsWith('.md')) return fileContent;
+      const isMdxSource = MDX_SOURCE_REPOS.has(sourceRepo(filePath));
+      // Keep front matter out of the MDX escapes so YAML values are never altered
+      const frontMatter = /^---\r?\n[\s\S]*?\r?\n---(?:\r?\n|$)/.exec(fileContent)?.[0] ?? '';
+      const body = fileContent.slice(frontMatter.length);
       // Split on code fences and inline code spans so we never escape inside them
-      const parts = fileContent.split(/(```[\s\S]*?```|`[^`\n]+`)/g);
-      return parts.map((part, i) => {
+      const parts = body.split(/(```[\s\S]*?```|`[^`\n]+`)/g);
+      return frontMatter + parts.map((part, i) => {
         if (i % 2 === 1) return part; // code block/span — leave verbatim
+        if (isMdxSource) part = escapeForMdx(part, fileContent);
         // Escape {identifier} in prose so MDX doesn't evaluate them as JS variables
         // Excludes {#anchor} (heading IDs) and {/* comments */}
         let result = part.replace(/\{([A-Za-z_$][A-Za-z0-9_$]*)\}/g, '\\{$1\\}');
