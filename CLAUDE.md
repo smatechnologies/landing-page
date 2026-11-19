@@ -99,7 +99,6 @@ docusaurus.config.js     # Site configuration
 ## Running Locally
 
 ```bash
-cd app
-npm ci
-npm start
+yarn install
+yarn start
 ```
