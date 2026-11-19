@@ -73,7 +73,7 @@ You can generate this token by logging into Solution Manager as a user like ocad
 14.  Navigate to **Library -> Agents**
 15.  For each Agent that will use the installed Relay:
      * Stop the agent
-     * Modify the agent and add the name of the Relay from Step 6 to the **NetComName** field under **General Settings**
+     * Modify the agent and add the name of the Relay from Step 8 to the **NetComName** field under **General Settings**
      * Save the changes
      * Start the agent
 16. If all Agents show **Communicating**, then you have successfully installed and configured Relay.  If not, please open a case with support so our team can help you troubleshoot the issue.
@@ -92,19 +92,19 @@ You can generate this token by logging into Solution Manager as a user like ocad
 10. Next, you will be prompted to **Enter your OpCon URI**.  Use the same **OpCon URI** that was used when installing the Primary Relay instance.
 11. Finally, you will be prompted to Enter External Token for a User with Super Admin privilege like ocadm.
 
-	For this step, you may use the token for the relayInstall user that was created while installing the first Relay. If that user no longer exists, please follow the instructions under **Step 10** in the **Install Primary Relay Instance** section above.
+	For this step, you may use the token for the relayInstall user that was created while installing the first Relay. If that user no longer exists, please follow the instructions under **Step 11** in the **Install Primary Relay Instance** section above.
 
-12. You will see the install dialogue confirm authentication to the URI entered in **Step 9** with the token entered in **Step 10** and then register to relay with the names given in **Steps 7 & 8**.
+12. You will see the install dialogue confirm authentication to the URI entered in **Step 10** with the token entered in **Step 11** and then register to relay with the names given in **Steps 7 & 8**.
 13.  You can now choose to **Exit** the install dialog or just close the window.
 14.  Log into Solution Manager as `ocadm` or user with equivalent rights.
 15.  Navigate to **Library -> Agents**
 16.  For each Agent that will use the installed Relay:
      * Stop the agent
-     * Modify the agent and add the name of the Relay from Step 6 to the **NetComName** field under **General Settings**
+     * Modify the agent and add the name of the Relay from Step 8 to the **NetComName** field under **General Settings**
      * Save the changes
      * Start the agent
 17. If all Agents show **Communicating**, then you have successfully installed and configured Relay.  If not, please open a case with support so our team can help you troubleshoot the issue.
-18. Log back into Solution Manager as a user like ocadm and navigate to LIBRARY → ACCESS MANAGEMENT → USERS.  Select the user relayInstall, created in Step #8, by clicking on it.  Click on the vertical ellipsis to Delete the selected user.
+18. Log back into Solution Manager as a user like ocadm and navigate to LIBRARY → ACCESS MANAGEMENT → USERS.  Select the user relayInstall, created in Step #11 of the **Install Primary Relay Instance** section, by clicking on it.  Click on the vertical ellipsis to Delete the selected user.
 
 ### Uninstall
 1. Open File Explorer in Windows and navigate to `"C:\Program Files\OpConxps\Relay-[[Instance Name]]"` or the path you installed to.
