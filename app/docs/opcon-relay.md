@@ -53,18 +53,18 @@ To set up TLS communication for OpCon agents using Relay, follow the existing do
 
 You can generate this token by logging into Solution Manager as a user like ocadm and navigating to LIBRARY → ACCESS MANAGEMENT → USERS → “+” to add a new user
 
-	* First Name: Relay
-	* Last Name: Install
-	* Username: relayInstall
-	* Password: (Set to unique value and remember for later)
+* **First Name: Relay**
+* **Last Name: Install**
+* **Username: relayInstall**
+* **Password: (*Set to unique value and remember for later*)**
 
-	Click on the button labeled “Save”
+- Click on the button labeled “Save”
 	
-	Click on the ROLES tab and check the box for Role_ocadm and click on the button labeled “Save”
+- Click on the ROLES tab and check the box for Role_ocadm and click on the button labeled “Save”
 	
-	Click on the SETTINGS tab and check the box for Enable external tokens and click on the button labeled “Save”
+- Click on the SETTINGS tab and check the box for Enable external tokens and click on the button labeled “Save”
 
-	Log out of Solution Manager and log back in as relayInstall and navigate to RELAYINSTALL → EXTERNAL TOKEN. Here you will select the radio button labeled API Token and then click the button labeled Generate. Make sure to copy and paste the generated token to the install dialog that is currently open.
+- Log out of Solution Manager and log back in as relayInstall and navigate to RELAYINSTALL → EXTERNAL TOKEN. Here you will select the radio button labeled API Token and then click the button labeled Generate. Make sure to copy and paste the generated token to the install dialog that is currently open.
 
 11. You will see the install dialogue confirm authentication to the URI entered in **Step 9** with the token entered in **Step 10** and then register to relay with the names given in **Steps 7 & 8**.
 12.  You can now choose to **Exit** the install dialog or just close the window.
@@ -76,7 +76,7 @@ You can generate this token by logging into Solution Manager as a user like ocad
      * Save the changes
      * Start the agent
 16. If all Agents show **Communicating**, then you have successfully installed and configured Relay.  If not, please open a case with support so our team can help you troubleshoot the issue.
-17. **If you are installing a second instance of Relay on the same Windows OS, you may skip this step until you are finished with that installation**. Log back into Solution Manager as a user like ocadm and navigate to LIBRARY → ACCESS MANAGEMENT → USERS.  Select the user relayInstall, created in Step #8, by clicking on it.  Click on the vertical ellipsis to Delete the selected user.
+17. **If you are installing a second instance of Relay on the same Windows OS, you may skip this step until you are finished with that installation**. Log back into Solution Manager as a user like ocadm and navigate to LIBRARY → ACCESS MANAGEMENT → USERS.  Select the user relayInstall, created in Step #11, by clicking on it.  Click on the vertical ellipsis to Delete the selected user.
 
 ### Install Standby Relay Instance
 1. Choose a compatible server within the secondary data center.
