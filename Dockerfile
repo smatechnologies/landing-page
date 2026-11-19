@@ -1,9 +1,9 @@
-FROM node:20
+FROM node:24
 ENV NODE_OPTIONS="--max-old-space-size=7168"
 COPY app /app
 COPY content /content
 WORKDIR /app
-RUN npm install
+RUN npm ci
 RUN npm run build
 COPY api /app/build/opcon/core/api
 EXPOSE 3000
