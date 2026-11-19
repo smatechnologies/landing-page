@@ -66,7 +66,8 @@ You can generate this token by logging into Solution Manager as a user like ocad
 
 - Log out of Solution Manager and log back in as relayInstall and navigate to RELAYINSTALL → EXTERNAL TOKEN. Here you will select the radio button labeled API Token and then click the button labeled Generate. Make sure to copy and paste the generated token to the install dialog that is currently open.
 
-11. You will see the install dialogue confirm authentication to the URI entered in **Step 9** with the token entered in **Step 10** and then register to relay with the names given in **Steps 7 & 8**.
+- You will see the install dialogue confirm authentication to the URI entered in **Step 9** with the token entered in **Step 10** and then register to relay with the names given in **Steps 7 & 8**.
+
 12.  You can now choose to **Exit** the install dialog or just close the window.
 13.  Log into Solution Manager as `ocadm` or user with equivalent rights.
 14.  Navigate to **Library -> Agents**
